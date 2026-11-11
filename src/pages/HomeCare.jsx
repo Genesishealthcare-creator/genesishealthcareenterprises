@@ -13,10 +13,9 @@ import {
 /* ─────────────────────────── DATA ─────────────────────────── */
 
 const bannerStats = [
-  { value: '10+',  label: 'Years Experience' },
-  { value: '100',  label: 'Care Staff' },
-  { value: '20k+', label: 'Happy Families' },
-  { value: '24/7', label: 'Support' },
+  { value: '12000+', label: 'Happy Patients' },
+  { value: '98%',    label: 'Patient Satisfaction Rate' },
+  { value: '✓',      label: 'Recommended by Leading Hospitals' },
 ]
 
 const services = [
@@ -78,12 +77,6 @@ const process = [
   { step: '02', title: 'Care Assessment', text: 'Our team understands the requirements and recommends the right type and duration of care.' },
   { step: '03', title: 'Caregiver Assigned', text: 'A trained nurse or attendant is matched to your family and begins care at home.' },
   { step: '04', title: 'Ongoing Support', text: 'We stay in touch, monitor service quality and adjust care as the patient\'s needs change.' },
-]
-
-const trust = [
-  { icon: Users,     color: 'teal',   value: '12000+', label: 'Happy Patients' },
-  { icon: HeartPlus, color: 'rose',   value: '98%',    label: 'Patient Satisfaction Rate' },
-  { icon: Shield,    color: 'violet', value: '',       label: 'Recommended by Leading Hospitals' },
 ]
 
 const clinicalServices = [
@@ -210,25 +203,6 @@ export default function HomeCare() {
           caption: { title: 'Care with dignity', text: 'Trained nurses & attendants at your home' },
         }}
       />
-
-      {/* ── Trust numbers ── */}
-      <section className="hc-trust" aria-label="Genesis home care in numbers">
-        <div className="container">
-          <div className="hc-trust__grid">
-            {trust.map(({ icon: Icon, color, value, label }, i) => (
-              <Reveal key={label} delay={i + 1}>
-                <div className={`hc-trust__item hc-trust__item--${color}${value ? '' : ' hc-trust__item--text'}`}>
-                  <span className="hc-trust__icon"><Icon /></span>
-                  <div>
-                    {value ? <strong>{value}</strong> : <strong>{label}</strong>}
-                    {value && <span>{label}</span>}
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── Intro + quick call card ── */}
       <section className="hc-intro">

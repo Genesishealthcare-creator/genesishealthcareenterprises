@@ -3853,36 +3853,3 @@ button:focus-visible,
 /* buttons that look like the existing text links */
 .jt-card button.hc-card__link { background: none; border: 0; padding: 0; cursor: pointer; font: inherit; font-family: var(--font-display); font-weight: 800; font-size: .88rem }
 button.jt-join__line { border: 0; cursor: pointer }
-
-/* ── Home Care — trust numbers band ─────────────────────────────────────── */
-.hc-trust { background: #fff; position: relative; z-index: 3; margin-top: -2.2rem; padding-bottom: .5rem }
-.hc-trust__grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem;
-  background: #fff; border-radius: var(--r-xl); padding: 1.1rem;
-  box-shadow: 0 24px 56px -18px rgba(45,27,110,.35); border: 1px solid var(--slate-100);
-}
-@media (max-width: 860px) { .hc-trust__grid { grid-template-columns: 1fr } }
-.hc-trust__item {
-  height: 100%; display: flex; align-items: center; gap: 1rem;
-  padding: 1.1rem 1.3rem; border-radius: var(--r-lg);
-  background: linear-gradient(135deg, var(--teal-50), #fff);
-  border-left: 5px solid var(--teal-500);
-  transition: transform var(--t), box-shadow var(--t);
-}
-.hc-trust__item:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0,0,0,.1) }
-.hc-trust__item--rose   { background: linear-gradient(135deg, var(--rose-50), #fff);   border-left-color: var(--rose-500) }
-.hc-trust__item--violet { background: linear-gradient(135deg, var(--violet-50), #fff); border-left-color: var(--violet-500) }
-.hc-trust__icon {
-  width: 54px; height: 54px; border-radius: 16px; flex-shrink: 0; display: grid; place-items: center; color: #fff;
-  background: linear-gradient(135deg, var(--teal-500), var(--teal-700));
-}
-.hc-trust__item--rose   .hc-trust__icon { background: linear-gradient(135deg, var(--rose-500), var(--rose-600)) }
-.hc-trust__item--violet .hc-trust__icon { background: linear-gradient(135deg, var(--violet-500), var(--violet-700)) }
-.hc-trust__icon svg { width: 27px; height: 27px }
-.hc-trust__item strong {
-  display: block; font-family: var(--font-display); font-weight: 900; line-height: 1.05;
-  font-size: clamp(1.7rem, 3vw, 2.2rem); color: var(--slate-900); letter-spacing: -.03em;
-}
-.hc-trust__item span:not(.hc-trust__icon) { display: block; font-weight: 700; font-size: .88rem; color: var(--slate-600); margin-top: .15rem; line-height: 1.35 }
-
-.hc-trust__item--text strong { font-size: clamp(1.15rem, 2vw, 1.4rem); line-height: 1.25; letter-spacing: -.01em }
