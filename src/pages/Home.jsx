@@ -6,7 +6,7 @@ import Reveal from '../components/Reveal.jsx'
 import useTypewriter from '../components/useTypewriter.js'
 import {
   Stethoscope, HomeCare, Elderly, Bed, Wheelchair, Pill,
-  Shield, Wallet, Hands, ArrowRight, HeartPlus, Check, Clock, Users, Oxygen, Mattress, Monitor, Phone, Ambulance,
+  Shield, Wallet, Hands, ArrowRight, HeartPlus, Check, Clock, Users, Oxygen, Mattress, Monitor, Phone, Ambulance, Globe,
 } from '../components/Icons.jsx'
 
 const services = [
@@ -33,7 +33,14 @@ const services = [
     title: 'Patient Transport Services',
     text: 'Cardiac and non-cardiac ambulances and medical taxis, with a trained nurse or caretaker accompanying your loved one.',
     to: '/patient-transport',
-  },]
+  },
+  {
+    icon: Globe, color: 'amber',
+    title: 'Exclusive Services for NRIs',
+    text: 'Living abroad? We take care of your aging parents in India — 24/7 caretaker, health monitoring, doctor visits and regular updates.',
+    to: '/nri-services',
+  },
+]
 
 const highlights = [
   { icon: Bed,        color: 'teal',   text: 'Bedridden Patient Care' },
@@ -279,7 +286,7 @@ export default function Home() {
             for patients, families and senior citizens.
           </SectionHeading>
 
-          <div className="grid grid-4">
+          <div className="grid grid-services">
             {services.map(({ icon: Icon, color, title, text, to }, i) => (
               <Reveal key={title} delay={i + 1}>
                 <article className={`scard scard--${color}`}>

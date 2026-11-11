@@ -11,6 +11,7 @@ import Contact from './pages/Contact.jsx'
 import FAQ from './pages/FAQ.jsx'
 import Careers from './pages/Careers.jsx'
 import PatientTransport from './pages/PatientTransport.jsx'
+import NriServices from './pages/NriServices.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/join-our-team" element={<Careers />} />
           <Route path="/patient-transport" element={<PatientTransport />} />
+          <Route path="/nri-services" element={<NriServices />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

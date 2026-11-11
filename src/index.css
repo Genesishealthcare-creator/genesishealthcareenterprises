@@ -3858,3 +3858,73 @@ button.jt-join__line { border: 0; cursor: pointer }
 .grid-4 { grid-template-columns: repeat(4, 1fr); gap: 1.4rem }
 @media (max-width: 1100px) { .grid-4 { grid-template-columns: repeat(2, 1fr) } }
 @media (max-width: 640px)  { .grid-4 { grid-template-columns: 1fr } }
+
+/* ── Home services: 3 on the first row, 2 wider cards on the second ───────── */
+.grid-services { grid-template-columns: repeat(6, 1fr); gap: 1.5rem }
+.grid-services > * { grid-column: span 2 }
+.grid-services > *:nth-child(n+4) { grid-column: span 3 }
+@media (max-width: 1000px) {
+  .grid-services { grid-template-columns: repeat(2, 1fr) }
+  .grid-services > *, .grid-services > *:nth-child(n+4) { grid-column: auto }
+  .grid-services > *:last-child:nth-child(odd) { grid-column: 1 / -1 }
+}
+@media (max-width: 640px) {
+  .grid-services { grid-template-columns: 1fr }
+  .grid-services > *:last-child:nth-child(odd) { grid-column: auto }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   NRI SERVICES PAGE
+   ══════════════════════════════════════════════════════════════════════════ */
+.nri-senses { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.3rem }
+.nri-sense {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-family: var(--font-display); font-weight: 800; font-size: .92rem;
+  color: var(--violet-600); background: #fff; border: 1.5px solid var(--violet-100);
+  padding: .55rem 1.05rem; border-radius: 999px; box-shadow: 0 6px 16px -8px rgba(109,40,217,.35);
+}
+.nri-sense svg { width: 20px; height: 20px }
+
+.nri-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem }
+@media (max-width: 1000px) { .nri-grid { grid-template-columns: repeat(2, 1fr) } }
+@media (max-width: 620px)  { .nri-grid { grid-template-columns: 1fr } }
+.nri-card {
+  position: relative; height: 100%; display: flex; align-items: flex-start; gap: 1rem;
+  background: #fff; border-radius: var(--r-lg); padding: 1.4rem 1.3rem;
+  border-left: 5px solid var(--teal-400); box-shadow: 0 3px 16px rgba(0,0,0,.06);
+  transition: transform var(--t), box-shadow var(--t);
+}
+.nri-card:hover { transform: translateY(-5px); box-shadow: 0 16px 38px rgba(0,0,0,.12) }
+.nri-card--violet  { border-left-color: var(--violet-400) }
+.nri-card--rose    { border-left-color: var(--rose-400) }
+.nri-card--sky     { border-left-color: var(--sky-400) }
+.nri-card--amber   { border-left-color: var(--amber-400) }
+.nri-card--emerald { border-left-color: var(--emerald-400) }
+.nri-card .meq-why-icon { margin-bottom: 0; flex-shrink: 0 }
+.nri-card h3 { font-size: 1.02rem; margin: 0 0 .25rem; color: var(--slate-800) }
+.nri-card p  { margin: 0; color: var(--slate-500); font-size: .9rem; line-height: 1.55 }
+.nri-card__n {
+  position: absolute; top: .55rem; right: .9rem;
+  font-family: var(--font-display); font-weight: 900; font-size: 1.6rem; color: var(--slate-800); opacity: .08;
+}
+
+.nri-trust { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem }
+.nri-trust > *:nth-child(4), .nri-trust > *:nth-child(5) { grid-column: span 1 }
+@media (max-width: 900px) { .nri-trust { grid-template-columns: repeat(2, 1fr) } }
+@media (max-width: 560px) { .nri-trust { grid-template-columns: 1fr } }
+
+.hc-steps--5 { grid-template-columns: repeat(5, 1fr); gap: 1.1rem }
+@media (max-width: 1100px) { .hc-steps--5 { grid-template-columns: repeat(3, 1fr) } }
+@media (max-width: 700px)  { .hc-steps--5 { grid-template-columns: 1fr 1fr } }
+@media (max-width: 460px)  { .hc-steps--5 { grid-template-columns: 1fr } }
+
+.nri-final {
+  text-align: center; max-width: 760px; margin: 0 auto;
+  background: linear-gradient(135deg, var(--violet-50), #fff 55%, var(--teal-50));
+  border: 1px solid var(--violet-100); border-radius: var(--r-xl); padding: 2.6rem 1.6rem;
+  box-shadow: 0 20px 50px -20px rgba(109,40,217,.3);
+}
+.nri-final > svg { width: 52px; height: 52px; color: var(--violet-600); margin-bottom: .6rem }
+.nri-final p { color: var(--slate-500); font-size: 1.05rem }
+.nri-final__actions { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; margin-top: 1.3rem }
+.nri-final__actions svg { width: 18px; height: 18px }

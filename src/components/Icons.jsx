@@ -213,6 +213,34 @@ export const Ambulance = (p) => (
   </svg>
 )
 
+export const Globe = (p) => (
+  <svg viewBox="0 0 24 24" {...base} {...p}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M3 12h18M12 3c2.6 2.6 4 5.8 4 9s-1.4 6.4-4 9c-2.6-2.6-4-5.8-4-9s1.4-6.4 4-9Z" />
+  </svg>
+)
+
+export const Video = (p) => (
+  <svg viewBox="0 0 24 24" {...base} {...p}>
+    <rect x="3" y="6" width="13" height="12" rx="2" />
+    <path d="m16 10 5-3v10l-5-3" />
+  </svg>
+)
+
+export const Flask = (p) => (
+  <svg viewBox="0 0 24 24" {...base} {...p}>
+    <path d="M9 3h6M10 3v6l-5.2 9.1A2 2 0 0 0 6.5 21h11a2 2 0 0 0 1.7-2.9L14 9V3" />
+    <path d="M7.5 15h9" />
+  </svg>
+)
+
+export const FileText = (p) => (
+  <svg viewBox="0 0 24 24" {...base} {...p}>
+    <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z" />
+    <path d="M14 3v5h5M9 13h6M9 17h6" />
+  </svg>
+)
+
 export const Car = (p) => (
   <svg viewBox="0 0 24 24" {...base} {...p}>
     <path d="M5 16V11l2-5h10l2 5v5M3 16h18v3H3zM7 19v1.5M17 19v1.5" />

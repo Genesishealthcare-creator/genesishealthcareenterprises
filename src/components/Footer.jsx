@@ -6,6 +6,7 @@ const services = [
   { to: '/home-care',         label: 'Home Care Services' },
   { to: '/old-age-home',      label: 'Old Age Home & Senior Care' },
   { to: '/patient-transport',  label: 'Patient Transport Services' },
+  { to: '/nri-services',       label: 'Exclusive Services for NRIs' },
   { to: '/about',             label: 'About Us' },
   { to: '/faq',               label: 'FAQs' },
 ]
