@@ -3,9 +3,17 @@ import { Link } from 'react-router-dom'
 // colorVariant: 'teal' | 'violet' | 'rose' | 'amber'
 // images: array of { src, alt, name } — shown as a grid on the right side
 // heroImage: { src, alt, chips?: string[], caption?: { title, text } } — single large photo on the right
-export default function PageBanner({ title, description, colorVariant = 'teal', badge, stats, images, heroImage }) {
+export default function PageBanner({ title, description, colorVariant = 'teal', badge, stats, images, heroImage, bgImage }) {
   return (
     <section className={`page-banner page-banner--${colorVariant}`}>
+      {/* Optional soft full-width background photo (bgImage = { src, position? }) */}
+      {bgImage && (
+        <span
+          className="pb-bgphoto"
+          aria-hidden="true"
+          style={{ backgroundImage: `url('${bgImage.src}')`, backgroundPosition: bgImage.position || 'center' }}
+        />
+      )}
       {/* Animated blobs */}
       <span className="pb-blob pb-blob-1" aria-hidden="true" />
       <span className="pb-blob pb-blob-2" aria-hidden="true" />

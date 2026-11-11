@@ -163,6 +163,7 @@ export default function MedicalEquipment() {
         description="Quality healthcare equipment at affordable prices — flexible rental options and equipment purchases to make healthcare more accessible, right at home."
         stats={bannerStats}
         images={bannerImages}
+        bgImage={{ src: '/5-function-electric-bed.jpg', position: '60% 50%' }}
       />
 
       {/* ── Intro highlight strip ── */}

@@ -3598,3 +3598,20 @@ button:focus-visible,
 @media (max-width: 1000px) {
   .pb-hero__label { max-width: 560px }
 }
+
+/* Page banner — soft full-width background photo (tinted by the banner gradient) */
+.pb-bgphoto {
+  position: absolute;
+  inset: 0;
+  background-size: auto 112%;          /* whole product visible, not zoomed in */
+  background-repeat: no-repeat;
+  opacity: .3;
+  mix-blend-mode: luminosity;
+  pointer-events: none;
+  /* feather the photo's edges so it melts into the banner */
+  -webkit-mask-image: radial-gradient(ellipse 52% 62% at var(--pb-x, 60%) 50%, #000 35%, transparent 100%);
+          mask-image: radial-gradient(ellipse 52% 62% at var(--pb-x, 60%) 50%, #000 35%, transparent 100%);
+}
+@media (max-width: 1000px) {
+  .pb-bgphoto { background-size: cover; opacity: .2; --pb-x: 50% }
+}
