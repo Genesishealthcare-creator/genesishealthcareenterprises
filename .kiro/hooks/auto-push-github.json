@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Auto-push changes to GitHub",
+      "trigger": "Stop",
+      "description": "After each agent run, commit any changes and push to GitHub main (which also deploys to Vercel). Skips the push if the build fails.",
+      "action": {
+        "type": "command",
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/auto-push.ps1",
+        "timeout": 180
+      }
+    }
+  ]
+}
