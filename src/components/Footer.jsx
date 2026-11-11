@@ -171,7 +171,7 @@ export default function Footer() {
         <div className="container footer__bottom">
           <span>© {year} Genesis Health Care Enterprises. All rights reserved.</span>
           <span className="footer__bottom-made">
-            Developed By <strong>Ch.Nookaraju</strong>
+            Developed by : <strong>Genesis Team</strong>
           </span>
         </div>
       </div>
