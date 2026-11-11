@@ -12,6 +12,7 @@ import FAQ from './pages/FAQ.jsx'
 import Careers from './pages/Careers.jsx'
 import PatientTransport from './pages/PatientTransport.jsx'
 import NriServices from './pages/NriServices.jsx'
+import OldAgeHomeSupport from './pages/OldAgeHomeSupport.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/join-our-team" element={<Careers />} />
           <Route path="/patient-transport" element={<PatientTransport />} />
           <Route path="/nri-services" element={<NriServices />} />
+          <Route path="/old-age-home-support" element={<OldAgeHomeSupport />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

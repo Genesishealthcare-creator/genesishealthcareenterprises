@@ -40,6 +40,12 @@ const services = [
     text: 'Living abroad? We take care of your aging parents in India — 24/7 caretaker, health monitoring, doctor visits and regular updates.',
     to: '/nri-services',
   },
+  {
+    icon: Elderly, color: 'emerald',
+    title: 'Old Age Home Support',
+    text: 'Help finding quality old age homes, plus hospice care, regular nurse visits, senior day care and long-term care support.',
+    to: '/old-age-home-support',
+  },
 ]
 
 const highlights = [

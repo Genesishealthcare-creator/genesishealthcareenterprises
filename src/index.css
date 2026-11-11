@@ -3862,10 +3862,12 @@ button.jt-join__line { border: 0; cursor: pointer }
 /* ── Home services: 3 on the first row, 2 wider cards on the second ───────── */
 .grid-services { grid-template-columns: repeat(6, 1fr); gap: 1.5rem }
 .grid-services > * { grid-column: span 2 }
-.grid-services > *:nth-child(n+4) { grid-column: span 3 }
+/* exactly five cards: the last two sit wider; six cards: all equal (span 2) */
+.grid-services > *:nth-child(4):nth-last-child(2),
+.grid-services > *:nth-child(5):nth-last-child(1) { grid-column: span 3 }
 @media (max-width: 1000px) {
   .grid-services { grid-template-columns: repeat(2, 1fr) }
-  .grid-services > *, .grid-services > *:nth-child(n+4) { grid-column: auto }
+  .grid-services > *, .grid-services > *:nth-child(4):nth-last-child(2), .grid-services > *:nth-child(5):nth-last-child(1) { grid-column: auto }
   .grid-services > *:last-child:nth-child(odd) { grid-column: 1 / -1 }
 }
 @media (max-width: 640px) {
@@ -3928,3 +3930,54 @@ button.jt-join__line { border: 0; cursor: pointer }
 .nri-final p { color: var(--slate-500); font-size: 1.05rem }
 .nri-final__actions { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; margin-top: 1.3rem }
 .nri-final__actions svg { width: 18px; height: 18px }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   OLD AGE HOME SUPPORT PAGE
+   ══════════════════════════════════════════════════════════════════════════ */
+.oas-grid { grid-template-columns: repeat(6, 1fr) }
+.oas-grid > * { grid-column: span 2 }
+.oas-grid > *:nth-child(4) { grid-column: 2 / span 2 }
+.oas-grid > *:nth-child(5) { grid-column: 4 / span 2 }
+@media (max-width: 1000px) {
+  .oas-grid { grid-template-columns: repeat(2, 1fr) }
+  .oas-grid > *, .oas-grid > *:nth-child(4), .oas-grid > *:nth-child(5) { grid-column: auto }
+  .oas-grid > *:last-child:nth-child(odd) { grid-column: 1 / -1 }
+}
+@media (max-width: 640px) {
+  .oas-grid { grid-template-columns: 1fr }
+  .oas-grid > *:last-child:nth-child(odd) { grid-column: auto }
+}
+
+.oas-philosophy { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem }
+@media (max-width: 1000px) { .oas-philosophy { grid-template-columns: repeat(2, 1fr) } }
+@media (max-width: 560px)  { .oas-philosophy { grid-template-columns: 1fr } }
+
+.oas-when { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem }
+@media (max-width: 1000px) { .oas-when { grid-template-columns: repeat(2, 1fr) } }
+@media (max-width: 560px)  { .oas-when { grid-template-columns: 1fr } }
+.oas-when__card {
+  height: 100%; text-align: center; padding: 1.8rem 1.3rem; border-radius: var(--r-lg);
+  background: #fff; border: 1px solid var(--slate-100); border-top: 4px solid var(--teal-400);
+  box-shadow: 0 3px 16px rgba(0,0,0,.06); transition: transform var(--t), box-shadow var(--t);
+}
+.oas-when__card:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(0,0,0,.12) }
+.oas-when__card--rose   { border-top-color: var(--rose-400) }
+.oas-when__card--violet { border-top-color: var(--violet-400) }
+.oas-when__card--amber  { border-top-color: var(--amber-400) }
+.oas-when__icon {
+  width: 60px; height: 60px; border-radius: 50%; display: grid; place-items: center; margin: 0 auto 1rem;
+  background: var(--teal-50); color: var(--teal-600);
+}
+.oas-when__card--rose   .oas-when__icon { background: var(--rose-50);   color: var(--rose-600) }
+.oas-when__card--violet .oas-when__icon { background: var(--violet-50); color: var(--violet-600) }
+.oas-when__card--amber  .oas-when__icon { background: var(--amber-50);  color: var(--amber-600) }
+.oas-when__icon svg { width: 28px; height: 28px }
+.oas-when__card p { margin: 0; font-family: var(--font-display); font-weight: 700; color: var(--slate-800); line-height: 1.4 }
+
+.oas-note {
+  display: flex; align-items: flex-start; gap: .9rem; max-width: 820px; margin: 2rem auto 0;
+  background: var(--rose-50); border: 1px solid var(--rose-100); border-left: 5px solid var(--rose-500);
+  border-radius: var(--r); padding: 1.1rem 1.4rem;
+}
+.oas-note svg { width: 22px; height: 22px; flex-shrink: 0; color: var(--rose-600); margin-top: .15rem }
+.oas-note p { margin: 0; color: var(--slate-700) }
