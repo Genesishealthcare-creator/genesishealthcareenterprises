@@ -1,17 +1,17 @@
+﻿import { useState } from 'react'
 import Seo from '../components/Seo.jsx'
 import PageBanner from '../components/PageBanner.jsx'
 import SectionHeading from '../components/SectionHeading.jsx'
 import CtaBand from '../components/CtaBand.jsx'
 import Reveal from '../components/Reveal.jsx'
+import ApplyModal from '../components/ApplyModal.jsx'
 import {
   Shield, Phone, Stethoscope, Monitor, Hands, HeartPlus, Elderly, Users,
   ArrowRight, Check, Mail, Sparkle, Clock,
 } from '../components/Icons.jsx'
 
 const EMAIL = 'info@genesishealthcareenterprises.com'
-
-const mailto = (subject, body = '') =>
-  `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}${body ? `&body=${encodeURIComponent(body)}` : ''}`
+const OTHER_ROLE = 'Other / Future Opportunities'
 
 /* ─────────────────────────── DATA ─────────────────────────── */
 
@@ -75,6 +75,9 @@ const steps = [
 /* ─────────────────────────── COMPONENT ─────────────────────────── */
 
 export default function Careers() {
+  const [applyRole, setApplyRole] = useState(null)   // string = open form for this role; null = closed
+  const roleTitles = roles.map(r => r.title)
+
   return (
     <>
       <Seo
@@ -107,9 +110,9 @@ export default function Careers() {
               As we grow, we need compassionate professionals who share our belief: <strong>We Care, He Cures.</strong>
             </p>
             <div className="jt-intro__actions">
-              <a className="btn btn--primary btn-lg" href={mailto('Application – Join the Genesis Team')}>
-                <Mail /> Apply by Email
-              </a>
+              <button type="button" className="btn btn--primary btn-lg" onClick={() => setApplyRole(OTHER_ROLE)}>
+                <Mail /> Apply Now
+              </button>
               <a className="btn btn--ghost btn-lg" href="tel:+917041081081"><Phone /> 70410 81081</a>
             </div>
           </Reveal>
@@ -134,12 +137,14 @@ export default function Careers() {
                   <span className={`hc-card__tag hc-card__tag--${color}`}>{tag}</span>
                   <h3>{title}</h3>
                   <p className="hc-card__intro">{text}</p>
-                  <a
+                  <button
+                    type="button"
                     className={`hc-card__link hc-card__link--${color}`}
-                    href={mailto(`Application – ${title}`, `Hello Genesis Team,\n\nI would like to apply for the position of ${title}.\n\nName:\nPhone:\nQualification:\nExperience:\n`)}
+                    onClick={() => setApplyRole(title)}
+                    aria-label={`Apply for ${title}`}
                   >
                     Apply for this role <ArrowRight />
-                  </a>
+                  </button>
                 </article>
               </Reveal>
             ))}
@@ -191,10 +196,10 @@ export default function Careers() {
       <section className="jt-join">
         <div className="container">
           <Reveal className="jt-join__inner">
-            <a className="jt-join__line" href={mailto('Application – Join the Genesis Team for Future Growth', 'Hello Genesis Team,\n\nI would like to join your team for future growth.\n\nName:\nPhone:\nRole of interest:\nQualification:\nExperience:\n')}>
+            <button type="button" className="jt-join__line" onClick={() => setApplyRole(OTHER_ROLE)}>
               <span>Click here to join the team for future growth</span>
               <ArrowRight />
-            </a>
+            </button>
             <p className="jt-join__sub">
               Or call <a href="tel:+917041081081">70410 81081</a> / <a href="tel:+917997272721">79972 72721</a> ·{' '}
               <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
@@ -207,6 +212,10 @@ export default function Careers() {
         title="Care Is a Calling. Answer It With Us."
         text="Join Genesis Health Care Enterprises — We Care, He Cures."
       />
+
+      {applyRole && (
+        <ApplyModal role={applyRole} roles={roleTitles} onClose={() => setApplyRole(null)} />
+      )}
     </>
   )
 }
