@@ -110,6 +110,14 @@ export default function About() {
         title="About Genesis Health Care Enterprises"
         description="Comprehensive healthcare and elderly care solutions — medical equipment, home care and old age home — delivered with compassion, responsibility and commitment."
         stats={bannerStats}
+        heroImage={{
+          src: '/founder-director.jpeg',
+          alt: 'Founder and Director of Genesis Health Care Enterprises, Visakhapatnam',
+          ratio: '1145 / 1374',
+          position: 'center top',
+          portrait: true,
+          clean: true,          /* the photo already carries its own name banner */
+        }}
       />
 
       {/* ── Story ── */}

@@ -3615,3 +3615,13 @@ button:focus-visible,
 @media (max-width: 1000px) {
   .pb-bgphoto { background-size: cover; opacity: .2; --pb-x: 50% }
 }
+
+/* Portrait hero photo (e.g. founder & director) */
+.pb-hero--portrait { max-width: 400px }
+.pb-hero--portrait .pb-hero__frame { border-radius: 24px; background: #dbeafe }
+@media (max-width: 1000px) {
+  .pb-hero--portrait { max-width: 340px; justify-self: center; margin: .5rem auto 0 }
+}
+@media (max-width: 480px) {
+  .pb-hero--portrait { max-width: 100%; width: 100% }
+}

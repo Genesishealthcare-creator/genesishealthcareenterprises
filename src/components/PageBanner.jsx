@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 
 // colorVariant: 'teal' | 'violet' | 'rose' | 'amber'
 // images: array of { src, alt, name } — shown as a grid on the right side
@@ -50,7 +50,7 @@ export default function PageBanner({ title, description, colorVariant = 'teal', 
 
           {/* Right hero photo */}
           {heroImage && (
-            <figure className="pb-hero">
+            <figure className={`pb-hero${heroImage.portrait ? ' pb-hero--portrait' : ''}`}>
               <div className="pb-hero__frame" style={heroImage.ratio ? { aspectRatio: heroImage.ratio } : undefined}>
                 <img
                   src={heroImage.src}
