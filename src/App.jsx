@@ -9,6 +9,7 @@ import OldAgeHome from './pages/OldAgeHome.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import FAQ from './pages/FAQ.jsx'
+import Careers from './pages/Careers.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/join-our-team" element={<Careers />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

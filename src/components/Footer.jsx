@@ -13,6 +13,7 @@ const quickLinks = [
   { to: '/',        label: 'Home' },
   { to: '/about',   label: 'About Us' },
   { to: '/contact', label: 'Contact Us' },
+  { to: '/join-our-team', label: 'Join in Our Team' },
   { to: '/faq',     label: 'Frequently Asked Questions' },
 ]
 

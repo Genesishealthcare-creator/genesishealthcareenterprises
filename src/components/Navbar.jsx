@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+﻿import { useState, useEffect } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
 import { Phone } from './Icons.jsx'
 
@@ -9,6 +9,7 @@ const links = [
   { to: '/old-age-home',     label: 'Old Age Home' },
   { to: '/about',            label: 'About' },
   { to: '/faq',              label: 'FAQ' },
+  { to: '/join-our-team', label: 'Join in Our Team' },
 ]
 
 export default function Navbar() {

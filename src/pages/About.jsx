@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import Seo from '../components/Seo.jsx'
 import PageBanner from '../components/PageBanner.jsx'
 import SectionHeading from '../components/SectionHeading.jsx'
@@ -6,7 +6,7 @@ import CtaBand from '../components/CtaBand.jsx'
 import Reveal from '../components/Reveal.jsx'
 import {
   Eye, Target, HeartPlus, Shield, Hands, Sparkle, Lock, Stethoscope,
-  ArrowRight, Check, Phone, Pin, Mail, Clock,
+  ArrowRight, Check, Phone, Pin, Mail, Clock, Elderly, Bed, Pill, Users,
 } from '../components/Icons.jsx'
 
 /* ─────────────────────────── DATA ─────────────────────────── */
@@ -53,13 +53,37 @@ const values = [
   { icon: HeartPlus,   color: 'rose',    title: 'Dedication',     text: 'A steadfast commitment to those we serve.' },
 ]
 
-const promises = [
-  'Honest, transparent pricing with no hidden charges',
-  'Trained and caring staff for every service',
-  'Quick response when your family needs help',
-  'Everything under one roof — equipment, home care and senior living',
+const horizons = [
+  {
+    icon: Elderly, color: 'violet', title: 'For the Global Family',
+    text: 'We act as the extended family for children living abroad and corporate professionals who cannot be by their parents\' side. We provide a safe, nurturing environment for seniors, including specialized old age home services.',
+  },
+  {
+    icon: Stethoscope, color: 'teal', title: 'Specialized Clinical Care',
+    text: 'For patients transitioning from hospital to home, we offer clinical care at home and palliative care, ensuring dignity and comfort in familiar surroundings.',
+  },
+  {
+    icon: HeartPlus, color: 'rose', title: 'The Gift of New Life',
+    text: 'For new mothers navigating the joys of parenthood, we provide expert aya nannies, baby care takers, and assistance to ensure the health of both mother and child.',
+  },
 ]
 
+const innovations = [
+  {
+    icon: Bed, title: 'Medical Equipment Rental Services', to: '/medical-equipment', cta: 'View rental equipment',
+    text: 'Knowing that investing in expensive medical equipment for short-term use is impractical, we introduced Medical Equipment Rental Services, allowing patients to recover at home without financial burden.',
+  },
+  {
+    icon: Pill, title: 'Genesis Surgicals', to: '/contact', cta: 'Enquire about supplies',
+    text: 'With the launch of Genesis Surgicals, we now provide retail and wholesale medical supplies directly to our patients and the wider community.',
+  },
+]
+
+const thanks = [
+  { icon: Users, color: 'teal', who: 'Our Patients', text: 'Whose trust fuels our passion.' },
+  { icon: Stethoscope, color: 'violet', who: 'Our Dedicated Staff', text: 'Whose clinical knowledge and empathy form the backbone of our organization.' },
+  { icon: Sparkle, color: 'amber', who: 'And Above All, God', text: 'For guiding us with the wisdom to serve the city of Vizag with the best standards of knowledge, compassion, and care.' },
+]
 const locations = [
   {
     label: 'Head Office', color: 'teal',
@@ -106,7 +130,7 @@ export default function About() {
     <>
       <Seo
         title="About Genesis Health Care Enterprises | Home Care, Medical Equipment & Old Age Home in Visakhapatnam"
-        description="Genesis Health Care Enterprises in Visakhapatnam offers medical equipment rental, home nursing and an old age home — compassionate, affordable healthcare. 10+ years, 20k+ clients."
+        description="A decade of compassion in Visakhapatnam — from Genesis Home Care Services to Genesis Health Care Enterprises: home care, old age home, palliative care, baby care, medical equipment rental and Genesis Surgicals."
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
 
@@ -131,49 +155,42 @@ export default function About() {
         }}
       />
 
-      {/* ── Story ── */}
+      {/* ── Journey / Story ── */}
       <section className="ab-story">
         <div className="container">
           <div className="ab-story__grid">
             <Reveal className="ab-story__text">
-              <span className="eyebrow eyebrow--violet">Our Story</span>
-              <h2>Making Quality Healthcare Accessible to Every Family</h2>
+              <span className="eyebrow eyebrow--violet">Our Journey</span>
+              <h2>A Decade of Compassion: From a Single Seed to a Comprehensive Circle of Care</h2>
+              <p className="ab-story__kicker">The Journey of Genesis Health Care Enterprises</p>
               <p>
-                <strong>Genesis Health Care Enterprises</strong> is dedicated to providing comprehensive
-                healthcare and elderly care solutions in <strong>Visakhapatnam</strong>. We make quality
-                healthcare accessible to individuals and families through three service divisions:
-                {' '}<strong>medical equipment rental and sales</strong>, <strong>home care services</strong>,
-                and <strong>old age home</strong> facilities.
+                When we planted the seed of <strong>Genesis Home Care Services</strong> a decade ago, our vision
+                was simple yet profound: to provide <strong>clinical excellence and heartfelt compassion</strong>{' '}
+                to the families of <strong>Vizag</strong>. Today, as we look back on ten years of proven service,
+                we are humbled to see how that single seed has blossomed into a vast, trusted network of care.
               </p>
               <p>
-                We understand the challenges families face when caring for patients, elderly relatives and
-                loved ones recovering from illness or surgery. Our goal is simple: dependable support and
-                convenient healthcare solutions that make everyday life easier.
+                We have evolved from a dedicated home care provider into <strong>Genesis Health Care
+                Enterprises</strong> — a comprehensive group of services designed to support every stage of a
+                patient&apos;s needs, <strong>from birth to old age</strong>.
               </p>
-              <p>
-                From supplying essential equipment to home-based patient assistance and elderly residential
-                care, we deliver every service with compassion, responsibility and commitment.
-              </p>
-              <ul className="ab-story__list">
-                {promises.map(p => <li key={p}><Check />{p}</li>)}
-              </ul>
             </Reveal>
 
             <Reveal delay={2} className="ab-brand">
               <div className="ab-brand__card">
                 <img src="/logo.jpeg" alt="Genesis Health Care Enterprises logo" width="320" height="320" />
-                <p className="ab-brand__tag">Caring for Life, Every Step of the Way</p>
+                <p className="ab-brand__tag">We Care, He Cures</p>
                 <div className="ab-brand__chips">
-                  <span>Medical Equipment</span>
                   <span>Home Care</span>
+                  <span>Medical Equipment</span>
                   <span>Old Age Home</span>
+                  <span>Genesis Surgicals</span>
                 </div>
               </div>
             </Reveal>
           </div>
         </div>
       </section>
-
       {/* ── Numbers ── */}
       <section className="ab-numbers">
         <div className="container">
@@ -191,6 +208,87 @@ export default function About() {
         </div>
       </section>
 
+      {/* ── Expanding our horizons ── */}
+      <section className="section section--white">
+        <div className="container">
+          <SectionHeading eyebrow="Expanding Our Horizons" eyebrowColor="violet" title="Care That Grows With the Families We Serve">
+            Our growth has been driven by the evolving needs of the families who trust us. We recognized that
+            care goes beyond just medical attention; it is about peace of mind. This decade has seen us broaden
+            our scope to serve a diverse community.
+          </SectionHeading>
+          <div className="ab-horizon">
+            {horizons.map(({ icon: Icon, color, title, text }, i) => (
+              <Reveal key={title} delay={i + 1}>
+                <article className={`ab-horizon__card ab-horizon__card--${color}`}>
+                  <span className="ab-horizon__icon"><Icon /></span>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Anticipating the need ── */}
+      <section className="section ab-need">
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <div className="ab-need__heading">
+            <SectionHeading eyebrow="Innovative Solutions" eyebrowColor="teal" title="Anticipating the Need">
+              What sets Genesis apart is our ability to foresee the needs of our patients and their relatives
+              before they even arise. We understand the financial and emotional strain of long-term hospitalization.
+            </SectionHeading>
+          </div>
+          <div className="ab-need__grid">
+            {innovations.map(({ icon: Icon, title, text, to, cta }, i) => (
+              <Reveal key={title} delay={i + 1}>
+                <article className="ab-need__card">
+                  <span className="ab-need__icon"><Icon /></span>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                  {to && <Link to={to} className="ab-need__link">{cta} <ArrowRight /></Link>}
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Gratitude ── */}
+      <section className="section ab-thanks">
+        <div className="container">
+          <SectionHeading eyebrow="A Note of Gratitude" eyebrowColor="rose" title="This Journey Has Been Wonderful">
+            We owe our success to the people who made it possible.
+          </SectionHeading>
+          <div className="ab-thanks__grid">
+            {thanks.map(({ icon: Icon, color, who, text }, i) => (
+              <Reveal key={who} delay={i + 1}>
+                <div className={`ab-thanks__card ab-thanks__card--${color}`}>
+                  <span className="ab-thanks__icon"><Icon /></span>
+                  <h4>{who}</h4>
+                  <p>{text}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── The future ── */}
+      <section className="ab-future">
+        <div className="container">
+          <Reveal className="ab-future__inner">
+            <span className="eyebrow eyebrow--light">The Future is Bright</span>
+            <h2>From a Modest Beginning to a Trusted Group of Services</h2>
+            <p>
+              Genesis has grown. But we are not done yet. As we move forward, we promise to grow even bigger,
+              expanding our reach to give our care to all under our services.
+            </p>
+            <p className="ab-future__tag">Genesis Health Care Enterprises: <strong>We Care, He Cures.</strong></p>
+            <Link to="/contact" className="btn btn--white btn-lg">Get in Touch <ArrowRight /></Link>
+          </Reveal>
+        </div>
+      </section>
       {/* ── Vision & Mission ── */}
       <section className="section section--white">
         <div className="container">
