@@ -43,13 +43,23 @@ export default function PageBanner({ title, description, colorVariant = 'teal', 
           {/* Right hero photo */}
           {heroImage && (
             <figure className="pb-hero">
-              <div className="pb-hero__frame">
-                <img src={heroImage.src} alt={heroImage.alt} width="1200" height="1200" fetchpriority="high" />
-                <span className="pb-hero__shade" aria-hidden="true" />
+              <div className="pb-hero__frame" style={heroImage.ratio ? { aspectRatio: heroImage.ratio } : undefined}>
+                <img
+                  src={heroImage.src}
+                  alt={heroImage.alt}
+                  width="1200"
+                  height="1200"
+                  fetchpriority="high"
+                  style={heroImage.position ? { objectPosition: heroImage.position } : undefined}
+                />
+                {!heroImage.clean && <span className="pb-hero__shade" aria-hidden="true" />}
                 {heroImage.chips && heroImage.chips.map((c, i) => (
                   <span key={c} className={`pb-hero__chip pb-hero__chip--${i + 1}`}>{c}</span>
                 ))}
               </div>
+              {heroImage.label && (
+                <figcaption className="pb-hero__label">{heroImage.label}</figcaption>
+              )}
               {heroImage.caption && (
                 <figcaption className="pb-hero__caption">
                   <strong>{heroImage.caption.title}</strong>

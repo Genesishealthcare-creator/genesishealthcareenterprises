@@ -3579,3 +3579,22 @@ button:focus-visible,
   mix-blend-mode: luminosity;      /* keeps the photo light and lets the site colours show through */
   pointer-events: none;
 }
+
+/* Hero photo — name bar underneath (nothing covers the product) */
+.pb-hero__label {
+  margin-top: .75rem;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(14,144,144,.95), rgba(99,102,241,.92));
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: .85rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: .6rem 1rem;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px -8px rgba(0,0,0,.4);
+}
+@media (max-width: 1000px) {
+  .pb-hero__label { max-width: 560px }
+}

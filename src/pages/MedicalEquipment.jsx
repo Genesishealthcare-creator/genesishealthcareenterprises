@@ -162,7 +162,14 @@ export default function MedicalEquipment() {
         title="Medical Equipment Rental & Sales"
         description="Quality healthcare equipment at affordable prices — flexible rental options and equipment purchases to make healthcare more accessible, right at home."
         stats={bannerStats}
-        images={bannerImages}
+        heroImage={{
+          src: '/5-function-electric-bed.jpg',
+          alt: '5 function electric hospital bed available on rent and sale in Visakhapatnam',
+          ratio: '1024 / 882',
+          position: 'center',
+          clean: true,                         /* photo only — nothing drawn over the bed */
+          label: '5 Function Electric Bed',
+        }}
       />
 
       {/* ── Intro highlight strip ── */}
