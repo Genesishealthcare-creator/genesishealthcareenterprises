@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo.jsx'
 import PageBanner from '../components/PageBanner.jsx'
@@ -80,10 +80,28 @@ const process = [
   { step: '04', title: 'Ongoing Support', text: 'We stay in touch, monitor service quality and adjust care as the patient\'s needs change.' },
 ]
 
-const conditions = [
-  'Stroke & Paralysis Recovery', 'Post-Surgery Recovery', 'Alzheimer\'s & Dementia', 'Diabetes Care',
-  'Cancer & Palliative Care', 'Fracture & Orthopaedic Care', 'Heart Patients', 'Parkinson\'s Disease',
-  'Kidney Patients', 'Respiratory / COPD Care', 'Bedridden Elderly', 'Newborn & Mother Care',
+const clinicalServices = [
+  { name: 'Post-Surgery Recovery', text: 'Wound care, medication management, and monitoring post-operation.' },
+  { name: 'Diabetes Care', text: 'Monitoring blood sugar, administering insulin, and diet/medication management.' },
+  { name: 'Cancer & Palliative Care', text: 'Pain management, symptom control, and end-of-life comfort care.' },
+  { name: 'Fracture & Orthopaedic Care', text: 'Mobility assistance, wound care, and rehabilitation post-bone injury.' },
+  { name: 'Heart Patients', text: 'Monitoring vital signs (BP, pulse) and managing cardiac medications.' },
+  { name: 'Parkinson\'s Disease', text: 'Medication management, mobility assistance, and fall prevention.' },
+  { name: 'Kidney Patients', text: 'Monitoring fluid intake/output, diet management, and dialysis-related assistance.' },
+  { name: 'Respiratory / COPD Care', text: 'Managing oxygen therapy, nebulizers, and monitoring breathing.' },
+  { name: 'Stroke & Paralysis Recovery', text: 'Physiotherapy assistance, repositioning to prevent bedsores, and feeding tube management.' },
+  { name: 'Newborn & Mother Care', text: 'Monitoring newborn health, umbilical cord care, and post-partum recovery monitoring for the mother.' },
+]
+
+const nonClinicalServices = [
+  { name: 'Bedridden Elderly', text: 'Daily hygiene, feeding, repositioning.' },
+  { name: 'Male Patient Caregiver', text: 'Personal hygiene and assistance for male patients.' },
+  { name: 'Female Caretaker', text: 'Personal care and companionship for female patients.' },
+  { name: 'Baby Caretaker', text: 'Infant feeding, bathing, supervision.' },
+  { name: 'Assistance at Old Age Homes', text: 'One-on-one daily living support in facilities.' },
+  { name: 'Assistance at Hospitals', text: 'Attendant/sitter services for admitted patients.' },
+  { name: 'Caretakers for Outstation Traveling', text: 'Attendants accompanying patients on trips.' },
+  { name: 'General Attendant Services', text: 'Household chores, companionship, grocery shopping.' },
 ]
 
 const areas = ['Seethammadhara', 'MVP Colony', 'Dwaraka Nagar', 'Madhurawada', 'Gajuwaka', 'Rushikonda', 'Maharanipeta', 'Hanumanthavaka', 'Chinagadili', 'Visakhapatnam City']
@@ -300,33 +318,71 @@ export default function HomeCare() {
         </div>
       </section>
 
-      {/* ── Conditions + areas (SEO) ── */}
+      {/* ── Clinical vs Non-clinical care ── */}
       <section className="section hc-seo">
         <div className="container">
-          <div className="hc-seo__grid">
-            <Reveal className="hc-seo__block">
-              <span className="eyebrow eyebrow--rose">Specialised Care</span>
-              <h2>Home Care for Every Health Condition</h2>
-              <p>
-                Whether it&apos;s long-term illness or short-term recovery, our caregivers are experienced in
-                handling a wide range of patient conditions at home.
+          <SectionHeading eyebrow="Specialised Care" eyebrowColor="rose" title="Home Care for Every Health Condition">
+            Whether your family needs skilled nursing or everyday assistance, we match the right trained
+            professional to the right need.
+          </SectionHeading>
+
+          <div className="hc-types">
+            <Reveal className="hc-type hc-type--clinical">
+              <header className="hc-type__head">
+                <span className="hc-type__icon"><Stethoscope /></span>
+                <div>
+                  <h3>Clinical Services</h3>
+                  <span className="hc-type__sub">Medical / Skilled Nursing Focus</span>
+                </div>
+              </header>
+              <p className="hc-type__intro">
+                These services require trained nurses or medical professionals and involve monitoring
+                health conditions and administering treatments.
               </p>
-              <div className="hc-chips">
-                {conditions.map(c => <span key={c} className="hc-chip">{c}</span>)}
-              </div>
+              <ul className="hc-type__list">
+                {clinicalServices.map(({ name, text }) => (
+                  <li key={name}>
+                    <Check />
+                    <div><strong>{name}</strong><span>{text}</span></div>
+                  </li>
+                ))}
+              </ul>
             </Reveal>
 
-            <Reveal delay={2} className="hc-seo__block">
+            <Reveal delay={2} className="hc-type hc-type--support">
+              <header className="hc-type__head">
+                <span className="hc-type__icon"><Hands /></span>
+                <div>
+                  <h3>Non-Clinical Services</h3>
+                  <span className="hc-type__sub">Supportive / Assistance</span>
+                </div>
+              </header>
+              <p className="hc-type__intro">
+                These services focus on daily living activities (ADLs), safety, companionship, and
+                logistical support. They are performed by trained caregivers/attendants, not medical nurses.
+              </p>
+              <ul className="hc-type__list">
+                {nonClinicalServices.map(({ name, text }) => (
+                  <li key={name}>
+                    <Check />
+                    <div><strong>{name}</strong><span>{text}</span></div>
+                  </li>
+                ))}
+              </ul>            </Reveal>
+          </div>
+
+          <Reveal className="hc-seo__block hc-areas">
+            <div>
               <span className="eyebrow eyebrow--teal">Service Areas</span>
               <h2>Home Nursing Across Visakhapatnam</h2>
               <p>
                 We provide home nursing, attendant and elderly care services across Vizag and nearby localities.
               </p>
-              <div className="hc-chips">
-                {areas.map(a => <span key={a} className="hc-chip hc-chip--area">📍 {a}</span>)}
-              </div>
-            </Reveal>
-          </div>
+            </div>
+            <div className="hc-chips">
+              {areas.map(a => <span key={a} className="hc-chip hc-chip--area">📍 {a}</span>)}
+            </div>
+          </Reveal>
         </div>
       </section>
 
