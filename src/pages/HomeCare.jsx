@@ -80,6 +80,12 @@ const process = [
   { step: '04', title: 'Ongoing Support', text: 'We stay in touch, monitor service quality and adjust care as the patient\'s needs change.' },
 ]
 
+const trust = [
+  { icon: Users,     color: 'teal',   value: '12000+', label: 'Happy Patients' },
+  { icon: HeartPlus, color: 'rose',   value: '98%',    label: 'Patient Satisfaction Rate' },
+  { icon: Shield,    color: 'violet', value: '',       label: 'Recommended by Leading Hospitals' },
+]
+
 const clinicalServices = [
   { name: 'Post-Surgery Recovery', text: 'Wound care, medication management, and monitoring post-operation.' },
   { name: 'Diabetes Care', text: 'Monitoring blood sugar, administering insulin, and diet/medication management.' },
@@ -204,6 +210,25 @@ export default function HomeCare() {
           caption: { title: 'Care with dignity', text: 'Trained nurses & attendants at your home' },
         }}
       />
+
+      {/* ── Trust numbers ── */}
+      <section className="hc-trust" aria-label="Genesis home care in numbers">
+        <div className="container">
+          <div className="hc-trust__grid">
+            {trust.map(({ icon: Icon, color, value, label }, i) => (
+              <Reveal key={label} delay={i + 1}>
+                <div className={`hc-trust__item hc-trust__item--${color}${value ? '' : ' hc-trust__item--text'}`}>
+                  <span className="hc-trust__icon"><Icon /></span>
+                  <div>
+                    {value ? <strong>{value}</strong> : <strong>{label}</strong>}
+                    {value && <span>{label}</span>}
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* ── Intro + quick call card ── */}
       <section className="hc-intro">
