@@ -83,6 +83,12 @@ export default function About() {
     url: 'https://genesishealthcareenterprises.com',
     logo: '/logo.jpeg',
     slogan: 'Caring for Life, Every Step of the Way',
+    founder: {
+      '@type': 'Person',
+      name: 'Potti Krupa Samson',
+      jobTitle: 'Founder & Director',
+      description: 'B.Sc.N, M.Sc.N, NPCC — Nurse Practitioner in Critical Care',
+    },
     description: 'Medical equipment rental and sales, home care services and old age home in Visakhapatnam.',
     telephone: '+917041081081',
     email: 'info@genesishealthcareenterprises.com',
@@ -117,6 +123,11 @@ export default function About() {
           position: 'center top',
           portrait: true,
           clean: true,          /* the photo already carries its own name banner */
+          person: {
+            name: 'Potti Krupa Samson',
+            degrees: 'B.Sc.N, M.Sc.N, NPCC',
+            role: 'Nurse Practitioner in Critical Care',
+          },
         }}
       />
 

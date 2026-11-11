@@ -3625,3 +3625,26 @@ button:focus-visible,
 @media (max-width: 480px) {
   .pb-hero--portrait { max-width: 100%; width: 100% }
 }
+
+/* Name + credentials under the founder photo */
+.pb-person {
+  margin-top: .9rem;
+  display: flex; flex-direction: column; align-items: center; gap: .2rem;
+  text-align: center;
+  padding: .9rem 1rem;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 14px 30px -12px rgba(0,0,0,.45);
+}
+.pb-person__name {
+  font-family: var(--font-display); font-weight: 800; font-size: 1.12rem;
+  color: #fff; letter-spacing: -.01em; line-height: 1.25;
+}
+.pb-person__degrees {
+  font-family: var(--font-display); font-weight: 800; font-size: .9rem;
+  letter-spacing: .04em; color: #7ffffa;
+}
+.pb-person__role { font-size: .84rem; font-weight: 600; color: rgba(255,255,255,.88); line-height: 1.4 }
+@media (max-width: 1000px) { .pb-hero--portrait .pb-person { max-width: 340px; margin-inline: auto } }

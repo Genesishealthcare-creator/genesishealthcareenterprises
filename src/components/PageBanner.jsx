@@ -65,6 +65,13 @@ export default function PageBanner({ title, description, colorVariant = 'teal', 
                   <span key={c} className={`pb-hero__chip pb-hero__chip--${i + 1}`}>{c}</span>
                 ))}
               </div>
+              {heroImage.person && (
+                <figcaption className="pb-person">
+                  <strong className="pb-person__name">{heroImage.person.name}</strong>
+                  {heroImage.person.degrees && <span className="pb-person__degrees">{heroImage.person.degrees}</span>}
+                  {heroImage.person.role && <span className="pb-person__role">{heroImage.person.role}</span>}
+                </figcaption>
+              )}
               {heroImage.label && (
                 <figcaption className="pb-hero__label">{heroImage.label}</figcaption>
               )}
