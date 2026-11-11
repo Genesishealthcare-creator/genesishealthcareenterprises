@@ -212,3 +212,12 @@ export const Ambulance = (p) => (
     <path d="M8 9v4M6 11h4" />
   </svg>
 )
+
+export const Car = (p) => (
+  <svg viewBox="0 0 24 24" {...base} {...p}>
+    <path d="M5 16V11l2-5h10l2 5v5M3 16h18v3H3zM7 19v1.5M17 19v1.5" />
+    <path d="M5 11h14" />
+    <circle cx="7.5" cy="14" r=".6" fill="currentColor" />
+    <circle cx="16.5" cy="14" r=".6" fill="currentColor" />
+  </svg>
+)

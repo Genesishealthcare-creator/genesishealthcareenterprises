@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import { Phone, Mail, Pin, Clock, ArrowRight, Shield, HeartPlus } from './Icons.jsx'
 
 const services = [
   { to: '/medical-equipment', label: 'Medical Equipment Rental & Sales' },
   { to: '/home-care',         label: 'Home Care Services' },
   { to: '/old-age-home',      label: 'Old Age Home & Senior Care' },
+  { to: '/patient-transport',  label: 'Patient Transport Services' },
   { to: '/about',             label: 'About Us' },
   { to: '/faq',               label: 'FAQs' },
 ]

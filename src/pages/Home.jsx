@@ -28,7 +28,12 @@ const services = [
     text: 'A safe, caring and comfortable living environment with personal assistance, meals and companionship for seniors.',
     to: '/old-age-home',
   },
-]
+  {
+    icon: Ambulance, color: 'sky',
+    title: 'Patient Transport Services',
+    text: 'Cardiac and non-cardiac ambulances and medical taxis, with a trained nurse or caretaker accompanying your loved one.',
+    to: '/patient-transport',
+  },]
 
 const highlights = [
   { icon: Bed,        color: 'teal',   text: 'Bedridden Patient Care' },
@@ -274,7 +279,7 @@ export default function Home() {
             for patients, families and senior citizens.
           </SectionHeading>
 
-          <div className="grid grid-3">
+          <div className="grid grid-4">
             {services.map(({ icon: Icon, color, title, text, to }, i) => (
               <Reveal key={title} delay={i + 1}>
                 <article className={`scard scard--${color}`}>
