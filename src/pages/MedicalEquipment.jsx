@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo.jsx'
 import PageBanner from '../components/PageBanner.jsx'
@@ -54,22 +54,7 @@ const categories = [
     ],
   },
   {
-    n: '02', icon: Wheelchair, color: 'violet',
-    title: 'Mobility & Walking Aids',
-    desc: 'Regain independence with safe and reliable mobility support.',
-    detail: 'Mobility aids help patients safely move around at home, reducing fall risk and supporting rehabilitation. Whether it\'s a lightweight wheelchair for daily outings, a walker for post-surgery recovery, or a commode chair for bathroom assistance — the right mobility aid improves quality of life and gives caregivers peace of mind.',
-    images: [],
-    items: [
-      { name: 'Standard Wheelchair',      note: 'Lightweight folding frame, easy to transport' },
-      { name: 'Reclining Wheelchair',     note: 'For patients who need to rest in transit' },
-      { name: 'Walker Frame',             note: 'Stable four-point support for walking assistance' },
-      { name: 'Walking Stick / Cane',     note: 'Single or quad-base options available' },
-      { name: 'Commode Chair',            note: 'Bedside toilet seat for limited mobility patients' },
-      { name: 'Patient Transfer Aids',    note: 'Transfer belts and slide sheets for safe repositioning' },
-    ],
-  },
-  {
-    n: '03', icon: Oxygen, color: 'sky',
+    n: '02', icon: Oxygen, color: 'sky',
     title: 'Respiratory Care',
     desc: 'Clinical-grade oxygen and breathing support equipment.',
     detail: 'Respiratory care equipment is essential for patients with COPD, asthma, sleep apnea, post-COVID recovery, or any condition requiring supplemental oxygen. Our range covers both continuous oxygen supply and therapy-specific machines like CPAP/BiPAP, ensuring patients breathe safely and comfortably at home without hospital stays.',
@@ -86,6 +71,20 @@ const categories = [
       { name: 'Nebulizer',             note: 'Converts medicine to mist for direct lung delivery' },
       { name: 'CPAP Machine',          note: 'Continuous positive airway pressure for sleep apnea' },
       { name: 'BiPAP Machine',         note: 'Bi-level pressure support for more severe respiratory cases' },
+    ],
+  },
+  {
+    n: '03', icon: Monitor, color: 'rose',
+    title: 'Monitoring & Accessories',
+    desc: 'Accurate, easy-to-use diagnostic and monitoring devices.',
+    detail: 'Home monitoring devices allow patients and caregivers to track vital signs accurately and act quickly if readings are abnormal. Regular monitoring of oxygen saturation, blood pressure and blood sugar is essential for managing chronic conditions like diabetes, hypertension and heart disease — without frequent hospital visits.',
+    images: [],
+    items: [
+      { name: 'Pulse Oximeter',       note: 'Measures blood oxygen level (SpO2) and pulse rate' },
+      { name: 'BP Monitor',           note: 'Digital upper arm monitor for accurate BP readings' },
+      { name: 'Digital Thermometer',  note: 'Fast, contactless or oral temperature measurement' },
+      { name: 'Glucometer',           note: 'Blood sugar monitoring kit with test strips' },
+      { name: 'Medical Accessories',  note: 'Masks, gloves, IV stands, urine bags and more' },
     ],
   },
   {
@@ -106,17 +105,18 @@ const categories = [
     ],
   },
   {
-    n: '05', icon: Monitor, color: 'rose',
-    title: 'Monitoring & Accessories',
-    desc: 'Accurate, easy-to-use diagnostic and monitoring devices.',
-    detail: 'Home monitoring devices allow patients and caregivers to track vital signs accurately and act quickly if readings are abnormal. Regular monitoring of oxygen saturation, blood pressure and blood sugar is essential for managing chronic conditions like diabetes, hypertension and heart disease — without frequent hospital visits.',
+    n: '05', icon: Wheelchair, color: 'violet',
+    title: 'Mobility & Walking Aids',
+    desc: 'Regain independence with safe and reliable mobility support.',
+    detail: 'Mobility aids help patients safely move around at home, reducing fall risk and supporting rehabilitation. Whether it\'s a lightweight wheelchair for daily outings, a walker for post-surgery recovery, or a commode chair for bathroom assistance — the right mobility aid improves quality of life and gives caregivers peace of mind.',
     images: [],
     items: [
-      { name: 'Pulse Oximeter',       note: 'Measures blood oxygen level (SpO2) and pulse rate' },
-      { name: 'BP Monitor',           note: 'Digital upper arm monitor for accurate BP readings' },
-      { name: 'Digital Thermometer',  note: 'Fast, contactless or oral temperature measurement' },
-      { name: 'Glucometer',           note: 'Blood sugar monitoring kit with test strips' },
-      { name: 'Medical Accessories',  note: 'Masks, gloves, IV stands, urine bags and more' },
+      { name: 'Standard Wheelchair',      note: 'Lightweight folding frame, easy to transport' },
+      { name: 'Reclining Wheelchair',     note: 'For patients who need to rest in transit' },
+      { name: 'Walker Frame',             note: 'Stable four-point support for walking assistance' },
+      { name: 'Walking Stick / Cane',     note: 'Single or quad-base options available' },
+      { name: 'Commode Chair',            note: 'Bedside toilet seat for limited mobility patients' },
+      { name: 'Patient Transfer Aids',    note: 'Transfer belts and slide sheets for safe repositioning' },
     ],
   },
 ]
