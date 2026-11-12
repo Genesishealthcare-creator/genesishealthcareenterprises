@@ -180,7 +180,7 @@ export default function MedicalEquipment() {
                 home-based patient care, we have flexible options to match your needs and budget.
               </p>
               <div style={{ display:'flex', flexWrap:'wrap', gap:'.75rem', marginTop:'1.5rem' }}>
-                {['Post-Surgery Recovery','Elderly Care','Bedridden Patients','Home Care','Long-Term Treatment'].map(tag => (
+                {['Bedridden Patients','Home Care','Long-Term Treatment'].map(tag => (
                   <span key={tag} className="meq-tag">{tag}</span>
                 ))}
               </div>
