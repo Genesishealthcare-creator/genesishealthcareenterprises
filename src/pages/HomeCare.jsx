@@ -196,6 +196,7 @@ export default function HomeCare() {
         title="Home Care Services"
         description="Trusted home nursing, elderly care, bedridden patient care and post-surgery support — delivered by trained, compassionate caregivers in the comfort of your home."
         stats={bannerStats}
+        bgImage={{ src: '/gallery/home-care-nursing-service.jpg', position: 'center 35%', full: true }}
         heroImage={{
           src: '/home-care-male-nurse.jpg',
           alt: 'Smiling male nurse caring for an elderly patient in a wheelchair — home care nursing services in Visakhapatnam',

@@ -9,7 +9,7 @@ export default function PageBanner({ title, description, colorVariant = 'teal', 
       {/* Optional soft full-width background photo (bgImage = { src, position? }) */}
       {bgImage && (
         <span
-          className="pb-bgphoto"
+          className={`pb-bgphoto${bgImage.full ? ' pb-bgphoto--full' : ''}`}
           aria-hidden="true"
           style={{ backgroundImage: `url('${bgImage.src}')`, backgroundPosition: bgImage.position || 'center' }}
         />
