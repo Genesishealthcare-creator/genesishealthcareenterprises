@@ -179,11 +179,6 @@ export default function MedicalEquipment() {
                 equipment for post-surgery recovery, elderly care, long-term treatment or
                 home-based patient care, we have flexible options to match your needs and budget.
               </p>
-              <div style={{ display:'flex', flexWrap:'wrap', gap:'.75rem', marginTop:'1.5rem' }}>
-                {['Bedridden Patients','Home Care','Long-Term Treatment'].map(tag => (
-                  <span key={tag} className="meq-tag">{tag}</span>
-                ))}
-              </div>
             </div>
             <div className="meq-intro-visual">
               <div className="meq-intro-img-wrap">
