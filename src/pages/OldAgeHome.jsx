@@ -188,8 +188,9 @@ export default function OldAgeHome() {
         description="A safe, caring and comfortable home for your loved ones — where every resident is treated with kindness, dignity and respect."
         stats={bannerStats}
         heroImage={{
-          src: '/home-care-male-nurse.jpg',
-          alt: 'Caring nurse with a smiling elderly man — senior citizen care at Genesis old age home, Visakhapatnam',
+          src: '/gallery/oldage-home-image-1.jpg',
+          alt: 'Caring support for a senior citizen at the Genesis old age home, Visakhapatnam',
+          position: 'center 30%',
           chips: ['Senior Citizen Care', 'Dignity & Respect'],
           caption: { title: 'A second family', text: 'Compassionate care for every resident' },
         }}
