@@ -257,3 +257,9 @@ export const Instagram = (p) => (
     <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
   </svg>
 )
+
+export const Facebook = (p) => (
+  <svg viewBox="0 0 24 24" {...base} {...p}>
+    <path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5A.5.5 0 0 1 14 8Z" />
+  </svg>
+)

@@ -4223,3 +4223,4 @@ table { display: block; max-width: 100%; overflow-x: auto }
   border-color: transparent;
 }
 .footer__social-link:focus-visible { outline: 2px solid #fff; outline-offset: 3px }
+.footer__social-link--facebook:hover { background: #1877f2; border-color: transparent }

@@ -1,5 +1,5 @@
 ﻿import { Link } from 'react-router-dom'
-import { Phone, Mail, Pin, Clock, ArrowRight, Shield, HeartPlus, Instagram } from './Icons.jsx'
+import { Phone, Mail, Pin, Clock, ArrowRight, Shield, HeartPlus, Instagram, Facebook } from './Icons.jsx'
 
 // Add more profiles here (Facebook, YouTube, ...) and they appear automatically.
 const socials = [
@@ -8,6 +8,12 @@ const socials = [
     href: 'https://www.instagram.com/genesis_home_care_nursing?psln=ZHB2bTdoYWgxYm81',
     icon: Instagram,
     cls: 'instagram',
+  },
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/genesis.krupa?rdid=WuF2GUt7Q37U9xFY&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1K9S3ByU1r%2F#',
+    icon: Facebook,
+    cls: 'facebook',
   },
 ]
 
