@@ -200,7 +200,7 @@ export default function HomeCare() {
         heroImage={{
           src: '/gallery/home-care-main-page-image.jpg',
           alt: 'Home care nursing services in Visakhapatnam — a caregiver supporting a patient at home',
-          clean: true,
+          caption: { title: 'Compassionate Trained Care' },
           portrait: true,
           ratio: '2 / 3',   // matches the 600x900 photo, so nothing is cropped
         }}

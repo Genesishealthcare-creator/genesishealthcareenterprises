@@ -78,7 +78,7 @@ export default function PageBanner({ title, description, colorVariant = 'teal', 
               {heroImage.caption && (
                 <figcaption className="pb-hero__caption">
                   <strong>{heroImage.caption.title}</strong>
-                  <span>{heroImage.caption.text}</span>
+                  {heroImage.caption.text && <span>{heroImage.caption.text}</span>}
                 </figcaption>
               )}
             </figure>
