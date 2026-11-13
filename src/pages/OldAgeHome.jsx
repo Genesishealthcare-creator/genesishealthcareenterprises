@@ -175,7 +175,7 @@ export default function OldAgeHome() {
   return (
     <>
       <Seo
-        title="Old Age Home in Visakhapatnam | Senior Citizen Care & Assisted Living"
+        title="Old Age Home & Rehabilitation Care in Visakhapatnam | Senior Citizen Care & Physiotherapy"
         description="Caring old age home in Visakhapatnam for senior citizens — comfortable stay, nutritious meals, nursing support, companionship and 24/7 supervised care. Call 70410 81081."
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -184,7 +184,7 @@ export default function OldAgeHome() {
       <PageBanner
         colorVariant="rose"
         badge="💗 Senior Citizen Care in Visakhapatnam"
-        title="Old Age Home"
+        title="Old Age Home & Rehabilitation Care"
         description="A safe, caring and comfortable home for your loved ones — where every resident is treated with kindness, dignity and respect."
         stats={bannerStats}
         bgImage={{ src: '/gallery/oldage-home.jpg', position: 'center 35%', full: true }}
