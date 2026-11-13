@@ -372,7 +372,7 @@ p  { margin-bottom: 1em }
   padding: .5rem .7rem;
   white-space: nowrap;
   border-radius: var(--r-full);
-  color: rgba(255,255,255,.86);
+  color: #fff;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: .9rem;
