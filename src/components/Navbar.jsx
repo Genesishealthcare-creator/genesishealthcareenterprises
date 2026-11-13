@@ -39,11 +39,18 @@ export default function Navbar() {
       <div className="container navbar__inner">
         {/* Brand */}
         <Link to="/" className="navbar__brand" aria-label="Genesis Health Care Enterprises — home">
-          <img
-            src="/logo-transparent.png"
-            alt="Genesis Health Care Enterprises logo"
-            className="brand-logo-img"
-          />
+          <picture>
+            {/* visitors who ask their device for less motion get the still logo */}
+            <source media="(prefers-reduced-motion: reduce)" srcSet="/logo-transparent.png" />
+            <img
+              src="/genesis-animated-logo.gif"
+              alt="Genesis Health Care Enterprises logo"
+              className="brand-logo-img"
+              width="506"
+              height="336"
+              decoding="async"
+            />
+          </picture>
         </Link>
 
         {/* Desktop nav links */}
