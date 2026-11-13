@@ -3354,6 +3354,15 @@ button:focus-visible,
     justify-content:center;
     margin-top:1.5rem;
     padding:1rem;
+    background:#fff;
+    color:var(--teal-800);
+    border-bottom:0;
+    box-shadow:0 10px 24px -8px rgba(0,0,0,.35);
+  }
+  .nav-mobile .nav-contact-btn:hover,
+  .nav-mobile .nav-contact-btn.active {
+    background:#fff;
+    color:var(--teal-900);
   }
   .nav-mobile .nav-phone-btn {
     display:flex;
