@@ -279,7 +279,7 @@ export default function Home() {
             <span className="amb-band__icon"><Ambulance /></span>
             <div className="amb-band__text">
               <h3>Ambulance Service 24/7</h3>
-              <p>Emergency and patient transfer ambulance available day and night in Visakhapatnam.</p>
+              <p>Patient transfer ambulance available day and night in Visakhapatnam.</p>
             </div>
             <a href="tel:+917041081081" className="btn btn--white btn-lg amb-band__btn">
               <Phone /> Call 70410 81081
