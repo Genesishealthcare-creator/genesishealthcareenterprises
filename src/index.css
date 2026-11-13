@@ -4168,3 +4168,32 @@ button.jt-join__line { border: 0; cursor: pointer }
 .img-strip__tile:hover { transform: translateY(-4px); box-shadow: 0 16px 34px -8px rgba(0,0,0,.3) }
 .img-strip__tile:hover img { transform: scale(1.07) }
 .img-strip__tile:hover::after { opacity: .3 }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   RESPONSIVE SAFETY NET  (phones, tablets, desktops)
+   - grid/flex children may shrink below their content width
+   - long words, emails and numbers wrap instead of pushing the layout wide
+   ══════════════════════════════════════════════════════════════════════════ */
+main [class*="grid"] > *,
+main [class*="__grid"] > *,
+.contact-grid > *,
+.oh-who > *,
+.hero__stats > *,
+.container > * { min-width: 0 }
+
+main h1, main h2, main h3, main h4, main p, main li, main a, main span, main strong {
+  overflow-wrap: anywhere;
+}
+/* keep nav/menu and buttons tidy: only break when really necessary */
+.nav-links a, .brand, .brand * { overflow-wrap: normal }
+
+img, video, svg, iframe { max-width: 100% }
+table { display: block; max-width: 100%; overflow-x: auto }
+
+.btn { max-width: 100%; white-space: normal; text-align: center }
+
+@media (max-width: 480px) {
+  .container { padding-inline: max(16px, 4vw) }
+  .hero__stats { grid-template-columns: 1fr 1fr; row-gap: 1.1rem }
+  .hero__stat::after { display: none }
+}
