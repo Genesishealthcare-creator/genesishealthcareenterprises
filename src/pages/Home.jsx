@@ -195,8 +195,11 @@ export default function Home() {
               </h1>
               <p className="lead">
                 At Genesis Health Care Enterprises, we believe everyone deserves quality
-                healthcare, comfort, dignity and compassionate support — through medical
-                equipment, home care services, and caring old age home facilities.
+                healthcare, comfort, dignity, and compassionate support. From medical
+                equipment and home care services to an integrated old age home with
+                in-house rehabilitation and physiotherapy — we bring complete care
+                together under one roof, so every individual can heal, recover, and
+                live with dignity.
               </p>
               <div className="hero__cta">
                 <Link to="/contact" className="btn btn--white btn-lg">
