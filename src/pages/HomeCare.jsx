@@ -198,10 +198,9 @@ export default function HomeCare() {
         stats={bannerStats}
         bgImage={{ src: '/gallery/home-care-nursing-service.jpg', position: 'center 35%', full: true }}
         heroImage={{
-          src: '/home-care-male-nurse.jpg',
-          alt: 'Smiling male nurse caring for an elderly patient in a wheelchair — home care nursing services in Visakhapatnam',
-          chips: ['Male Nursing Care', 'Home Nursing in Vizag'],
-          caption: { title: 'Care with dignity', text: 'Trained nurses & attendants at your home' },
+          src: '/gallery/home-care-main-page-image.jpg',
+          alt: 'Home care nursing services in Visakhapatnam — a caregiver supporting a patient at home',
+          clean: true,
         }}
       />
 
