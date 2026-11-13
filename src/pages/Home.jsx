@@ -202,7 +202,7 @@ export default function Home() {
                 live with dignity.
               </p>
               <div className="hero__cta">
-                <Link to="/contact" className="btn btn--white btn-lg">
+                <Link to="/home-care" className="btn btn--white btn-lg">
                   Get Started <ArrowRight />
                 </Link>
                 <Link to="/medical-equipment" className="btn btn--outline btn-lg">
