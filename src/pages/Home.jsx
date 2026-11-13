@@ -11,12 +11,6 @@ import {
 
 const services = [
   {
-    icon: Stethoscope, color: 'teal',
-    title: 'Medical Equipment Rental & Sales',
-    text: 'Hospital beds, oxygen concentrators, wheelchairs and patient care equipment — rent or purchase for home-based care.',
-    to: '/medical-equipment',
-  },
-  {
     icon: HomeCare, color: 'violet',
     title: 'Home Care Services',
     text: 'Professional nursing, elderly care, bedridden patient care and post-hospitalization support in the comfort of home.',
@@ -24,27 +18,33 @@ const services = [
   },
   {
     icon: Elderly, color: 'rose',
-    title: 'Old Age Home & Senior Care',
-    text: 'A safe, caring and comfortable living environment with personal assistance, meals and companionship for seniors.',
+    title: 'Old Age Home & Rehabilitation Care',
+    text: 'A safe, caring living environment with personal assistance, meals, companionship, and in-house rehabilitation and physiotherapy.',
     to: '/old-age-home',
   },
   {
+    icon: Stethoscope, color: 'teal',
+    title: 'Medical Equipment Rental & Sales',
+    text: 'Hospital beds, oxygen concentrators, wheelchairs and patient care equipment — rent or purchase for home-based care.',
+    to: '/medical-equipment',
+  },
+  {
     icon: Ambulance, color: 'sky',
-    title: 'Patient Transport Services',
+    title: 'Patient Transport',
     text: 'Cardiac and non-cardiac ambulances and medical taxis, with a trained nurse or caretaker accompanying your loved one.',
     to: '/patient-transport',
   },
   {
     icon: Globe, color: 'amber',
-    title: 'Exclusive Services for NRIs',
+    title: 'Exclusive NRI Services',
     text: 'Living abroad? We take care of your aging parents in India — 24/7 caretaker, health monitoring, doctor visits and regular updates.',
     to: '/nri-services',
   },
   {
-    icon: Elderly, color: 'emerald',
-    title: 'Old Age Home Support',
-    text: 'Help finding quality old age homes, plus hospice care, regular nurse visits, senior day care and long-term care support.',
-    to: '/old-age-home-support',
+    icon: Pill, color: 'emerald',
+    title: 'Genesis Surgicals',
+    text: 'Retail and wholesale medical supplies for our patients and the wider community. Enquire for surgical and medical supplies.',
+    to: '/contact',
   },
 ]
 
