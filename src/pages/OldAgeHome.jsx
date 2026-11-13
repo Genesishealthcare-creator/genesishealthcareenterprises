@@ -187,6 +187,7 @@ export default function OldAgeHome() {
         title="Old Age Home"
         description="A safe, caring and comfortable home for your loved ones — where every resident is treated with kindness, dignity and respect."
         stats={bannerStats}
+        bgImage={{ src: '/gallery/oldage-home.jpg', position: 'center 35%', full: true }}
         heroImage={{
           src: '/gallery/oldage-home-image-1.jpg',
           alt: 'Caring support for a senior citizen at the Genesis old age home, Visakhapatnam',
