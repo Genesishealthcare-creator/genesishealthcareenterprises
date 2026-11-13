@@ -20,9 +20,9 @@ const bannerStats = [
 
 const bannerImages = [
   {
-    src: '/CIpap-Bipap-Mask.png',
-    alt: 'CPAP BiPAP mask for respiratory care',
-    name: 'CPAP / BiPAP Mask',
+    src: '/hospital-bed-manual.jpeg',
+    alt: 'Manual hospital bed for home care',
+    name: 'Manual Hospital Bed',
   },
   {
     src: '/CPAP-BiPAP-machines.png',
