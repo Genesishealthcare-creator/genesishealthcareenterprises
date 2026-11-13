@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import WhatsAppButton from './components/WhatsAppButton.jsx'
+import ImageStrip from './components/ImageStrip.jsx'
 import Home from './pages/Home.jsx'
 import MedicalEquipment from './pages/MedicalEquipment.jsx'
 import HomeCare from './pages/HomeCare.jsx'
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      <ImageStrip />
       <Footer />
       <WhatsAppButton />
     </>
