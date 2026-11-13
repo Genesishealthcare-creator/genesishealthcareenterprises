@@ -185,7 +185,7 @@ export default function Home() {
         <div className="container">
           <div className="hero__inner">
             <div className="hero__content">
-              <span className="eyebrow eyebrow--light">Caring for Life, Every Step of the Way</span>
+              <span className="eyebrow eyebrow--light">Caring for Life, with Compassion</span>
               <h1 className="hero__title">
                 <span className="hero__name">Genesis Health Care Enterprises</span>
                 <span className="grad typed-word hero__tagline" aria-label="We Care He Cures">
