@@ -4242,3 +4242,11 @@ table { display: block; max-width: 100%; overflow-x: auto }
   .nav-phone-btn { padding-inline: .85rem }
   .nav-contact-btn { padding-inline: 1.1rem }
 }
+
+/* Hero stats with five items */
+.hero__stats--5 { grid-template-columns: repeat(5, 1fr) }
+.hero__stats--5 .hero__stat { padding: 0 .3rem }
+@media (max-width: 480px) {
+  .hero__stats--5 { grid-template-columns: 1fr 1fr }
+  .hero__stats--5 .hero__stat:last-child { grid-column: 1 / -1 }
+}

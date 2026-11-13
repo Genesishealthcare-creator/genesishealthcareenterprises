@@ -74,7 +74,8 @@ const trustItems = [
 const heroStats = [
   { v: '10+',  l1: 'Years',        l2: 'Experience' },
   { v: '100',  l1: 'Patient Care', l2: 'Staff' },
-  { v: '20k+', l1: 'Satisfied',    l2: 'Clients' },
+  { v: '12k+', l1: 'Satisfied',    l2: 'Clients' },
+  { v: '98%',  l1: 'Patient',      l2: 'Satisfaction Rate' },
   { v: '24',   l1: 'Hrs Pharmacy', l2: 'Home Delivery' },
 ]
 
@@ -209,7 +210,7 @@ export default function Home() {
                   Explore Equipment
                 </Link>
               </div>
-              <div className="hero__stats">
+              <div className="hero__stats hero__stats--5">
                 {heroStats.map(s => (
                   <div className="hero__stat" key={s.l1}>
                     <strong>{s.v}</strong>
