@@ -61,18 +61,15 @@ export default function Footer() {
           {/* Brand col */}
           <div className="footer__brand-col">
             <Link to="/" className="footer__logo-link" aria-label="Genesis Health Care home">
-              <picture>
-                <source media="(prefers-reduced-motion: reduce)" srcSet="/logo-transparent.png" />
-                <img
-                  src="/genesis-animated-logo.png"
-                  alt="Genesis Health Care Enterprises"
-                  className="footer__logo-img"
-                  width="260"
-                  height="173"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </picture>
+              <img
+                src="/genesis-logo-transparent.png"
+                alt="Genesis Health Care Enterprises"
+                className="footer__logo-img"
+                width="420"
+                height="297"
+                loading="lazy"
+                decoding="async"
+              />
             </Link>
             <p className="footer__tagline">
               Bringing quality healthcare, comfort and compassionate support closer to your home — through medical equipment, home care and senior living.
