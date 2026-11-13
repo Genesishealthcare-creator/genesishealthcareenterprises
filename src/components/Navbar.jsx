@@ -43,11 +43,11 @@ export default function Navbar() {
             {/* visitors who ask their device for less motion get the still logo */}
             <source media="(prefers-reduced-motion: reduce)" srcSet="/logo-transparent.png" />
             <img
-              src="/genesis-animated-logo.gif"
+              src="/genesis-animated-logo.png"
               alt="Genesis Health Care Enterprises logo"
               className="brand-logo-img"
-              width="506"
-              height="336"
+              width="260"
+              height="173"
               decoding="async"
             />
           </picture>

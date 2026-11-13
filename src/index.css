@@ -309,8 +309,13 @@ p  { margin-bottom: 1em }
   width: auto;                 /* animated logo is 3:2, so ~105px wide */
   object-fit: contain;
   display: block;
-  border-radius: 12px;         /* the animation has its own backdrop: round it into a neat badge */
-  box-shadow: 0 6px 18px rgba(0,0,0,.28);
+  /* transparent animated logo: no box. A thin white halo keeps the green/blue
+     artwork clearly visible on the dark teal header. */
+  filter:
+    drop-shadow(0 0 .8px #fff)
+    drop-shadow(0 0 .8px #fff)
+    drop-shadow(0 0 1.6px #fff)
+    drop-shadow(0 0 7px rgba(255,255,255,.45));
   flex-shrink: 0;
   transition: transform var(--t);
 }
@@ -3070,8 +3075,11 @@ textarea.form-control { resize:vertical; min-height:130px }
   width: auto;
   max-width: 100%;
   object-fit: contain;
-  border-radius: 14px;
-  box-shadow: 0 8px 22px rgba(0,0,0,.35);
+  filter:
+    drop-shadow(0 0 .8px #fff)
+    drop-shadow(0 0 .8px #fff)
+    drop-shadow(0 0 1.6px #fff)
+    drop-shadow(0 0 7px rgba(255,255,255,.4));
   display: block;
   transition: transform var(--t);
 }
