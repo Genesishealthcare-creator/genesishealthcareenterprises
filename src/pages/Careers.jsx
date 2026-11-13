@@ -96,6 +96,7 @@ export default function Careers() {
           { value: '24/7', label: 'Care Network' },
           { value: 'Vizag', label: 'Location' },
         ]}
+        bgImage={{ src: '/team/join-our-team.jpg', position: 'center 30%', full: true }}
       />
 
       {/* ── Intro ── */}
