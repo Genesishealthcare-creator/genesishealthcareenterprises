@@ -311,7 +311,6 @@ p  { margin-bottom: 1em }
   display: block;
   /* fully transparent PNG: nothing behind it, no outline, no glow */
   flex-shrink: 0;
-  filter: brightness(0) invert(1); /* solid white logo */
   transition: transform var(--t);
 }
 .brand-logo-img:hover { transform: scale(1.05) }
@@ -3066,13 +3065,12 @@ textarea.form-control { resize:vertical; min-height:130px }
 
 .footer__logo-link { display: inline-block; margin-bottom: .4rem }
 .footer__logo-img {
-  height: 92px;
+  height: 130px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
   /* fully transparent PNG: nothing behind it, no outline, no glow */
   display: block;
-  filter: brightness(0) invert(1); /* solid white logo */
   transition: transform var(--t);
 }
 .footer__logo-img:hover { transform: scale(1.04) }

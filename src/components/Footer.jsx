@@ -62,11 +62,11 @@ export default function Footer() {
           <div className="footer__brand-col">
             <Link to="/" className="footer__logo-link" aria-label="Genesis Health Care home">
               <img
-                src="/genesis-logo-transparent.png"
+                src="/genesis-logo-white.png"
                 alt="Genesis Health Care Enterprises"
                 className="footer__logo-img"
-                width="420"
-                height="297"
+                width="900"
+                height="847"
                 loading="lazy"
                 decoding="async"
               />

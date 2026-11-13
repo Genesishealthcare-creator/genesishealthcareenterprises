@@ -40,11 +40,11 @@ export default function Navbar() {
         {/* Brand */}
         <Link to="/" className="navbar__brand" aria-label="Genesis Health Care Enterprises — home">
           <img
-            src="/genesis-logo-transparent.png"
+            src="/genesis-logo-white.png"
             alt="Genesis Health Care Enterprises logo"
             className="brand-logo-img"
-            width="420"
-            height="297"
+            width="900"
+            height="847"
             decoding="async"
           />
         </Link>
