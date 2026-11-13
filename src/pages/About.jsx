@@ -106,7 +106,7 @@ export default function About() {
     name: 'Genesis Health Care Enterprises',
     url: 'https://genesishealthcareenterprises.com',
     logo: '/logo.jpeg',
-    slogan: 'Caring for Life, Every Step of the Way',
+    slogan: 'Caring for Life, with Compassion',
     founder: {
       '@type': 'Person',
       name: 'Potti Krupa Samson',

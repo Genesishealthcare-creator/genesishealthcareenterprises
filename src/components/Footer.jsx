@@ -77,7 +77,7 @@ export default function Footer() {
             </p>
             <p className="footer__slogan">
               <HeartPlus style={{ width: 16, height: 16 }} />
-              Caring for Life, Every Step of the Way.
+              Caring for Life, with Compassion.
             </p>
 
             {/* Social profiles */}
