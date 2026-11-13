@@ -1,5 +1,15 @@
 ﻿import { Link } from 'react-router-dom'
-import { Phone, Mail, Pin, Clock, ArrowRight, Shield, HeartPlus } from './Icons.jsx'
+import { Phone, Mail, Pin, Clock, ArrowRight, Shield, HeartPlus, Instagram } from './Icons.jsx'
+
+// Add more profiles here (Facebook, YouTube, ...) and they appear automatically.
+const socials = [
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/genesis_home_care_nursing?psln=ZHB2bTdoYWgxYm81',
+    icon: Instagram,
+    cls: 'instagram',
+  },
+]
 
 const services = [
   { to: '/medical-equipment', label: 'Medical Equipment Rental & Sales' },
@@ -78,6 +88,23 @@ export default function Footer() {
               <HeartPlus style={{ width: 16, height: 16 }} />
               Caring for Life, Every Step of the Way.
             </p>
+
+            {/* Social profiles */}
+            <div className="footer__social" aria-label="Follow us on social media">
+              {socials.map(({ label, href, icon: Icon, cls }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`footer__social-link footer__social-link--${cls}`}
+                  aria-label={`Genesis on ${label}`}
+                >
+                  <Icon />
+                  <span>{label}</span>
+                </a>
+              ))}
+            </div>
 
             {/* Trust badges */}
             <div className="footer__badges">

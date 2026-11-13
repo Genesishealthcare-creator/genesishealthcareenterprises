@@ -4204,3 +4204,22 @@ table { display: block; max-width: 100%; overflow-x: auto }
   .hero__stats { grid-template-columns: 1fr 1fr; row-gap: 1.1rem }
   .hero__stat::after { display: none }
 }
+
+/* ── Footer social profiles ── */
+.footer__social { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1rem 0 .4rem }
+.footer__social-link {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .5rem .95rem .5rem .6rem;
+  border-radius: var(--r-full);
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  color: #fff; font-family: var(--font-display); font-weight: 600; font-size: .88rem;
+  transition: transform var(--t), background var(--t), box-shadow var(--t);
+}
+.footer__social-link svg { width: 20px; height: 20px; flex-shrink: 0 }
+.footer__social-link:hover { transform: translateY(-2px); box-shadow: 0 10px 22px -8px rgba(0,0,0,.5) }
+.footer__social-link--instagram:hover {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b 55%, #6228d7);
+  border-color: transparent;
+}
+.footer__social-link:focus-visible { outline: 2px solid #fff; outline-offset: 3px }
