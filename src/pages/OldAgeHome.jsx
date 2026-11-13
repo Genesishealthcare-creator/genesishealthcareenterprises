@@ -202,19 +202,28 @@ export default function OldAgeHome() {
         <div className="container">
           <div className="hc-intro__grid">
             <Reveal className="hc-intro__text">
-              <span className="eyebrow eyebrow--rose">Welcome</span>
-              <h2>A Home Away From Home for Your Parents</h2>
+              <span className="eyebrow eyebrow--rose">Genesis Nursing Home Care</span>
+              <h2>An Old Age Home and Rehabilitation Centre Under One Roof</h2>
               <p>
-                Senior citizens deserve love, respect, companionship and proper care at every stage of
-                life. <strong>Genesis Health Care Enterprises</strong> offers a peaceful, secure and
-                supportive <strong>old age home in Visakhapatnam</strong> for elders who need daily
-                assistance, companionship and health support.
+                <strong>Genesis Nursing Home Care</strong> offers a unique and comprehensive care
+                model — combining a full-fledged <strong>Old Age Home</strong> with a state-of-the-art{' '}
+                <strong>Rehabilitation Centre</strong> on the same premises. This integrated approach
+                ensures that every resident receives seamless, round-the-clock care under one roof.
               </p>
               <p>
-                We believe an old age home should feel like a second family — with{' '}
-                <strong>comfortable accommodation</strong>, <strong>nutritious meals</strong>,{' '}
-                <strong>nursing support</strong> and warm company, so you can have peace of mind knowing
-                your loved one is looked after with dignity.
+                Our facility is designed for seniors who need long-term residential care, as well as
+                patients recovering from surgeries, strokes, fractures, or chronic illnesses who require
+                intensive physiotherapy and rehabilitation. By bringing both services together, we create
+                a holistic healing environment where rehabilitation patients benefit from the comfort of
+                a home-like setting, and old age home residents gain immediate access to the best
+                physiotherapy services — maximizing recovery outcomes for every individual in our care.
+              </p>
+              <p>
+                The biggest advantage of our model is <strong>continuity of care</strong>. Residents of
+                our old age home receive on-site physiotherapy without the need for travel, while
+                rehabilitation patients enjoy the comfort and stability of a residential environment.
+                This combination accelerates recovery, improves mobility, and enhances overall quality of
+                life for every patient.
               </p>
               <ul className="hc-intro__points hc-intro__points--rose">
                 <li><Check /> Comfortable, hygienic rooms</li>
