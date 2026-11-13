@@ -203,7 +203,7 @@ export default function OldAgeHome() {
           <div className="hc-intro__grid">
             <Reveal className="hc-intro__text">
               <span className="eyebrow eyebrow--rose">Genesis Nursing Home Care</span>
-              <h2>An Old Age Home and Rehabilitation Centre Under One Roof</h2>
+              <h2>Old Age Home and Rehabilitation Centre Under One Roof</h2>
               <p>
                 <strong>Genesis Nursing Home Care</strong> offers a unique and comprehensive care
                 model — combining a full-fledged <strong>Old Age Home</strong> with a state-of-the-art{' '}
