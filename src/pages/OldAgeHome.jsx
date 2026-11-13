@@ -185,7 +185,7 @@ export default function OldAgeHome() {
         colorVariant="rose"
         badge="💗 Senior Citizen Care in Visakhapatnam"
         title="Old Age Home & Rehabilitation Care"
-        description="A safe, caring and comfortable home for your loved ones — where every resident is treated with kindness, dignity and respect."
+        description="A safe, caring and comfortable home for your loved ones — where compassionate comfort care meets expert rehabilitation, helping every resident recover, regain independence and live with dignity."
         stats={bannerStats}
         bgImage={{ src: '/gallery/oldage-home.jpg', position: 'center 35%', full: true }}
         heroImage={{
