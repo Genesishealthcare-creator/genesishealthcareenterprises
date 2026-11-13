@@ -309,13 +309,7 @@ p  { margin-bottom: 1em }
   width: auto;                 /* logo is about 1.4 : 1, so roughly 107px wide */
   object-fit: contain;
   display: block;
-  /* transparent PNG: no box behind it. The artwork is dark navy / teal / green, so a
-     thin white outline plus a soft glow lifts it off the dark teal header. */
-  filter:
-    drop-shadow(0 0 1px #fff)
-    drop-shadow(0 0 1px #fff)
-    drop-shadow(0 0 2px #fff)
-    drop-shadow(0 0 9px rgba(255,255,255,.6));
+  /* fully transparent PNG: nothing behind it, no outline, no glow */
   flex-shrink: 0;
   transition: transform var(--t);
 }
@@ -3075,11 +3069,7 @@ textarea.form-control { resize:vertical; min-height:130px }
   width: auto;
   max-width: 100%;
   object-fit: contain;
-  filter:
-    drop-shadow(0 0 1px #fff)
-    drop-shadow(0 0 1px #fff)
-    drop-shadow(0 0 2px #fff)
-    drop-shadow(0 0 9px rgba(255,255,255,.55));
+  /* fully transparent PNG: nothing behind it, no outline, no glow */
   display: block;
   transition: transform var(--t);
 }
