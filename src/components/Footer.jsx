@@ -1,21 +1,6 @@
 ﻿import { Link } from 'react-router-dom'
-import { Phone, Mail, Pin, Clock, ArrowRight, Shield, HeartPlus, Instagram, Facebook } from './Icons.jsx'
-
-// Add more profiles here (Facebook, YouTube, ...) and they appear automatically.
-const socials = [
-  {
-    label: 'Instagram',
-    href: 'https://www.instagram.com/genesis_home_care_nursing?psln=ZHB2bTdoYWgxYm81',
-    icon: Instagram,
-    cls: 'instagram',
-  },
-  {
-    label: 'Facebook',
-    href: 'https://www.facebook.com/genesis.krupa?rdid=WuF2GUt7Q37U9xFY&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1K9S3ByU1r%2F#',
-    icon: Facebook,
-    cls: 'facebook',
-  },
-]
+import { Phone, Mail, Pin, Clock, ArrowRight, Shield, HeartPlus } from './Icons.jsx'
+import SocialLinks from './SocialLinks.jsx'
 
 const services = [
   { to: '/medical-equipment', label: 'Medical Equipment Rental & Sales' },
@@ -96,21 +81,7 @@ export default function Footer() {
             </p>
 
             {/* Social profiles */}
-            <div className="footer__social" aria-label="Follow us on social media">
-              {socials.map(({ label, href, icon: Icon, cls }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`footer__social-link footer__social-link--${cls}`}
-                  aria-label={`Genesis on ${label}`}
-                >
-                  <Icon />
-                  <span>{label}</span>
-                </a>
-              ))}
-            </div>
+            <SocialLinks where="footer" />
 
             {/* Trust badges */}
             <div className="footer__badges">

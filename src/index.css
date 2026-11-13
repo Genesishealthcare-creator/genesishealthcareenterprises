@@ -4205,22 +4205,40 @@ table { display: block; max-width: 100%; overflow-x: auto }
   .hero__stat::after { display: none }
 }
 
-/* ── Footer social profiles ── */
-.footer__social { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1rem 0 .4rem }
-.footer__social-link {
-  display: inline-flex; align-items: center; gap: .5rem;
-  padding: .5rem .95rem .5rem .6rem;
-  border-radius: var(--r-full);
-  background: rgba(255,255,255,.1);
-  border: 1px solid rgba(255,255,255,.2);
-  color: #fff; font-family: var(--font-display); font-weight: 600; font-size: .88rem;
-  transition: transform var(--t), background var(--t), box-shadow var(--t);
+/* ── Social icons (header, drawer, footer) — medium round buttons ── */
+.social-icons { display: flex; align-items: center; gap: .6rem }
+.social-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.3);
+  color: #fff;
+  transition: transform var(--t), background var(--t), box-shadow var(--t), border-color var(--t);
 }
-.footer__social-link svg { width: 20px; height: 20px; flex-shrink: 0 }
-.footer__social-link:hover { transform: translateY(-2px); box-shadow: 0 10px 22px -8px rgba(0,0,0,.5) }
-.footer__social-link--instagram:hover {
-  background: linear-gradient(45deg, #f9ce34, #ee2a7b 55%, #6228d7);
-  border-color: transparent;
+.social-icon svg { width: 20px; height: 20px }
+.social-icon:hover { transform: translateY(-2px); color: #fff; border-color: transparent; box-shadow: 0 10px 20px -8px rgba(0,0,0,.5) }
+.social-icon--instagram:hover { background: linear-gradient(45deg, #f9ce34, #ee2a7b 55%, #6228d7) }
+.social-icon--facebook:hover  { background: #1877f2 }
+.social-icon:focus-visible { outline: 2px solid #fff; outline-offset: 3px }
+
+.social-icons--footer { margin: 1.1rem 0 .6rem; gap: .75rem }
+.social-icons--footer .social-icon { width: 46px; height: 46px }
+.social-icons--footer .social-icon svg { width: 22px; height: 22px }
+
+.social-icons--drawer { display: none }
+
+@media (max-width: 1160px) {
+  .nav-cta .social-icons--header { display: none }          /* phones/tablets use the menu drawer */
+  .nav-mobile .social-icons--drawer { display: flex; justify-content: center; margin-top: 1.5rem; gap: 1rem }
+  .nav-mobile .social-icons--drawer .social-icon { width: 48px; height: 48px; border: 1px solid rgba(255,255,255,.3); border-radius: 50%; padding: 0 }
+  .nav-mobile .social-icons--drawer .social-icon--instagram:hover { background: linear-gradient(45deg, #f9ce34, #ee2a7b 55%, #6228d7) }
+  .nav-mobile .social-icons--drawer .social-icon--facebook:hover  { background: #1877f2 }
 }
-.footer__social-link:focus-visible { outline: 2px solid #fff; outline-offset: 3px }
-.footer__social-link--facebook:hover { background: #1877f2; border-color: transparent }
+/* slightly tighter desktop header so the icons fit on every desktop width */
+@media (min-width: 1161px) {
+  .nav-links a { padding-inline: .55rem; font-size: .86rem }
+  .nav-cta { gap: .55rem }
+  .nav-phone-btn { padding-inline: .85rem }
+  .nav-contact-btn { padding-inline: 1.1rem }
+}

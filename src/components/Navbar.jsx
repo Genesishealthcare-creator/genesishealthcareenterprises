@@ -1,6 +1,7 @@
 ﻿import { useState, useEffect } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
 import { Phone } from './Icons.jsx'
+import SocialLinks from './SocialLinks.jsx'
 
 const links = [
   { to: '/',                 label: 'Home' },
@@ -60,6 +61,7 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="nav-cta">
+          <SocialLinks where="header" />
           <a className="nav-phone-btn" href="tel:+917041081081" aria-label="Call us">
             <Phone />
             <span>Call Us</span>
@@ -94,6 +96,7 @@ export default function Navbar() {
           <Phone /> Call Us
         </a>
         <Link to="/contact" className="nav-contact-btn">Get in Touch</Link>
+        <SocialLinks where="drawer" />
       </nav>
     </header>
   )
