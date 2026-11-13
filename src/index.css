@@ -4243,3 +4243,29 @@ table { display: block; max-width: 100%; overflow-x: auto }
   .nav-contact-btn { padding-inline: 1.1rem }
 }
 
+
+/* ── Hero photo slideshow (auto-scrolling, crossfade) ── */
+.pb-slides { position: absolute; inset: 0 }
+.pb-slides__img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  opacity: 0;
+  transition: opacity .9s ease, transform .6s ease;
+}
+.pb-slides__img.is-active { opacity: 1 }
+.pb-hero:hover .pb-slides__img { transform: scale(1.04) }
+.pb-slides__dots {
+  position: absolute; top: .9rem; left: 50%; transform: translateX(-50%);
+  display: flex; gap: .45rem; z-index: 3;
+  padding: .35rem .6rem; border-radius: 999px;
+  background: rgba(0,0,0,.28); backdrop-filter: blur(6px);
+}
+.pb-slides__dot {
+  width: 9px; height: 9px; padding: 0; border: 0; border-radius: 50%;
+  background: rgba(255,255,255,.55); cursor: pointer;
+  transition: background var(--t), transform var(--t);
+}
+.pb-slides__dot.is-active { background: #fff; transform: scale(1.25) }
+.pb-slides__dot:focus-visible { outline: 2px solid #fff; outline-offset: 2px }
+@media (prefers-reduced-motion: reduce) { .pb-slides__img { transition: none } }

@@ -1,8 +1,61 @@
-﻿import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+
+// Crossfading photo slideshow used inside the hero frame (heroImage.slides).
+// Auto-advances, pauses on hover/focus, and stays still for reduced-motion users.
+function HeroSlides({ slides, position }) {
+  const [active, setActive] = useState(0)
+  const [paused, setPaused] = useState(false)
+
+  useEffect(() => {
+    if (paused || slides.length < 2) return undefined
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined
+    const t = setInterval(() => setActive(a => (a + 1) % slides.length), 4500)
+    return () => clearInterval(t)
+  }, [paused, slides.length])
+
+  return (
+    <div
+      className="pb-slides"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onFocus={() => setPaused(true)}
+      onBlur={() => setPaused(false)}
+    >
+      {slides.map((s, i) => (
+        <img
+          key={s.src}
+          src={s.src}
+          alt={s.alt}
+          className={`pb-slides__img${i === active ? ' is-active' : ''}`}
+          width="1200"
+          height="1200"
+          loading={i === 0 ? 'eager' : 'lazy'}
+          fetchpriority={i === 0 ? 'high' : undefined}
+          aria-hidden={i === active ? undefined : 'true'}
+          style={{ objectPosition: s.position || position || undefined }}
+        />
+      ))}
+      <div className="pb-slides__dots" role="group" aria-label="Choose photo">
+        {slides.map((s, i) => (
+          <button
+            key={s.src}
+            type="button"
+            className={`pb-slides__dot${i === active ? ' is-active' : ''}`}
+            aria-label={`Show photo ${i + 1} of ${slides.length}`}
+            aria-current={i === active ? 'true' : undefined}
+            onClick={() => setActive(i)}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
 
 // colorVariant: 'teal' | 'violet' | 'rose' | 'amber'
 // images: array of { src, alt, name } — shown as a grid on the right side
 // heroImage: { src, alt, chips?: string[], caption?: { title, text } } — single large photo on the right
+//            or { slides: [{ src, alt, position? }, ...] } for an auto-scrolling photo slideshow
 export default function PageBanner({ title, description, colorVariant = 'teal', badge, stats, images, heroImage, bgImage }) {
   return (
     <section className={`page-banner page-banner--${colorVariant}`}>
@@ -52,14 +105,18 @@ export default function PageBanner({ title, description, colorVariant = 'teal', 
           {heroImage && (
             <figure className={`pb-hero${heroImage.portrait ? ' pb-hero--portrait' : ''}`}>
               <div className="pb-hero__frame" style={heroImage.ratio ? { aspectRatio: heroImage.ratio } : undefined}>
-                <img
-                  src={heroImage.src}
-                  alt={heroImage.alt}
-                  width="1200"
-                  height="1200"
-                  fetchpriority="high"
-                  style={heroImage.position ? { objectPosition: heroImage.position } : undefined}
-                />
+                {heroImage.slides ? (
+                  <HeroSlides slides={heroImage.slides} position={heroImage.position} />
+                ) : (
+                  <img
+                    src={heroImage.src}
+                    alt={heroImage.alt}
+                    width="1200"
+                    height="1200"
+                    fetchpriority="high"
+                    style={heroImage.position ? { objectPosition: heroImage.position } : undefined}
+                  />
+                )}
                 {!heroImage.clean && <span className="pb-hero__shade" aria-hidden="true" />}
                 {heroImage.chips && heroImage.chips.map((c, i) => (
                   <span key={c} className={`pb-hero__chip pb-hero__chip--${i + 1}`}>{c}</span>

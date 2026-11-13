@@ -189,10 +189,18 @@ export default function OldAgeHome() {
         stats={bannerStats}
         bgImage={{ src: '/gallery/oldage-home.jpg', position: 'center 35%', full: true }}
         heroImage={{
-          src: '/gallery/oldage-home-image-1.jpg',
-          alt: 'Caring support for a senior citizen at the Genesis old age home, Visakhapatnam',
-          position: 'center 30%',
-          chips: ['Senior Citizen Care', 'Dignity & Respect'],
+          slides: [
+            {
+              src: '/gallery/oldage-home-image-1.jpg',
+              alt: 'Caring support for a senior citizen at the Genesis old age home, Visakhapatnam',
+              position: 'center 30%',
+            },
+            {
+              src: '/gallery/rehab-oldage-home.jpg',
+              alt: 'Rehabilitation and physiotherapy for seniors at the Genesis old age home, Visakhapatnam',
+              position: 'center 40%',
+            },
+          ],
           caption: { title: 'A second family', text: 'Compassionate care for every resident' },
         }}
       />
