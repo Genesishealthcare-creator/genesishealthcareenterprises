@@ -201,6 +201,8 @@ export default function HomeCare() {
           src: '/gallery/home-care-main-page-image.jpg',
           alt: 'Home care nursing services in Visakhapatnam — a caregiver supporting a patient at home',
           clean: true,
+          portrait: true,
+          ratio: '2 / 3',   // matches the 600x900 photo, so nothing is cropped
         }}
       />
 
