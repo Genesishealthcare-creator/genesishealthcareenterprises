@@ -20,7 +20,7 @@ const bannerStats = [
 
 const bannerImages = [
   {
-    src: '/hospital-bed-manual.jpeg',
+    src: '/hospital-bed-manual.png',
     alt: 'Manual hospital bed for home care',
     name: 'Manual Hospital Bed',
   },
