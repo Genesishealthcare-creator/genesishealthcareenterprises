@@ -14,14 +14,14 @@ import {
 const bannerStats = [
   { value: '10+',  label: 'Years Experience' },
   { value: '100',  label: 'Care Staff' },
-  { value: '20k+', label: 'Satisfied Clients' },
+  { value: '12k+', label: 'Satisfied Clients' },
   { value: '3',    label: 'Service Divisions' },
 ]
 
 const numbers = [
   { v: '10+',  l1: 'Years of', l2: 'Experience',          color: 'teal' },
   { v: '100',  l1: 'Patient Care', l2: 'Staff',           color: 'violet' },
-  { v: '20k+', l1: 'Satisfied', l2: 'Clients',            color: 'amber' },
+  { v: '12k+', l1: 'Satisfied', l2: 'Clients',            color: 'amber' },
   { v: '24',   l1: 'Hours Pharmacy', l2: 'Home Delivery', color: 'rose' },
 ]
 
