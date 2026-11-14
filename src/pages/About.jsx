@@ -97,8 +97,8 @@ export default function About() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Genesis Health Care Enterprises',
-    url: 'https://genesishealthcareenterprises.com',
-    logo: '/logo.jpeg',
+    url: 'https://www.genesishealthcareenterprises.com',
+    logo: 'https://www.genesishealthcareenterprises.com/android-chrome-512x512.png',
     slogan: 'Caring for Life, with Compassion',
     founder: {
       '@type': 'Person',
