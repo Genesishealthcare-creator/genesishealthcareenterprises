@@ -25,8 +25,8 @@ const quickLinks = [
 const stats = [
   { v: '10+',  l1: 'Years',        l2: 'Experience' },
   { v: '100',  l1: 'Patient Care', l2: 'Staff' },
-  { v: '20k+', l1: 'Satisfied',    l2: 'Clients' },
-  { v: '24',   l1: 'Hrs Pharmacy', l2: 'Home Delivery' },
+  { v: '12k+', l1: 'Satisfied',    l2: 'Clients' },
+  { v: '98%',  l1: 'Satisfaction', l2: 'Rate' },
 ]
 
 export default function Footer() {
