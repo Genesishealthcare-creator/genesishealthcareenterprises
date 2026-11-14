@@ -18,13 +18,6 @@ const bannerStats = [
   { value: '3',    label: 'Service Divisions' },
 ]
 
-const numbers = [
-  { v: '10+',  l1: 'Years of', l2: 'Experience',          color: 'teal' },
-  { v: '100',  l1: 'Patient Care', l2: 'Staff',           color: 'violet' },
-  { v: '12k+', l1: 'Satisfied', l2: 'Clients',            color: 'amber' },
-  { v: '24',   l1: 'Hours Pharmacy', l2: 'Home Delivery', color: 'rose' },
-]
-
 const divisions = [
   {
     icon: Stethoscope, color: 'teal', title: 'Medical Equipment', to: '/medical-equipment', cta: 'View equipment',
@@ -188,22 +181,6 @@ export default function About() {
                 </div>
               </div>
             </Reveal>
-          </div>
-        </div>
-      </section>
-      {/* ── Numbers ── */}
-      <section className="ab-numbers">
-        <div className="container">
-          <div className="ab-numbers__grid">
-            {numbers.map(({ v, l1, l2, color }, i) => (
-              <Reveal key={l1} delay={i + 1}>
-                <div className={`ab-num ab-num--${color}`}>
-                  <strong>{v}</strong>
-                  <span>{l1}</span>
-                  <span>{l2}</span>
-                </div>
-              </Reveal>
-            ))}
           </div>
         </div>
       </section>
