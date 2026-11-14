@@ -3311,7 +3311,8 @@ button:focus-visible,
    ═══════════════════════════════════════════════ */
 @media (max-width:1000px) {
   .hero__inner { grid-template-columns:1fr; gap:2.5rem }
-  .hero__panel { order:-1 }
+  /* phones & tablets: text first, photo below */
+  .hero__panel { order:0 }
 }
 
 @media (max-width:1160px) {
