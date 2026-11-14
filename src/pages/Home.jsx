@@ -291,8 +291,8 @@ export default function Home() {
       <section className="section section--white">
         <div className="container">
           <SectionHeading eyebrow="What We Offer" eyebrowColor="teal" title="Our Services">
-            Healthcare solutions designed to make quality care accessible, affordable and convenient
-            for patients, families and senior citizens.
+            Healthcare solutions in Visakhapatnam (Vizag) designed to make quality care accessible,
+            affordable and convenient for patients, families and senior citizens.
           </SectionHeading>
 
           <div className="grid grid-services">
@@ -404,7 +404,7 @@ export default function Home() {
       {/* ─── Testimonials ─── */}
       <section className="section testimonials-section">
         <div className="container">
-          <SectionHeading eyebrow="What Clients Say" eyebrowColor="amber" title="Trusted by Families Across Bangalore">
+          <SectionHeading eyebrow="What Clients Say" eyebrowColor="amber" title="Trusted by Patients and Families">
             Real experiences from patients, families and doctors who rely on Genesis Health Care.
           </SectionHeading>
 

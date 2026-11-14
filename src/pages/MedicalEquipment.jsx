@@ -6,6 +6,7 @@ import SectionHeading from '../components/SectionHeading.jsx'
 import CtaBand from '../components/CtaBand.jsx'
 import Reveal from '../components/Reveal.jsx'
 import EquipmentModal from '../components/EquipmentModal.jsx'
+import FaqItem from '../components/FaqItem.jsx'
 import {
   Bed, Wheelchair, Oxygen, Mattress, Monitor,
   Wallet, HomeCare, Clock, Check, ArrowRight, Phone, Shield, HeartPlus
@@ -146,15 +147,72 @@ const benefits = [
   'Sales options for long-term or permanent requirements.',
 ]
 
+const vizagFaqs = [
+  {
+    q: 'Where can I get medical equipment on rent in Vizag?',
+    a: 'Genesis Health Care Enterprises rents and sells medical equipment in Visakhapatnam (Vizag), including hospital beds, oxygen concentrators, CPAP and BiPAP machines, wheelchairs, air mattresses and walking aids. Call 70410 81081 to check availability.',
+  },
+  {
+    q: 'Can I rent a hospital bed for home use in Visakhapatnam?',
+    a: 'Yes. We offer manual hospital beds, semi-fowler and fowler beds and 5-function electric beds for home recovery and long-term patient care, on short-term or long-term rental, or for purchase.',
+  },
+  {
+    q: 'Do you rent oxygen concentrators and CPAP or BiPAP machines in Vizag?',
+    a: 'Yes. Our respiratory care range includes oxygen concentrators, portable oxygen concentrators, CPAP and BiPAP machines, masks and humidifier bottles. Please share the doctor\u2019s advice when you call so our team can suggest the right option.',
+  },
+  {
+    q: 'Do you deliver medical equipment to my home in Visakhapatnam?',
+    a: 'Yes. Equipment is delivered to your home and set up by our team. Delivery timing and terms are confirmed when you speak with us.',
+  },
+  {
+    q: 'Can I buy medical equipment instead of renting?',
+    a: 'Yes. Most items are available on rent or for purchase, and our Genesis Surgicals division supplies medical and surgical items at retail and wholesale to patients and the wider community.',
+  },
+  {
+    q: 'How do I get the rental price for medical equipment in Vizag?',
+    a: 'Rental and purchase prices depend on the item and how long you need it. Call 70410 81081 or WhatsApp us, and our team will share the details for your requirement.',
+  },
+]
+
 export default function MedicalEquipment() {
   const [activeItem, setActiveItem] = useState(null)
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: vizagFaqs.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  }
+
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Medical equipment rental and sales in Visakhapatnam',
+    serviceType: 'Medical equipment rental and sales',
+    provider: { '@id': 'https://www.genesishealthcareenterprises.com/#business' },
+    areaServed: { '@type': 'City', name: 'Visakhapatnam' },
+    url: 'https://www.genesishealthcareenterprises.com/medical-equipment',
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Medical equipment on rent and sale',
+      itemListElement: categories.map((c) => ({
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Product', name: c.title, description: c.desc },
+      })),
+    },
+  }
 
   return (
     <>
       <Seo
-        title="Medical Equipment Rental & Sales – Genesis Health Care"
-        description="Quality medical equipment on rent or purchase — hospital beds, wheelchairs, oxygen concentrators, air mattresses and patient care equipment."
+        title="Medical Equipment on Rent in Vizag | Bed, Oxygen, CPAP"
+        description="Rent or buy hospital beds, oxygen concentrators, CPAP/BiPAP machines, wheelchairs and air mattresses in Visakhapatnam (Vizag). Home delivery and setup. Call 70410 81081."
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <PageBanner
         colorVariant="teal"
@@ -315,6 +373,20 @@ export default function MedicalEquipment() {
                 <span><Check style={{ width: 14, height: 14 }} /> Expert Support</span>
               </div>
             </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Local FAQ (Vizag) ── */}
+      <section className="section section--soft">
+        <div className="container" style={{ maxWidth: 860 }}>
+          <SectionHeading eyebrow="Medical Equipment in Vizag" eyebrowColor="teal" title="Medical Equipment on Rent in Visakhapatnam: Your Questions">
+            Quick answers about renting or buying hospital beds, oxygen concentrators, CPAP machines and wheelchairs in Vizag.
+          </SectionHeading>
+          <div className="faq-list">
+            {vizagFaqs.map((item, i) => (
+              <FaqItem key={item.q} id={`meq-${i}`} question={item.q} answer={item.a} />
+            ))}
           </div>
         </div>
       </section>

@@ -20,7 +20,7 @@ if ($secrets) {
 }
 
 # Build check
-$build = npx vite build 2>&1 | Out-String
+$build = npm run build 2>&1 | Out-String
 if ($LASTEXITCODE -ne 0) {
   Write-Output "auto-push: build FAILED, nothing pushed.`n$build"
   exit 0
