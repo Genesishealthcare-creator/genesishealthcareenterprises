@@ -21,7 +21,15 @@ export const posts = [
     image: '/5-function-electric-bed.jpg',
     imageAlt: '5 function electric hospital bed for home care in Visakhapatnam',
     keywords:
-      'hospital bed on rent in Vizag, hospital bed for home use Visakhapatnam, manual hospital bed Vizag, 5 function electric bed Vizag, patient bed on rent Vizag',
+      'hospital beds for rent in Vizag, hospital bed on rent in Vizag, ICU bed rental in Vizag, patient bed on rent in Vizag, air mattress for rent in Vizag, hospital bed for home use Visakhapatnam, manual hospital bed Vizag, 5 function electric bed Vizag, medical equipment for home care Vizag, hospital equipment for rent in Vizag, home nursing equipment rental Vizag, medical equipment rental in Visakhapatnam',
+    tags: [
+      'Hospital Beds for Rent in Vizag',
+      'Patient Bed on Rent in Vizag',
+      'ICU Bed Rental in Vizag',
+      'Air Mattress for Rent in Vizag',
+      'Medical Equipment for Home Care Vizag',
+      'Hospital Equipment for Rent in Vizag',
+    ],
     cta: { to: '/medical-equipment', label: 'See hospital beds on rent in Vizag' },
     sections: [
       {
@@ -53,7 +61,8 @@ export const posts = [
       {
         heading: 'Get advice for your situation',
         paragraphs: [
-          'The right bed depends on the patient\u2019s condition. Please follow your doctor\u2019s advice, and talk to our team about availability, rental plans and home setup in Vizag. Call 70410 81081.',
+          'The right bed depends on the patient\u2019s condition. Please follow your doctor\u2019s advice, and talk to our team about availability, rental plans and home setup in Vizag.',
+          'Genesis Health Care Enterprises offers hospital beds for rent in Vizag, patient beds on rent, air mattresses for rent and other medical equipment for home care in Visakhapatnam, at affordable prices. Call 70410 81081.',
         ],
       },
     ],
@@ -69,7 +78,15 @@ export const posts = [
     image: '/oxygen-machine.png',
     imageAlt: 'Oxygen concentrator machine for home use in Visakhapatnam',
     keywords:
-      'oxygen concentrator on rent in Vizag, oxygen concentrator rental Visakhapatnam, portable oxygen concentrator Vizag, home oxygen Vizag',
+      'oxygen concentrator on rent in Vizag, oxygen concentrator rental Visakhapatnam, portable oxygen concentrator Vizag, home oxygen Vizag, medical equipment for rent in Vizag, home medical equipment rental Vizag, suction machine rental in Vizag, medical equipment suppliers in Vizag, patient care equipment rental Vizag, affordable medical equipment rental Vizag',
+    tags: [
+      'Oxygen Concentrator on Rent in Vizag',
+      'Medical Equipment for Rent in Vizag',
+      'Home Medical Equipment Rental Vizag',
+      'Suction Machine Rental in Vizag',
+      'Patient Care Equipment Rental Vizag',
+      'Medical Equipment Suppliers in Vizag',
+    ],
     cta: { to: '/medical-equipment', label: 'Oxygen concentrators and respiratory care' },
     sections: [
       {
@@ -99,7 +116,8 @@ export const posts = [
       {
         heading: 'Need one in Vizag?',
         paragraphs: [
-          'Genesis Health Care Enterprises provides oxygen concentrators and related respiratory equipment in Visakhapatnam. Call 70410 81081 to check availability and rental terms. If a patient is struggling to breathe, call your doctor or emergency services right away.',
+          'Genesis Health Care Enterprises is a medical equipment supplier in Vizag. We offer oxygen concentrators on rent in Vizag, along with other home medical equipment rental such as suction machines and patient care equipment, at affordable prices. Call 70410 81081 to check availability and rental terms.',
+          'If a patient is struggling to breathe, call your doctor or emergency services right away.',
         ],
       },
     ],
@@ -115,7 +133,14 @@ export const posts = [
     image: '/CPAP-BiPAP-machines.png',
     imageAlt: 'CPAP and BiPAP machines available on rent in Visakhapatnam',
     keywords:
-      'CPAP machine on rent in Vizag, BiPAP machine rental in Vizag, CPAP vs BiPAP, sleep apnea machine Visakhapatnam',
+      'CPAP machine on rent in Vizag, BiPAP machine rental in Vizag, CPAP vs BiPAP, sleep apnea machine Visakhapatnam, medical equipment hire in Vizag, medical equipment rental services in Vizag, medical equipment on rent in Visakhapatnam, nursing equipment for home use Vizag',
+    tags: [
+      'CPAP Machine on Rent in Vizag',
+      'BiPAP Machine Rental in Vizag',
+      'Medical Equipment Hire in Vizag',
+      'Medical Equipment Rental Services in Vizag',
+      'Nursing Equipment for Home Use Vizag',
+    ],
     cta: { to: '/medical-equipment', label: 'CPAP and BiPAP machines on rent' },
     sections: [
       {
@@ -143,7 +168,7 @@ export const posts = [
       {
         heading: 'CPAP and BiPAP rental in Vizag',
         paragraphs: [
-          'Genesis Health Care Enterprises offers CPAP and BiPAP machines and masks in Visakhapatnam. Bring your doctor\u2019s advice and call 70410 81081 to discuss availability and rental options.',
+          'Genesis Health Care Enterprises offers a CPAP machine on rent in Vizag and BiPAP machine rental in Vizag, with masks, as part of our medical equipment rental services in Visakhapatnam. Bring your doctor\u2019s advice and call 70410 81081 to discuss availability and rental options.',
         ],
       },
     ],
@@ -159,7 +184,14 @@ export const posts = [
     image: '/gallery/nursing-care-images.jpg',
     imageAlt: 'Nurse repositioning a bedridden patient at home to prevent bedsores',
     keywords:
-      'bedridden patient care at home Vizag, bedsore prevention, home nursing Visakhapatnam, caregiver for bedridden patient Vizag, air mattress for bedsores Vizag',
+      'bedridden patient care at home Vizag, bedsore prevention, home nursing Visakhapatnam, caregiver for bedridden patient Vizag, air mattress for bedsores Vizag, air mattress for rent in Vizag, medical equipment for elderly care in Vizag, home nursing equipment rental Vizag, hospital beds for rent in Vizag, home care services in Vizag',
+    tags: [
+      'Bedridden Patient Care at Home Vizag',
+      'Home Nursing Visakhapatnam',
+      'Air Mattress for Rent in Vizag',
+      'Medical Equipment for Elderly Care in Vizag',
+      'Home Nursing Equipment Rental Vizag',
+    ],
     cta: { to: '/home-care', label: 'Home nursing and bedridden patient care in Vizag' },
     sections: [
       {
@@ -189,7 +221,7 @@ export const posts = [
         heading: 'When to get professional help',
         paragraphs: [
           'Caring for a bedridden patient is physically and emotionally demanding. A trained nurse or patient care attendant can handle repositioning, hygiene, medication reminders, wound dressing and vitals checks, and can teach your family what to do.',
-          'Genesis Health Care Enterprises provides home nursing and trained attendants in Visakhapatnam, with 12-hour and 24-hour arrangements. Call 70410 81081 to discuss your needs.',
+          'Genesis Health Care Enterprises provides home nursing and trained attendants in Visakhapatnam, with 12-hour and 24-hour arrangements. We also supply medical equipment for elderly care in Vizag, such as hospital beds and air mattresses for rent, and home nursing equipment rental. Call 70410 81081 to discuss your needs.',
         ],
       },
     ],
@@ -205,7 +237,13 @@ export const posts = [
     image: '/gallery/oldage-home-image-1.jpg',
     imageAlt: 'Caregiver supporting an elderly person, care for NRI families parents in Visakhapatnam',
     keywords:
-      'NRI parent care Vizag, caretaker for elderly parents Visakhapatnam, home nursing for NRI families, elderly care India NRI',
+      'NRI parent care Vizag, caretaker for elderly parents Visakhapatnam, home nursing for NRI families, elderly care India NRI, medical equipment for elderly care in Vizag, medical equipment for home care Vizag, home care services in Vizag, old age home Vizag',
+    tags: [
+      'NRI Parent Care Vizag',
+      'Caretaker for Elderly Parents Visakhapatnam',
+      'Home Care Services in Vizag',
+      'Medical Equipment for Elderly Care in Vizag',
+    ],
     cta: { to: '/nri-services', label: 'Exclusive services for NRIs' },
     sections: [
       {
@@ -237,7 +275,7 @@ export const posts = [
       {
         heading: 'How Genesis can help',
         paragraphs: [
-          'Genesis Health Care Enterprises offers an NRI services package in Visakhapatnam, covering a 24/7 caretaker, health monitoring, doctor and lab visits at home, video updates and more. Call or WhatsApp 70410 81081 from anywhere in the world.',
+          'Genesis Health Care Enterprises offers an NRI services package in Visakhapatnam, covering a 24/7 caretaker, health monitoring, doctor and lab visits at home, video updates and more. We can also arrange medical equipment for elderly care in Vizag, such as a hospital bed or oxygen concentrator on rent. Call or WhatsApp 70410 81081 from anywhere in the world.',
         ],
       },
     ],

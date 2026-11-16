@@ -25,6 +25,7 @@ export default function BlogPost() {
     image: `${SITE_URL}${post.image}`,
     datePublished: post.date,
     dateModified: post.date,
+    keywords: post.keywords,
     mainEntityOfPage: url,
     author: { '@type': 'Organization', name: BLOG_AUTHOR },
     publisher: {
@@ -73,6 +74,17 @@ export default function BlogPost() {
               )}
             </section>
           ))}
+
+          {post.tags && (
+            <div className="blog-post__tags">
+              <h2>Related Searches in Vizag</h2>
+              <ul className="hc-chips" aria-label="Related topics" style={{ listStyle: 'none', padding: 0 }}>
+                {post.tags.map((t) => (
+                  <li key={t} className="hc-chip">{t}</li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           <div className="callout blog-post__note">
             <p>
