@@ -201,6 +201,16 @@ const vizagFaqs = [
 export default function MedicalEquipment() {
   const [activeItem, setActiveItem] = useState(null)
 
+  // A keyword chip opens the matching equipment category; general ones go to the enquiry page.
+  const categoryFor = (text) => {
+    const byTitle = (t) => categories.find((c) => c.title === t)
+    if (/oxygen|cpap|bipap/i.test(text)) return byTitle('Respiratory Care')
+    if (/suction|air mattress|patient care equipment/i.test(text)) return byTitle('Patient Care Equipment')
+    if (/wheelchair/i.test(text)) return byTitle('Mobility & Walking Aids')
+    if (/\bbeds?\b/i.test(text)) return byTitle('Hospital Beds')
+    return null
+  }
+
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -410,9 +420,18 @@ export default function MedicalEquipment() {
           </SectionHeading>
           <Reveal>
             <ul className="hc-chips" aria-label="Medical equipment rental services in Vizag" style={{ justifyContent: 'center', listStyle: 'none', padding: 0 }}>
-              {vizagServices.map((s) => (
-                <li key={s} className="hc-chip">{s}</li>
-              ))}
+              {vizagServices.map((s) => {
+                const cat = categoryFor(s)
+                return (
+                  <li key={s}>
+                    {cat ? (
+                      <button type="button" className="hc-chip hc-chip--link" onClick={() => setActiveItem(cat)}>{s}</button>
+                    ) : (
+                      <Link to="/contact" className="hc-chip hc-chip--link">{s}</Link>
+                    )}
+                  </li>
+                )
+              })}
             </ul>
             <p style={{ textAlign: 'center', marginTop: '1.4rem' }}>
               Call <a href="tel:+917041081081"><strong>70410 81081</strong></a> or{' '}

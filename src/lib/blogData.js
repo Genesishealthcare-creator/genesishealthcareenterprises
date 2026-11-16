@@ -282,6 +282,16 @@ export const posts = [
   },
 ]
 
+// Where a clickable keyword tag should take the reader (first match wins).
+const TAG_ROUTES = [
+  [/nri|abroad/i, '/nri-services'],
+  [/old age/i, '/old-age-home'],
+  [/ambulance|transport/i, '/patient-transport'],
+  [/\bbeds?\b|mattress|oxygen|cpap|bipap|suction|wheelchair|equipment|supplier/i, '/medical-equipment'],
+  [/nursing|bedridden|home care|caretaker|elderly/i, '/home-care'],
+]
+export const tagRoute = (tag) => (TAG_ROUTES.find(([re]) => re.test(tag)) || [null, '/contact'])[1]
+
 export const getPost = (slug) => posts.find((p) => p.slug === slug)
 
 export const formatDate = (iso) =>

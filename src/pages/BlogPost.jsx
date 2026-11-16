@@ -5,7 +5,7 @@ import Reveal from '../components/Reveal.jsx'
 import BlogCard from '../components/BlogCard.jsx'
 import NotFound from './NotFound.jsx'
 import { ArrowRight, Phone, Check } from '../components/Icons.jsx'
-import { posts, getPost, formatDate, BLOG_AUTHOR } from '../lib/blogData.js'
+import { posts, getPost, formatDate, tagRoute, BLOG_AUTHOR } from '../lib/blogData.js'
 import { SITE_URL, SITE_IMAGE } from '../lib/seoData.js'
 
 export default function BlogPost() {
@@ -80,7 +80,9 @@ export default function BlogPost() {
               <h2>Related Searches in Vizag</h2>
               <ul className="hc-chips" aria-label="Related topics" style={{ listStyle: 'none', padding: 0 }}>
                 {post.tags.map((t) => (
-                  <li key={t} className="hc-chip">{t}</li>
+                  <li key={t}>
+                    <Link to={tagRoute(t)} className="hc-chip hc-chip--link">{t}</Link>
+                  </li>
                 ))}
               </ul>
             </div>
