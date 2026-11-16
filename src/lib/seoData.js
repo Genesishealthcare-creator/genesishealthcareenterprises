@@ -3,6 +3,8 @@
 // so crawlers and link previews (WhatsApp, Facebook) that do not run JavaScript
 // still receive the correct tags for every page.
 
+import { posts } from './blogData.js'
+
 export const SITE_URL = 'https://www.genesishealthcareenterprises.com'
 export const SITE_NAME = 'Genesis Health Care Enterprises'
 export const SITE_IMAGE = `${SITE_URL}/android-chrome-512x512.png`
@@ -92,6 +94,22 @@ export const seoData = {
     keywords: 'Genesis Health Care photos, home care Vizag gallery, old age home Vizag photos',
   },
 }
+
+// Blog list + one entry per post (generated from src/lib/blogData.js).
+seoData['/blog'] = {
+  title: 'Health Care Blog | Medical Equipment & Home Care Tips Vizag',
+  description:
+    'Practical guides from Genesis Health Care, Visakhapatnam: choosing a hospital bed, oxygen concentrators, CPAP vs BiPAP, bedridden patient care and caring for parents from abroad.',
+  keywords:
+    'home care tips Vizag, medical equipment guide Visakhapatnam, bedridden patient care tips, oxygen concentrator guide, NRI parent care guide, Genesis Health Care blog',
+}
+posts.forEach((p) => {
+  seoData[`/blog/${p.slug}`] = {
+    title: `${p.title} | Genesis Health Care`,
+    description: p.excerpt,
+    keywords: p.keywords,
+  }
+})
 
 // Normalise a pathname so "/about/" and "/about" both match.
 export const normalisePath = (p) => (p.replace(/\/+$/, '') || '/')

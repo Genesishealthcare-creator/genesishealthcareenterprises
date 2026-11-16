@@ -1,0 +1,116 @@
+import { Link, useParams } from 'react-router-dom'
+import Seo from '../components/Seo.jsx'
+import CtaBand from '../components/CtaBand.jsx'
+import Reveal from '../components/Reveal.jsx'
+import BlogCard from '../components/BlogCard.jsx'
+import NotFound from './NotFound.jsx'
+import { ArrowRight, Phone, Check } from '../components/Icons.jsx'
+import { posts, getPost, formatDate, BLOG_AUTHOR } from '../lib/blogData.js'
+import { SITE_URL, SITE_IMAGE } from '../lib/seoData.js'
+
+export default function BlogPost() {
+  const { slug } = useParams()
+  const post = getPost(slug)
+
+  if (!post) return <NotFound />
+
+  const url = `${SITE_URL}/blog/${post.slug}`
+  const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3)
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    image: `${SITE_URL}${post.image}`,
+    datePublished: post.date,
+    dateModified: post.date,
+    mainEntityOfPage: url,
+    author: { '@type': 'Organization', name: BLOG_AUTHOR },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Genesis Health Care Enterprises',
+      logo: { '@type': 'ImageObject', url: SITE_IMAGE },
+    },
+  }
+
+  return (
+    <>
+      <Seo />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+
+      <section className="blog-hero">
+        <div className="container blog-hero__inner">
+          <nav className="breadcrumb" aria-label="Breadcrumb">
+            <Link to="/">Home</Link>
+            <span className="sep" aria-hidden="true">/</span>
+            <Link to="/blog">Blog</Link>
+          </nav>
+          <span className="blog-card__cat blog-card__cat--static">{post.category}</span>
+          <h1>{post.title}</h1>
+          <p className="blog-meta blog-meta--light">
+            By {BLOG_AUTHOR} · <time dateTime={post.date}>{formatDate(post.date)}</time> · {post.readMins} min read
+          </p>
+        </div>
+      </section>
+
+      <article className="section section--white">
+        <div className="container blog-post">
+          <img className="blog-post__img" src={post.image} alt={post.imageAlt} width="900" height="560" />
+
+          <p className="blog-post__lead">{post.excerpt}</p>
+
+          {post.sections.map((s) => (
+            <section key={s.heading} className="blog-post__section">
+              <h2>{s.heading}</h2>
+              {s.paragraphs && s.paragraphs.map((t) => <p key={t}>{t}</p>)}
+              {s.list && (
+                <ul className="blog-post__list">
+                  {s.list.map((t) => (
+                    <li key={t}><Check />{t}</li>
+                  ))}
+                </ul>
+              )}
+            </section>
+          ))}
+
+          <div className="callout blog-post__note">
+            <p>
+              <strong>Please note:</strong> This article is general information and not medical advice.
+              Always follow your doctor&apos;s advice for your own situation.
+            </p>
+          </div>
+
+          <div className="blog-post__cta">
+            {post.cta && (
+              <Link to={post.cta.to} className="btn btn--primary btn-lg">
+                {post.cta.label} <ArrowRight />
+              </Link>
+            )}
+            <a href="tel:+917041081081" className="btn btn--ghost btn-lg">
+              <Phone /> Call 70410 81081
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <section className="section section--soft">
+        <div className="container">
+          <h2 className="blog-related__title">More from our blog</h2>
+          <div className="blog-grid">
+            {related.map((p, i) => (
+              <Reveal key={p.slug} delay={i + 1}>
+                <BlogCard post={p} showExcerpt={false} />
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <CtaBand
+        title="Need Help in Visakhapatnam?"
+        text="Call 70410 81081 for medical equipment, home nursing, old age home care or patient transport."
+      />
+    </>
+  )
+}

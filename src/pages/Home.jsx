@@ -3,6 +3,8 @@ import Seo from '../components/Seo.jsx'
 import SectionHeading from '../components/SectionHeading.jsx'
 import CtaBand from '../components/CtaBand.jsx'
 import Reveal from '../components/Reveal.jsx'
+import BlogCard from '../components/BlogCard.jsx'
+import { posts } from '../lib/blogData.js'
 import useTypewriter from '../components/useTypewriter.js'
 import {
   Stethoscope, HomeCare, Elderly, Bed, Wheelchair, Pill,
@@ -402,6 +404,27 @@ export default function Home() {
       </section>
 
       {/* ─── Testimonials ─── */}
+      {/* ─── From the blog ─── */}
+      <section className="section section--soft">
+        <div className="container">
+          <SectionHeading eyebrow="From Our Blog" eyebrowColor="teal" title="Health Care Guides for Families in Vizag">
+            Practical advice on medical equipment, home nursing and senior care.
+          </SectionHeading>
+          <div className="blog-grid">
+            {posts.slice(0, 3).map((p, i) => (
+              <Reveal key={p.slug} delay={i + 1}>
+                <BlogCard post={p} />
+              </Reveal>
+            ))}
+          </div>
+          <p style={{ textAlign: 'center', marginTop: '2rem' }}>
+            <Link to="/blog" className="btn btn--primary btn-lg">
+              Read all articles <ArrowRight />
+            </Link>
+          </p>
+        </div>
+      </section>
+
       <section className="section testimonials-section">
         <div className="container">
           <SectionHeading eyebrow="What Clients Say" eyebrowColor="amber" title="Trusted by Patients and Families">

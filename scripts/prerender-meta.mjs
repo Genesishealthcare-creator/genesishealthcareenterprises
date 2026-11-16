@@ -37,4 +37,15 @@ for (const [route, d] of Object.entries(seoData)) {
   }
   count++
 }
-console.log(`prerender-meta: wrote SEO tags for ${count} routes`)
+// sitemap.xml is generated from the same route list, so new pages and blog posts are never missed.
+const priority = (r) => (r === '/' ? '1.0' : r.startsWith('/blog/') ? '0.6' : r === '/blog' ? '0.7' : '0.8')
+const today = new Date().toISOString().slice(0, 10)
+const urls = Object.keys(seoData)
+  .map((r) => `  <url><loc>${SITE_URL}${r === '/' ? '/' : r}</loc><lastmod>${today}</lastmod><priority>${priority(r)}</priority></url>`)
+  .join('\n')
+writeFileSync(
+  join(dist, 'sitemap.xml'),
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`,
+)
+
+console.log(`prerender-meta: wrote SEO tags for ${count} routes and sitemap.xml`)
