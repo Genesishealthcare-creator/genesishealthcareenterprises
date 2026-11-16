@@ -4270,3 +4270,50 @@ table { display: block; max-width: 100%; overflow-x: auto }
 .pb-slides__dot.is-active { background: #fff; transform: scale(1.25) }
 .pb-slides__dot:focus-visible { outline: 2px solid #fff; outline-offset: 2px }
 @media (prefers-reduced-motion: reduce) { .pb-slides__img { transition: none } }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   MOBILE / TABLET HEADER  (≤1160px) — bigger logo, call button, cleaner bar
+   ══════════════════════════════════════════════════════════════════════════ */
+.nav-call-icon { display: none }
+
+@media (max-width: 1160px) {
+  .navbar {
+    background: linear-gradient(120deg, var(--teal-900) 0%, var(--teal-700) 55%, var(--sky-600) 100%);
+    border-bottom: 1px solid rgba(255,255,255,.14);
+  }
+  .navbar__inner { padding-block: 8px; gap: .75rem }
+
+  /* Logo: clearly visible; shrinks a little once the page is scrolled */
+  .brand-logo-img { height: 72px; transition: height .25s ease, transform var(--t) }
+  .navbar.scrolled .brand-logo-img { height: 56px }
+
+  .nav-cta { gap: .6rem }
+  .nav-call-icon,
+  .nav-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 46px; height: 46px; flex-shrink: 0;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.3);
+    background: rgba(255,255,255,.14);
+    color: #fff;
+    -webkit-tap-highlight-color: transparent;
+    transition: background var(--t), transform var(--t);
+  }
+  .nav-toggle { flex-direction: column; gap: 5px }
+  .nav-call-icon { background: #fff; border-color: #fff; color: var(--teal-800); box-shadow: 0 6px 16px -6px rgba(0,0,0,.45) }
+  .nav-call-icon svg { width: 21px; height: 21px }
+  .nav-call-icon:active,
+  .nav-toggle:active { transform: scale(.94) }
+
+  /* Drawer sits below the taller header */
+  .nav-mobile { padding: 112px 24px 40px }
+  .nav-mobile a { font-size: 1.08rem }
+}
+
+@media (max-width: 480px) {
+  .navbar__inner { padding-block: 6px }
+  .brand-logo-img { height: 64px }
+  .navbar.scrolled .brand-logo-img { height: 50px }
+  .nav-call-icon, .nav-toggle { width: 44px; height: 44px; border-radius: 12px }
+  .nav-mobile { padding-top: 100px }
+}

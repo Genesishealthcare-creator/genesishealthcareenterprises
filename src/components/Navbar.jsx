@@ -68,6 +68,11 @@ export default function Navbar() {
           </a>
           <Link to="/contact" className="nav-contact-btn">Get in Touch</Link>
 
+          {/* Phones & tablets: one-tap call button beside the menu button */}
+          <a className="nav-call-icon" href="tel:+917041081081" aria-label="Call Genesis Health Care">
+            <Phone />
+          </a>
+
           <button
             className="nav-toggle"
             aria-label="Toggle navigation menu"
