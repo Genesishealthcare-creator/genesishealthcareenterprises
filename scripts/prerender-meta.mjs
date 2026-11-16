@@ -48,4 +48,20 @@ writeFileSync(
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`,
 )
 
-console.log(`prerender-meta: wrote SEO tags for ${count} routes and sitemap.xml`)
+// keywords.sitemap.xml: a second sitemap for the pages that target search keywords.
+// Each <url> is preceded by a comment with its keywords, as a readable reference.
+// (Search engines ignore the comments; only the <loc> addresses are used.)
+const xmlSafe = (s) => s.replace(/--/g, '- -').replace(/&/g, '&amp;')
+const keywordUrls = Object.entries(seoData)
+  .filter(([, d]) => d.keywords)
+  .map(
+    ([r, d]) =>
+      `  <!-- keywords: ${xmlSafe(d.keywords)} -->\n  <url><loc>${SITE_URL}${r === '/' ? '/' : r}</loc><lastmod>${today}</lastmod><priority>${priority(r)}</priority></url>`,
+  )
+  .join('\n')
+writeFileSync(
+  join(dist, 'keywords.sitemap.xml'),
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${keywordUrls}\n</urlset>\n`,
+)
+
+console.log(`prerender-meta: wrote SEO tags for ${count} routes, sitemap.xml and keywords.sitemap.xml`)
