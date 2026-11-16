@@ -147,6 +147,30 @@ const benefits = [
   'Sales options for long-term or permanent requirements.',
 ]
 
+const vizagServices = [
+  'Medical Equipment for Rent in Vizag',
+  'Medical Equipment Rental in Visakhapatnam',
+  'Hospital Equipment for Rent in Vizag',
+  'Medical Equipment Hire in Vizag',
+  'Home Medical Equipment Rental Vizag',
+  'Affordable Medical Equipment Rental Vizag',
+  'Medical Equipment Suppliers in Vizag',
+  'Medical Equipment for Home Care Vizag',
+  'Hospital Beds for Rent in Vizag',
+  'ICU Bed Rental in Vizag',
+  'Patient Bed on Rent in Vizag',
+  'Air Mattress for Rent in Vizag',
+  'Oxygen Concentrator on Rent in Vizag',
+  'BiPAP Machine Rental in Vizag',
+  'CPAP Machine on Rent in Vizag',
+  'Suction Machine Rental in Vizag',
+  'Wheelchair Rental in Visakhapatnam',
+  'Medical Equipment for Elderly Care in Vizag',
+  'Nursing Equipment for Home Use Vizag',
+  'Patient Care Equipment Rental Vizag',
+  'Home Nursing Equipment Rental Vizag',
+]
+
 const vizagFaqs = [
   {
     q: 'Where can I get medical equipment on rent in Vizag?',
@@ -208,8 +232,8 @@ export default function MedicalEquipment() {
   return (
     <>
       <Seo
-        title="Medical Equipment on Rent in Vizag | Bed, Oxygen, CPAP"
-        description="Rent or buy hospital beds, oxygen concentrators, CPAP/BiPAP machines, wheelchairs and air mattresses in Visakhapatnam (Vizag). Home delivery and setup. Call 70410 81081."
+        title="Medical Equipment for Rent in Vizag | Beds, Oxygen, CPAP"
+        description="Medical equipment rental in Visakhapatnam (Vizag): hospital beds, ICU beds, oxygen concentrators, CPAP/BiPAP and suction machines, wheelchairs and air mattresses at affordable prices. Call 70410 81081."
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -374,6 +398,27 @@ export default function MedicalEquipment() {
               </div>
             </Reveal>
           </div>
+        </div>
+      </section>
+
+      {/* ── Vizag rental services (search terms people use) ── */}
+      <section className="section section--white">
+        <div className="container" style={{ maxWidth: 960 }}>
+          <SectionHeading eyebrow="Rental Services in Vizag" eyebrowColor="violet" title="Medical Equipment Rental Services in Vizag">
+            Genesis Health Care Enterprises is a trusted supplier of medical equipment in Visakhapatnam (Vizag).
+            Hire hospital and home care equipment at affordable prices, for a few days or for long-term care.
+          </SectionHeading>
+          <Reveal>
+            <ul className="hc-chips" aria-label="Medical equipment rental services in Vizag" style={{ justifyContent: 'center', listStyle: 'none', padding: 0 }}>
+              {vizagServices.map((s) => (
+                <li key={s} className="hc-chip">{s}</li>
+              ))}
+            </ul>
+            <p style={{ textAlign: 'center', marginTop: '1.4rem' }}>
+              Call <a href="tel:+917041081081"><strong>70410 81081</strong></a> or{' '}
+              <Link to="/contact"><strong>send an enquiry</strong></Link> to check availability and rental rates.
+            </p>
+          </Reveal>
         </div>
       </section>
 

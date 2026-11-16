@@ -16,11 +16,11 @@ export const seoData = {
       'medical equipment in Vizag, medical equipment on rent Visakhapatnam, home care services Vizag, home nursing Visakhapatnam, old age home Vizag, hospital bed on rent Vizag, oxygen concentrator on rent Vizag, ambulance service Vizag, Genesis Health Care',
   },
   '/medical-equipment': {
-    title: 'Medical Equipment on Rent in Vizag | Bed, Oxygen, CPAP',
+    title: 'Medical Equipment for Rent in Vizag | Beds, Oxygen, CPAP',
     description:
-      'Rent or buy hospital beds, oxygen concentrators, CPAP/BiPAP machines, wheelchairs and air mattresses in Visakhapatnam (Vizag). Home delivery and setup. Call 70410 81081.',
+      'Medical equipment rental in Visakhapatnam (Vizag): hospital beds, ICU beds, oxygen concentrators, CPAP/BiPAP and suction machines, wheelchairs and air mattresses at affordable prices. Call 70410 81081.',
     keywords:
-      'medical equipment in Vizag, medical equipment on rent Visakhapatnam, hospital bed on rent Vizag, oxygen concentrator on rent Vizag, CPAP machine on rent Vizag, BiPAP machine rental Visakhapatnam, wheelchair on rent Vizag, air mattress Vizag, 5 function electric bed Vizag, manual hospital bed Vizag, surgical items Vizag, Genesis Surgicals',
+      'medical equipment for rent in Vizag, medical equipment rental in Visakhapatnam, hospital equipment for rent in Vizag, medical equipment hire in Vizag, medical equipment on rent in Visakhapatnam, home medical equipment rental Vizag, medical equipment rental services in Vizag, affordable medical equipment rental Vizag, medical equipment suppliers in Vizag, medical equipment for home care Vizag, hospital beds for rent in Vizag, ICU bed rental in Vizag, oxygen concentrator on rent in Vizag, wheelchair rental in Visakhapatnam, patient bed on rent in Vizag, air mattress for rent in Vizag, BiPAP machine rental in Vizag, CPAP machine on rent in Vizag, suction machine rental in Vizag, medical equipment for elderly care in Vizag, nursing equipment for home use Vizag, patient care equipment rental Vizag, medical equipment at affordable prices Vizag, home nursing equipment rental Vizag, Genesis Surgicals',
   },
   '/home-care': {
     title: 'Home Care Services in Vizag | Home Nursing & Elderly Care',
