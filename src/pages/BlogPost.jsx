@@ -80,7 +80,13 @@ export default function BlogPost() {
 
       <article className="section section--white">
         <div className="container blog-post">
-          <img className="blog-post__img" src={post.image} alt={post.imageAlt} width="900" height="560" />
+          <img
+            className={`blog-post__img${post.imageSize ? ' blog-post__img--whole' : ''}`}
+            src={post.image}
+            alt={post.imageAlt}
+            width={post.imageSize ? post.imageSize[0] : 900}
+            height={post.imageSize ? post.imageSize[1] : 560}
+          />
 
           <p className="blog-post__lead">{post.excerpt}</p>
 

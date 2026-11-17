@@ -4337,7 +4337,7 @@ table { display: block; max-width: 100%; overflow-x: auto }
   position: relative; display: block; aspect-ratio: 16 / 10; overflow: hidden;
   background: linear-gradient(135deg, var(--teal-50), var(--sky-50));
 }
-.blog-card__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease }
+.blog-card__img img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; transition: transform .5s ease }
 .blog-card:hover .blog-card__img img { transform: scale(1.05) }
 .blog-card__cat {
   position: absolute; left: .9rem; top: .9rem;
@@ -4377,6 +4377,7 @@ table { display: block; max-width: 100%; overflow-x: auto }
   border-radius: var(--r-lg); box-shadow: 0 14px 40px -12px rgba(0,0,0,.28);
   margin-bottom: 1.6rem; background: var(--teal-50);
 }
+.blog-post__img--whole { max-height: none; aspect-ratio: auto; object-fit: contain; max-width: 620px; display: block; margin-inline: auto }
 .blog-post__lead { font-size: 1.15rem; color: var(--slate-600); font-weight: 500; margin-bottom: 1.2rem }
 .blog-post__section { margin-top: 2rem }
 .blog-post__section h2 { font-size: clamp(1.3rem, 2.6vw, 1.7rem); margin-bottom: .7rem }

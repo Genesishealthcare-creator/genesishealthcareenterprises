@@ -20,8 +20,9 @@ export const posts = [
     date: '2026-11-17',
     category: 'Medical Equipment',
     readMins: 9,
-    image: '/5-function-electric-bed.jpg',
-    imageAlt: 'Hospital bed and wheelchair on rent for home care in Visakhapatnam and Vizianagaram',
+    image: '/blog/medical-equipment-rentals-vizag.jpg',
+    imageSize: [1200, 1200],   // square picture: shown whole on the post page, cropped only on cards
+    imageAlt: 'Genesis Health Care Enterprises medical equipment rentals in Vizag: hospital bed and wheelchair for home care in Visakhapatnam and Vizianagaram',
     keywords:
       'medical equipment rental in Vizag, medical equipment rentals in Vizag, hospital beds on rent in Vizag, hospital bed rental Visakhapatnam, wheelchair on rent in Vizag, wheelchair rental in Visakhapatnam, medical equipment rental Vizianagaram, hospital equipment for rent in Vizag, medical equipment on rent in Visakhapatnam, home medical equipment rental Vizag, oxygen concentrator rental Vizag, patient transport cab Vizag, Genesis Home Care Nursing, Genesis Health Care Enterprises',
     tags: [
