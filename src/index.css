@@ -4384,6 +4384,9 @@ table { display: block; max-width: 100%; overflow-x: auto }
 .blog-post__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: .65rem }
 .blog-post__list li { display: flex; gap: .65rem; color: var(--slate-600); font-size: 1.02rem; line-height: 1.65 }
 .blog-post__list svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: .3em; color: var(--teal-500) }
+.blog-post__sub { margin-top: 1.4rem }
+.blog-post__sub h3 { font-size: 1.15rem; margin-bottom: .6rem; color: var(--teal-700) }
+.blog-post__list strong { color: var(--slate-800) }
 .blog-post__note { margin-top: 2.2rem }
 .blog-post__tags { margin-top: 2.2rem }
 .blog-post__tags h2 { font-size: 1.15rem; margin-bottom: .2rem }

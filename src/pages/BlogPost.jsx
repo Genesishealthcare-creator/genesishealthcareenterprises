@@ -8,6 +8,29 @@ import { ArrowRight, Phone, Check } from '../components/Icons.jsx'
 import { posts, getPost, formatDate, tagRoute, BLOG_AUTHOR } from '../lib/blogData.js'
 import { SITE_URL, SITE_IMAGE } from '../lib/seoData.js'
 
+// Paragraphs and a checklist. A list item is plain text, or { b: 'Bold label', t: 'text' }.
+function PostBlock({ block }) {
+  return (
+    <>
+      {block.paragraphs && block.paragraphs.map((t) => <p key={t}>{t}</p>)}
+      {block.list && (
+        <ul className="blog-post__list">
+          {block.list.map((item) => {
+            const label = typeof item === 'string' ? null : item.b
+            const text = typeof item === 'string' ? item : item.t
+            return (
+              <li key={label || text}>
+                <Check />
+                <span>{label && <strong>{label}: </strong>}{text}</span>
+              </li>
+            )
+          })}
+        </ul>
+      )}
+    </>
+  )
+}
+
 export default function BlogPost() {
   const { slug } = useParams()
   const post = getPost(slug)
@@ -64,14 +87,14 @@ export default function BlogPost() {
           {post.sections.map((s) => (
             <section key={s.heading} className="blog-post__section">
               <h2>{s.heading}</h2>
-              {s.paragraphs && s.paragraphs.map((t) => <p key={t}>{t}</p>)}
-              {s.list && (
-                <ul className="blog-post__list">
-                  {s.list.map((t) => (
-                    <li key={t}><Check />{t}</li>
-                  ))}
-                </ul>
-              )}
+              <PostBlock block={s} />
+              {s.subsections && s.subsections.map((sub) => (
+                <div key={sub.heading} className="blog-post__sub">
+                  <h3>{sub.heading}</h3>
+                  <PostBlock block={sub} />
+                </div>
+              ))}
+              {s.after && s.after.map((t) => <p key={t}>{t}</p>)}
             </section>
           ))}
 

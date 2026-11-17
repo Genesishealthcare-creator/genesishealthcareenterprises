@@ -11,6 +11,206 @@ export const BLOG_AUTHOR = 'Genesis Health Care Team'
 
 export const posts = [
   {
+    slug: 'medical-equipment-rentals-in-vizag-hospital-beds-wheelchairs',
+    title: 'Medical Equipment Rentals in Vizag – Hospital Beds & Wheelchairs',
+    excerpt:
+      'When a loved one is recovering at home, the right equipment makes all the difference. Here is what families in Visakhapatnam and Vizianagaram need to know before renting a hospital bed or wheelchair, from a team that has served over 12,000 patients across the region.',
+    metaDescription:
+      'Renting a hospital bed or wheelchair in Vizag or Vizianagaram? Practical advice, pickup points and doorstep delivery from a team that has served 12,000+ patients. Call 70410 81081.',
+    date: '2026-11-17',
+    category: 'Medical Equipment',
+    readMins: 9,
+    image: '/5-function-electric-bed.jpg',
+    imageAlt: 'Hospital bed and wheelchair on rent for home care in Visakhapatnam and Vizianagaram',
+    keywords:
+      'medical equipment rental in Vizag, medical equipment rentals in Vizag, hospital beds on rent in Vizag, hospital bed rental Visakhapatnam, wheelchair on rent in Vizag, wheelchair rental in Visakhapatnam, medical equipment rental Vizianagaram, hospital equipment for rent in Vizag, medical equipment on rent in Visakhapatnam, home medical equipment rental Vizag, oxygen concentrator rental Vizag, patient transport cab Vizag, Genesis Home Care Nursing, Genesis Health Care Enterprises',
+    tags: [
+      'Medical Equipment Rental in Visakhapatnam',
+      'Hospital Beds for Rent in Vizag',
+      'Wheelchair Rental in Visakhapatnam',
+      'Patient Bed on Rent in Vizag',
+      'Home Medical Equipment Rental Vizag',
+      'Oxygen Concentrator on Rent in Vizag',
+    ],
+    cta: { to: '/medical-equipment', label: 'Hospital beds & wheelchairs on rent in Vizag' },
+    sections: [
+      {
+        heading: 'Caring for a Family Member at Home',
+        paragraphs: [
+          'Caring for a family member at home after surgery, a stroke, or during a long-term illness is one of the most demanding things you will ever do. You want them to be comfortable. You want them to heal. And you want to avoid the crushing cost of buying equipment you may only need for a few weeks.',
+          'That is where medical equipment rental in Vizag becomes a practical, compassionate solution. At Genesis Health Care Enterprises (Genesis Home Care Nursing), we have spent over 10 years helping families across Visakhapatnam and Vizianagaram navigate exactly this challenge, and the questions we hear most often are about two essentials: hospital beds and wheelchairs.',
+          'This guide answers those questions honestly, so you can make a confident decision for your family.',
+        ],
+      },
+      {
+        heading: 'Why Families Trust Genesis Health Care Enterprises (Genesis Home Care Nursing)',
+        paragraphs: ['Before we get into the details, here is who we are:'],
+        list: [
+          '12,000+ patients served over 10 years across Visakhapatnam and Vizianagaram',
+          'Home nursing, equipment rentals, patient transport, and physiotherapy, all under one roof',
+          'Multiple pickup points across Vizag and Vizianagaram, with doorstep delivery and installation',
+          'A dedicated team that can pick up and drop equipment from any location',
+          'Practical, field-tested advice, not a call centre script',
+        ],
+        after: [
+          'We are not a large, faceless corporation. We are a local team that understands the challenges families here face, from navigating hospital discharge to setting up a safe home care environment.',
+          'Genesis Health Care Enterprises (Genesis Home Care Nursing) arrived from a small business with a great vision. What began as Genesis Home Care Nursing is now Genesis Health Care Enterprises: same team, same commitment, expanded services.',
+        ],
+      },
+      {
+        heading: 'Why Rent Instead of Buy?',
+        paragraphs: [
+          'A good hospital bed can cost anywhere from ₹15,000 to over ₹40,000 depending on the model. A wheelchair adds another significant expense. For a recovery period of a few weeks or months, buying rarely makes financial sense.',
+          'Medical equipment rental in Visakhapatnam solves this. You get hospital-grade equipment delivered to your door, pay a monthly or daily rate, and return it when it is no longer needed. No storage problems. No resale headaches. No large upfront cost.',
+          'For families managing a health crisis, that peace of mind is worth more than the money saved.',
+        ],
+      },
+      {
+        heading: 'Our Story: Why Genesis Started Equipment Rentals',
+        paragraphs: [
+          'Genesis Health Care Enterprises (Genesis Home Care Nursing) is one of the many home care services that emerged after the COVID pandemic. But our story, and our understanding of Vizag\u2019s demand for equipment and services, began earlier.',
+          'Our equipment rental services started with a need we encountered firsthand: a 53-year-old mother who had a cerebrovascular stroke (CV stroke) and was on a ventilator for months due to hospital-acquired pneumonia. Her family, a father and two school-going kids, wanted to bring her home after 45 days in the hospital. They had finally decided to move out, but they were already exhausted and had no idea how to do it.',
+          'In 2017, the internet was not as advanced as it is today in 2026. They came across Genesis Health Care Enterprises (Genesis Home Care Nursing). Looking at the urgent need, we started our medical equipment rental services, because equipment needs to be installed and ready within 3 hours of a discharge plan if the situation is urgent. Generally, a 24-hour gap is a safe window for us to transport, install, and sterilise equipment.',
+          'The major challenge is that families fail to plan for buying equipment while under the stress of hospital and discharge. They hardly get time to research the best brands, negotiate, or even know the exact need of the product. This is where we actually come into the picture. Our advice is crucial, and we are just a call away for all your queries.',
+        ],
+      },
+      {
+        heading: 'The Practical Experience That Sets Us Apart',
+        paragraphs: [
+          'You tell us the condition, and we can suggest the right equipment, consulting your primary consultants where needed.',
+          'In most cases, we have seen families buy an oxygen concentrator but forget to have a pulse oximeter to check blood saturation. Some forget to buy a mask and rush to get one, only to realise at opening that it is a pediatric mask. These are all our practical, real-world experiences.',
+          'After the ambulance reaches home, families often do not know how to shift a patient on oxygen to the 5th floor. We know how to handle this, and which equipment is needed at what time.',
+          'We solve it by providing a standby 10-litre portable oxygen cylinder. This is useful while shifting, to switch during a power cut, or if the patient suddenly needs more than 10 litres, which a concentrator sometimes fails to deliver. An oxygen cylinder with a flowmeter can be adjusted up to 15 litres.',
+          'In another experience, a family bought a 2-function bed for a leg fracture, where the second function (moving the left lower limb) was not advised in cases of multiple leg fractures. We not only save you time and money but also give you the right suggestion to take the right equipment.',
+          'Every rental comes with a welcome kit containing all the requirements a patient needs after discharge to home. This helps families relax and let the team do all the work, rather than going from shop to shop looking for different equipment and selecting in a hurry.',
+          'Shopping online or offline is enjoyable. But when your family members are in hospital, you just need the right thing at the right place. That is where we stand out, providing patient care services alongside medical equipment on rent.',
+          'Medical equipment rental services have emerged only to be a support to patient families, which is often misunderstood as cross-marketing. We are known for our services and commitment, but we add an extra layer to solve this, because beds play a major role in recovery and fall prevention.',
+        ],
+      },
+      {
+        heading: 'Hospital Beds on Rent in Vizag: What You Should Know',
+        paragraphs: [
+          'Not all hospital beds are the same. The right choice depends on the patient\u2019s mobility, the level of care required, and the space available at home.',
+        ],
+        subsections: [
+          {
+            heading: 'Types of Hospital Beds Available for Rent',
+            paragraphs: [
+              'Manual Hospital Beds are the most common choice for home care. The head and foot sections adjust with a hand crank, allowing caregivers to reposition the patient for comfort, feeding, and pressure relief. These are ideal for patients who need bed rest but do not require frequent position changes throughout the night.',
+              'Motorised (Electric) Hospital Beds use a remote control to adjust positions with minimal physical effort. These are particularly valuable when the primary caregiver is elderly or when the patient needs frequent repositioning, for example, in cases of stroke recovery or advanced mobility limitations.',
+              'Beds with Side Rails and Castors add safety and convenience. Side rails prevent falls for patients who are confused or restless. Castors (wheels) make it easier to move the bed for cleaning or to transfer the patient to another room.',
+            ],
+          },
+          {
+            heading: 'What to Check Before Renting a Hospital Bed in Vizag',
+            list: [
+              { b: 'Mattress quality', t: 'A hospital bed is only as comfortable as its mattress. Ask whether an air mattress or pressure-relief mattress is included or available as an add-on. This matters greatly for bedridden patients at risk of bedsores.' },
+              { b: 'Delivery and installation', t: 'Reputable providers deliver, assemble, and demonstrate the bed in your home. Do not assume this is included; confirm it upfront.' },
+              { b: 'Maintenance and sanitisation', t: 'The equipment should arrive clean and in working condition. Ask about the sanitisation process between rentals.' },
+              { b: 'Monthly vs. daily pricing', t: 'Most families need a bed for at least a month. Ask for the monthly rate and whether there is a discount for extended periods.' },
+            ],
+          },
+        ],
+      },
+      {
+        heading: 'Wheelchairs on Rent in Vizag: Choosing the Right Mobility Aid',
+        paragraphs: [
+          'A wheelchair is not just a wheelchair. The wrong type can cause discomfort, posture problems, or even injury. The right one restores dignity and independence.',
+        ],
+        subsections: [
+          {
+            heading: 'Types of Wheelchairs for Rent',
+            paragraphs: [
+              'Standard Manual Wheelchairs are lightweight, foldable, and suitable for patients who have upper body strength or who will be pushed by a caregiver. They work well for doctor visits, short trips outside the home, and moving around the house.',
+              'Transport Wheelchairs are lighter and designed primarily for being pushed by someone else. They are ideal for elderly patients or those with limited upper body strength who need assistance getting to appointments.',
+              'Motorised or Electric Wheelchairs are powered by a battery and controlled by a joystick. They offer greater independence for patients who can operate the controls but cannot propel a manual chair. These are particularly useful for longer distances or for patients with conditions affecting both arms and legs.',
+            ],
+          },
+          {
+            heading: 'Practical Tips for Wheelchair Rental in Visakhapatnam',
+            list: [
+              { b: 'Measure the doorway', t: 'Before renting, measure the narrowest door in your home. Standard wheelchairs need at least 28–32 inches of clearance.' },
+              { b: 'Consider the terrain', t: 'If the patient will be moving between rooms with thresholds or going outside on uneven surfaces, a chair with larger rear wheels is more stable.' },
+              { b: 'Check the weight capacity', t: 'Always confirm the chair\u2019s maximum weight capacity matches the patient\u2019s needs.' },
+              { b: 'Ask about accessories', t: 'Cushions, seat belts, and anti-tip bars can often be added. These small additions make a big difference in comfort and safety.' },
+            ],
+          },
+        ],
+      },
+      {
+        heading: 'Wheelchairs for Visitors: A Vizag Travel Solution',
+        paragraphs: [
+          'Wheelchairs are generally enquired about by out-of-station visitors who come to Vizag for weddings or to visit Simhachalam. We have pickup points, and our patient transport cab services include a wheelchair.',
+          'Most frequently, the wheelchair is used at the railway station. After getting down from the train, the patient needs to be shifted from the platform to the car, and the same wheelchair remains with them until they leave the city.',
+          'Again, there are many types of wheelchairs. Choosing the right one needs guidance, because a wheelchair with too many functions may not fit in your car, which does not solve the purpose. And a normal wheelchair at times does not meet every requirement of a patient.',
+          'For all this, we ask you to feel free and give us a call, be it a sudden trip, a planned visit, or just an hour\u2019s trip to any place in the beautiful Vizag city.',
+        ],
+      },
+      {
+        heading: 'Pickup Points Across Vizag and Vizianagaram',
+        paragraphs: ['We make it easy to get equipment, wherever you are.'],
+        subsections: [
+          {
+            heading: 'Visakhapatnam',
+            list: [
+              'Railway Station',
+              'RTC Bus Stand',
+              'Hanumanthavaka Junction – Genesis Surgical',
+              'Seethammadhara – Main Office',
+              'Health City Road, Arilova – Branch Office',
+            ],
+          },
+          {
+            heading: 'Vizianagaram',
+            list: ['R&B Bungalow – VZM Branch Office'],
+          },
+        ],
+        after: [
+          'Any other location? Our dedicated team can pick up and drop equipment from any location across Vizag and Vizianagaram. Just call us and we will arrange it.',
+        ],
+      },
+      {
+        heading: 'Why Families in Vizag Choose Genesis Health Care Enterprises (Genesis Home Care Nursing)',
+        paragraphs: [
+          'We are a local team based in Visakhapatnam, and we understand the challenges families here face, from navigating hospital discharge to setting up a safe home care environment. With 12,000+ patients served over 10 years across Vizag and Vizianagaram, our experience is practical, not theoretical.',
+          'When you rent hospital beds and wheelchairs in Vizag from Genesis Health Care Enterprises (Genesis Home Care Nursing), you get:',
+        ],
+        list: [
+          'Equipment that is checked and sanitised before every delivery',
+          'Clear, transparent pricing with no hidden charges',
+          'Delivery and setup by people who know how to install and explain the equipment',
+          'A welcome kit with post-discharge patient essentials',
+          'Multiple pickup points across Vizag and Vizianagaram',
+          'A dedicated team for pickup and drop at any location',
+          'Local support: if something is not right, you can reach us',
+        ],
+        after: [
+          'We also offer home nursing services, oxygen concentrator rentals, physiotherapy support, patient transport cabs, and a range of home care services, so you have one trusted point of contact for your family\u2019s needs.',
+        ],
+      },
+      {
+        heading: 'A Final Word for Caregivers',
+        paragraphs: [
+          'If you are reading this, you are probably in the middle of a difficult season. You are making decisions under pressure, often while exhausted and worried.',
+          'Here is what we want you to know: you do not have to figure everything out alone. The right equipment, set up correctly, can transform home care from overwhelming to manageable. It protects the patient\u2019s dignity and protects your own health as a caregiver.',
+          'If you are unsure what you need, call us. We will ask the right questions about the patient\u2019s mobility, the home layout, the expected duration of care, and recommend only what is genuinely useful. No pressure. No upselling. Just practical help from people who do this every day.',
+        ],
+      },
+      {
+        heading: 'Contact Genesis Health Care Enterprises (Genesis Home Care Nursing)',
+        paragraphs: ['Ready to arrange a hospital bed or wheelchair rental in Vizag or Vizianagaram?'],
+        list: [
+          { b: 'Call us', t: '79972 72721 and 70410 81081 (Office)' },
+          { b: 'WhatsApp', t: '95818 77277 (Vizianagaram & Visakhapatnam)' },
+          { b: 'Website', t: 'genesishealthcareenterprises.com' },
+          { b: 'Email', t: 'info@genesishealthcareenterprises.com' },
+          { b: 'Pickup points', t: 'Railway Station, RTC Bus Stand, Hanumanthavaka Junction (Genesis Surgical), Seethammadhara (Main Office), Health City Road, Arilova (Branch Office), and R&B Bungalow (Vizianagaram Branch Office). Any other location: our team will pick up and drop.' },
+        ],
+        after: ['We are just a call away. Tell us the condition, and we will guide you to the right equipment.'],
+      },
+    ],
+  },
+  {
     slug: 'how-to-choose-hospital-bed-for-home-use-vizag',
     title: 'How to Choose a Hospital Bed for Home Use in Vizag',
     excerpt:

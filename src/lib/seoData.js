@@ -106,7 +106,7 @@ seoData['/blog'] = {
 posts.forEach((p) => {
   seoData[`/blog/${p.slug}`] = {
     title: `${p.title} | Genesis Health Care`,
-    description: p.excerpt,
+    description: p.metaDescription || p.excerpt,
     keywords: p.keywords,
   }
 })
