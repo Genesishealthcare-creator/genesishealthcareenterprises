@@ -31,3 +31,8 @@ dist-ssr
 .env
 .env.*
 .vercel
+
+*.exe
+*.msi
+*.dmg
+*.AppImage
