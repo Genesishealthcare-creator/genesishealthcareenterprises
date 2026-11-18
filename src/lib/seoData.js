@@ -18,32 +18,32 @@ export const seoData = {
       'medical equipment in Vizag, medical equipment on rent Visakhapatnam, home care services Vizag, home nursing Visakhapatnam, old age home Vizag, hospital bed on rent Vizag, oxygen concentrator on rent Vizag, ambulance service Vizag, Genesis Health Care',
   },
   '/medical-equipment': {
-    title: 'Medical Equipment for Rent in Vizag | Beds, Oxygen, CPAP',
+    title: 'Hospital Bed & Wheelchair Rental in Visakhapatnam | Buy Home ICU Equipment Vizag',
     description:
-      'Medical equipment rental in Visakhapatnam (Vizag): hospital beds, ICU beds, oxygen concentrators, CPAP/BiPAP and suction machines, wheelchairs and air mattresses at affordable prices. Call 70410 81081.',
+      'Hospital bed and wheelchair rental in Visakhapatnam, oxygen concentrator and cylinder rental Vizianagaram, home ICU equipment for sale or rent in Vizag. Doorstep delivery. Call 70410 81081.',
     keywords:
-      'medical equipment for rent in Vizag, medical equipment rental in Visakhapatnam, hospital equipment for rent in Vizag, medical equipment hire in Vizag, medical equipment on rent in Visakhapatnam, home medical equipment rental Vizag, medical equipment rental services in Vizag, affordable medical equipment rental Vizag, medical equipment suppliers in Vizag, medical equipment for home care Vizag, hospital beds for rent in Vizag, ICU bed rental in Vizag, oxygen concentrator on rent in Vizag, wheelchair rental in Visakhapatnam, patient bed on rent in Vizag, air mattress for rent in Vizag, BiPAP machine rental in Vizag, CPAP machine on rent in Vizag, suction machine rental in Vizag, medical equipment for elderly care in Vizag, nursing equipment for home use Vizag, patient care equipment rental Vizag, medical equipment at affordable prices Vizag, home nursing equipment rental Vizag, Genesis Surgicals',
+      'hospital bed and wheelchair rental in Visakhapatnam, buy home ICU medical equipment Visakhapatnam, oxygen concentrator and cylinder rental Vizianagaram, medical equipment for rent and sale in Vizag, hospital bed rental Visakhapatnam, wheelchair rental Visakhapatnam, ICU bed rental Vizag, air mattress for rent in Vizag, CPAP machine on rent in Vizag, BiPAP machine rental in Vizag, suction machine rental in Vizag, medical equipment suppliers in Vizag, home medical equipment rental Vizag, affordable medical equipment rental Vizag, home nursing equipment rental Vizag, Genesis Surgicals',
   },
   '/home-care': {
-    title: 'Home Care Services in Vizag | Home Nursing & Elderly Care',
+    title: 'Home Care Services in Vizag | Ryles Tube, Foley Catheter, IV Therapy at Home',
     description:
-      'Trusted home care in Visakhapatnam: home nursing, elderly care, bedridden patient care, post-surgery care and trained attendants for 12 or 24 hours. Call 70410 81081.',
+      'Home nursing in Visakhapatnam and Vizianagaram: Ryles tube insertion and changing, Foley catheter changing, IV antibiotic therapy, home injection and IV infusion service, bedridden patient care. Call 70410 81081.',
     keywords:
-      'home care services in Vizag, home nursing Visakhapatnam, nurse at home Vizag, elderly care at home Vizag, bedridden patient care Vizag, male nurse Vizag, ICU at home Vizag, post surgery care at home Vizag, patient care attendant Vizag',
+      'Ryles tube insertion and changing at home Vizag, Foley catheter changing service at home Visakhapatnam, IV antibiotic therapy at home Visakhapatnam, home injection and IV infusion service Vizianagaram, home care services in Vizag, home nursing Visakhapatnam, nurse at home Vizag, elderly care at home Vizag, bedridden patient care Vizag, ICU at home Vizag, post surgery care at home Vizag, clinical nursing at home Vizianagaram',
   },
   '/old-age-home': {
-    title: 'Old Age Home & Rehabilitation in Vizag | Physiotherapy',
+    title: 'Old Age Home & Post-Stroke Rehabilitation in Vizag | Senior Care Vizianagaram',
     description:
-      'Old age home with an in-house rehabilitation centre in Visakhapatnam: long-term senior care, physiotherapy after stroke, fracture or surgery, nursing and meals. Call 70410 81081.',
+      'Post-stroke rehabilitation care centre, assisted living and old age home in Visakhapatnam and Vizianagaram: senior rehabilitation, elder care, physiotherapy and in-house nursing. Call 70410 81081.',
     keywords:
-      'old age home in Vizag, old age home Visakhapatnam, senior citizen care Vizag, rehabilitation centre Vizag, physiotherapy centre Visakhapatnam, stroke rehabilitation Vizag, elderly care home Vizag',
+      'post-stroke rehabilitation care center Visakhapatnam, assisted living and old age home Vizianagaram, senior rehabilitation and elder care Visakhapatnam, old age home in Vizag, rehabilitation centre Vizag, physiotherapy centre Visakhapatnam, stroke rehabilitation Vizag, elderly care home Vizag, old age home Vizianagaram',
   },
   '/patient-transport': {
-    title: 'Ambulance Service in Vizag | 24/7 Patient Transport',
+    title: 'Ambulance Service Vizianagaram to Visakhapatnam | ICU Ambulance & Medical Cab',
     description:
-      '24/7 patient transport in Visakhapatnam: cardiac ambulance, non-cardiac (BLS) ambulance and medical taxi with a trained nurse or caretaker. Call 70410 81081.',
+      '24/7 ambulance service Vizianagaram to Visakhapatnam, ICU ambulance with oxygen support, non-emergency patient transport and wheelchair accessible medical cab. Call 70410 81081.',
     keywords:
-      'ambulance service in Vizag, ambulance Visakhapatnam, cardiac ambulance Vizag, patient transfer ambulance Vizag, medical taxi Visakhapatnam, 24 hour ambulance Vizag',
+      '24/7 ambulance service Vizianagaram to Visakhapatnam, ICU ambulance with oxygen support Visakhapatnam, non-emergency patient transport service Vizag, wheelchair accessible medical cab Visakhapatnam, cardiac ambulance Vizag, patient transfer ambulance Vizag, medical taxi Visakhapatnam, ambulance Vizianagaram',
   },
   '/nri-services': {
     title: 'NRI Services: Care for Parents in Vizag | Genesis',

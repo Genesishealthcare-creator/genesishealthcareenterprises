@@ -212,6 +212,305 @@ export const posts = [
     ],
   },
   {
+    slug: 'ryles-tube-foley-catheter-iv-therapy-at-home-vizag',
+    title: 'Ryles Tube Insertion, Foley Catheter Changing & IV Therapy at Home in Vizag',
+    excerpt:
+      'Clinical nursing procedures you may need at home after a hospital discharge: Ryles tube insertion and changing, Foley catheter service, IV antibiotic therapy and IV infusion in Visakhapatnam and Vizianagaram.',
+    metaDescription:
+      'Genesis Health Care provides Ryles tube insertion, Foley catheter changing, IV antibiotic therapy and home injection services in Visakhapatnam and Vizianagaram. Call 70410 81081.',
+    date: '2026-11-18',
+    category: 'Home Care',
+    readMins: 5,
+    image: '/gallery/nursing-care-images.jpg',
+    imageAlt: 'Nurse performing clinical care for a patient at home in Visakhapatnam',
+    keywords:
+      'Ryles tube insertion and changing at home Vizag, Foley catheter changing service at home Visakhapatnam, IV antibiotic therapy at home Visakhapatnam, home injection and IV infusion service Vizianagaram, clinical nursing at home Vizag, home nursing Visakhapatnam',
+    tags: [
+      'Ryles Tube Insertion at Home Vizag',
+      'Foley Catheter Service at Home Visakhapatnam',
+      'IV Antibiotic Therapy at Home Visakhapatnam',
+      'Home Injection & IV Infusion Vizianagaram',
+      'Clinical Nursing at Home Vizag',
+    ],
+    cta: { to: '/home-care', label: 'Clinical home nursing in Visakhapatnam' },
+    sections: [
+      {
+        heading: 'Clinical Nursing Procedures at Home in Vizag',
+        paragraphs: [
+          'Many patients are discharged from hospital with ongoing clinical needs. Travelling back to the hospital every day for a Ryles tube change, catheter care or an IV drip is exhausting and expensive for the family. Genesis Health Care Enterprises sends trained registered nurses to your home in Visakhapatnam and Vizianagaram for these procedures.',
+          'All procedures are carried out under a doctor\u2019s prescription. Please do not arrange or accept any clinical procedure at home without a valid prescription from your treating doctor.',
+        ],
+      },
+      {
+        heading: 'Ryles Tube Insertion and Changing at Home, Vizag',
+        paragraphs: [
+          'A Ryles tube (nasogastric tube) is used to deliver nutrition or medicine to patients who cannot swallow safely, including those recovering from a stroke, head injury or major surgery.',
+          'Our nurses can insert, replace or remove a Ryles tube at home in Visakhapatnam and surrounding areas, as directed by your doctor.',
+        ],
+        list: [
+          'Insertion and securing of the NG tube.',
+          'Regular tube changes on the schedule your doctor sets.',
+          'Verification of placement before each feed or medicine.',
+          'Training your family members on feeding procedure and care.',
+        ],
+      },
+      {
+        heading: 'Foley Catheter Changing Service at Home, Visakhapatnam',
+        paragraphs: [
+          'A urinary (Foley) catheter requires regular changing to prevent infection. This is a sterile procedure that must be performed by a trained nurse.',
+          'We provide catheter insertion, care and changing for male and female patients at home across Visakhapatnam, Vizianagaram and nearby areas.',
+        ],
+        list: [
+          'Sterile catheter insertion and dressing.',
+          'Regular catheter changes as prescribed.',
+          'Bladder irrigation when needed.',
+          'Guidance to the family on catheter bag care and hygiene.',
+        ],
+      },
+      {
+        heading: 'IV Antibiotic Therapy at Home, Visakhapatnam',
+        paragraphs: [
+          'Some infections require intravenous (IV) antibiotics over several days or weeks. Rather than a daily hospital visit, your doctor may authorise IV antibiotic therapy at home.',
+          'Our registered nurses administer IV antibiotics safely at home, monitor for any reactions and document the dose for your records.',
+        ],
+        list: [
+          'IV line insertion and care.',
+          'IV antibiotic administration as per prescription.',
+          'Monitoring for adverse reactions.',
+          'Proper disposal of needles and clinical waste.',
+        ],
+      },
+      {
+        heading: 'Home Injection and IV Infusion Service, Vizianagaram',
+        paragraphs: [
+          'Genesis Health Care Enterprises also provides home injection services and IV infusion therapy in Vizianagaram and Visakhapatnam. This includes vitamin infusions, iron infusions, pain management injections and other parenteral therapies as prescribed.',
+          'Our nurses serve patients in both Visakhapatnam and Vizianagaram. Timing can be arranged to match the prescription schedule.',
+        ],
+      },
+      {
+        heading: 'Important Note',
+        paragraphs: [
+          'All clinical procedures described here are carried out only under a valid prescription from your treating doctor. Genesis Health Care does not carry out any clinical procedure without a prescription. If you have a clinical nursing need at home, please share your prescription when you call.',
+          'Call 70410 81081 or WhatsApp 95818 77277 for home clinical nursing in Visakhapatnam and Vizianagaram.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'post-stroke-rehabilitation-at-home-and-centre-visakhapatnam',
+    title: 'Post-Stroke Rehabilitation at Home and in Our Centre, Visakhapatnam',
+    excerpt:
+      'Stroke recovery needs early, consistent rehabilitation. Genesis Health Care offers post-stroke physiotherapy, speech therapy support and in-facility senior rehabilitation at our old age home and rehabilitation centre in Visakhapatnam.',
+    metaDescription:
+      'Post-stroke rehabilitation care centre in Visakhapatnam and Vizianagaram: physiotherapy, occupational therapy support, bedridden nursing care and assisted living for seniors. Call 70410 81081.',
+    date: '2026-11-18',
+    category: 'Old Age Home',
+    readMins: 5,
+    image: '/gallery/rehab-oldage-home.jpg',
+    imageAlt: 'Senior patient receiving rehabilitation care at Genesis Health Care, Visakhapatnam',
+    keywords:
+      'post-stroke rehabilitation care center Visakhapatnam, senior rehabilitation and elder care Visakhapatnam, assisted living and old age home Vizianagaram, stroke rehabilitation Vizag, physiotherapy at home Visakhapatnam, old age home Vizianagaram, rehabilitation centre Vizag',
+    tags: [
+      'Post-Stroke Rehabilitation Care Centre Visakhapatnam',
+      'Senior Rehabilitation & Elder Care Visakhapatnam',
+      'Assisted Living & Old Age Home Vizianagaram',
+      'Stroke Rehabilitation Vizag',
+      'Physiotherapy at Home Visakhapatnam',
+    ],
+    cta: { to: '/old-age-home', label: 'Old age home & rehabilitation centre, Visakhapatnam' },
+    sections: [
+      {
+        heading: 'Why Stroke Rehabilitation Matters',
+        paragraphs: [
+          'A stroke can affect movement, speech, memory and daily function. The brain can recover and relearn, but rehabilitation must start early and continue consistently. Stopping too soon or delaying care leads to permanent disability that could have been avoided.',
+          'At Genesis Health Care Enterprises, our old age home and rehabilitation centre in Visakhapatnam offers a combined environment: residential care and in-house rehabilitation under one roof.',
+        ],
+      },
+      {
+        heading: 'Post-Stroke Rehabilitation at Our Centre, Visakhapatnam',
+        paragraphs: [
+          'Our facility is designed for patients transitioning from hospital to recovery. Stroke patients who cannot be managed at home benefit from round-the-clock nursing, daily physiotherapy and a structured recovery routine.',
+        ],
+        list: [
+          'Daily physiotherapy by trained therapists.',
+          '24/7 nursing care and vital monitoring.',
+          'Nutritious meals suited to the patient\u2019s condition.',
+          'Occupational therapy support for activities of daily living.',
+          'Speech and swallowing support coordination.',
+          'Family counselling and training.',
+        ],
+      },
+      {
+        heading: 'Post-Stroke Rehabilitation at Home, Vizag',
+        paragraphs: [
+          'If your family member can be managed at home with support, we can send a physiotherapist and a trained nursing attendant to your home in Visakhapatnam for daily sessions.',
+        ],
+        list: [
+          'Physiotherapy and exercise programme at home.',
+          'Bedridden patient care and repositioning to prevent bedsores.',
+          'Ryles tube and catheter care if needed.',
+          'Medication reminders and vital checks.',
+        ],
+      },
+      {
+        heading: 'Senior Rehabilitation and Elder Care in Visakhapatnam and Vizianagaram',
+        paragraphs: [
+          'Our services are not limited to stroke patients. We support seniors recovering from hip fractures, knee replacements, spinal conditions and neurological illnesses across Visakhapatnam and Vizianagaram.',
+          'Families in Vizianagaram can reach our team at 95818 77277 (WhatsApp) for admission to our Visakhapatnam facility or for home-based rehabilitation in Vizianagaram.',
+        ],
+      },
+      {
+        heading: 'Assisted Living and Old Age Home for Seniors from Vizianagaram',
+        paragraphs: [
+          'Families in Vizianagaram who need a safe, medically supervised environment for a senior parent can arrange admission to our old age home and rehabilitation centre in Visakhapatnam. We coordinate transport and admission.',
+          'Call 70410 81081 or WhatsApp 95818 77277 to discuss admission, rehabilitation programmes and care plans.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'ambulance-service-vizianagaram-to-visakhapatnam-icu-medical-cab',
+    title: '24/7 Ambulance Service Vizianagaram to Visakhapatnam | ICU Ambulance & Medical Cab',
+    excerpt:
+      'Need an ambulance from Vizianagaram to Visakhapatnam, an ICU ambulance with oxygen, or a wheelchair-accessible medical cab for a non-emergency transfer? Genesis Health Care is available 24/7.',
+    metaDescription:
+      '24/7 ambulance service Vizianagaram to Visakhapatnam: ICU ambulance with oxygen support, non-emergency patient transport and wheelchair accessible medical cab. Call 70410 81081.',
+    date: '2026-11-18',
+    category: 'Patient Transport',
+    readMins: 4,
+    image: '/gallery/critical-care-at-home-and-patient-shifting.jpg',
+    imageAlt: 'Ambulance and patient transport service from Vizianagaram to Visakhapatnam',
+    keywords:
+      '24/7 ambulance service Vizianagaram to Visakhapatnam, ICU ambulance with oxygen support Visakhapatnam, non-emergency patient transport service Vizag, wheelchair accessible medical cab Visakhapatnam, ambulance Vizianagaram, cardiac ambulance Vizag, patient transfer Visakhapatnam',
+    tags: [
+      '24/7 Ambulance Service Vizianagaram to Visakhapatnam',
+      'ICU Ambulance with Oxygen Support Visakhapatnam',
+      'Non-Emergency Patient Transport Service Vizag',
+      'Wheelchair Accessible Medical Cab Visakhapatnam',
+    ],
+    cta: { to: '/patient-transport', label: 'Ambulance and patient transport services' },
+    sections: [
+      {
+        heading: 'Ambulance Service from Vizianagaram to Visakhapatnam',
+        paragraphs: [
+          'Genesis Health Care Enterprises provides 24/7 ambulance services between Vizianagaram and Visakhapatnam. Whether it is an emergency transfer to a hospital in Vizag or a planned discharge, our team is on call.',
+          'Call 70410 81081 or WhatsApp 95818 77277 (Vizianagaram) any time of day or night. We will arrange the right vehicle and escort for the patient\u2019s condition.',
+        ],
+      },
+      {
+        heading: 'ICU Ambulance with Oxygen Support, Visakhapatnam',
+        paragraphs: [
+          'Critical patients who need continuous oxygen, cardiac monitoring or ventilator support during transport require an ICU-level ambulance. Our ICU ambulance is equipped with oxygen cylinders, a cardiac monitor and a trained paramedic or nurse.',
+        ],
+        list: [
+          'Oxygen cylinder and flow-meter on board.',
+          'Cardiac monitor and defibrillator.',
+          'Trained nurse or paramedic escort.',
+          'Coordination with the receiving hospital before departure.',
+          'Available 24/7 within Visakhapatnam and for intercity transfers from Vizianagaram.',
+        ],
+      },
+      {
+        heading: 'Non-Emergency Patient Transport Service, Vizag',
+        paragraphs: [
+          'Not every patient transfer is an emergency. We provide planned, comfortable transport for dialysis visits, chemotherapy sessions, outpatient appointments and hospital discharge trips within Visakhapatnam and Vizianagaram.',
+        ],
+        list: [
+          'Scheduled pickups for regular hospital visits.',
+          'Trained attendant to assist the patient.',
+          'Stretcher or wheelchair available inside the vehicle.',
+          'Clean, air-conditioned vehicle.',
+        ],
+      },
+      {
+        heading: 'Wheelchair Accessible Medical Cab, Visakhapatnam',
+        paragraphs: [
+          'For patients who use a wheelchair, a standard taxi is not safe or comfortable. Our wheelchair-accessible medical cab is designed for patients who cannot transfer easily, with a ramp or lift, secure wheelchair restraints and a trained attendant.',
+          'This service is also available for out-of-station visitors arriving at Visakhapatnam railway station or airport who need a wheelchair and onward transport.',
+        ],
+      },
+      {
+        heading: 'Contact Us',
+        paragraphs: [
+          'For ambulance service from Vizianagaram to Visakhapatnam, an ICU ambulance or a medical cab, call 70410 81081 or WhatsApp 95818 77277. Available 24 hours, 7 days a week.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'medical-equipment-for-rent-and-sale-vizag-buy-home-icu',
+    title: 'Medical Equipment for Rent and Sale in Vizag | Buy Home ICU Equipment Visakhapatnam',
+    excerpt:
+      'Looking to rent or buy home ICU equipment, a hospital bed or wheelchair in Visakhapatnam? Oxygen concentrator and cylinder rental also available in Vizianagaram. Genesis Health Care, 10+ years serving Vizag.',
+    metaDescription:
+      'Medical equipment for rent and sale in Vizag: hospital beds, wheelchairs, oxygen concentrators, cylinders, home ICU equipment. Also serving Vizianagaram. Call 70410 81081.',
+    date: '2026-11-18',
+    category: 'Medical Equipment',
+    readMins: 4,
+    image: '/blog/medical-equipment-rentals-vizag.jpg',
+    imageSize: [1200, 800],
+    imageAlt: 'Medical equipment for rent and sale in Vizag: hospital bed, wheelchair and oxygen concentrator',
+    keywords:
+      'medical equipment for rent and sale in Vizag, buy home ICU medical equipment Visakhapatnam, hospital bed and wheelchair rental in Visakhapatnam, oxygen concentrator and cylinder rental Vizianagaram, home ICU equipment Vizag, medical equipment suppliers Vizianagaram',
+    tags: [
+      'Medical Equipment for Rent and Sale in Vizag',
+      'Buy Home ICU Medical Equipment Visakhapatnam',
+      'Hospital Bed & Wheelchair Rental Visakhapatnam',
+      'Oxygen Concentrator & Cylinder Rental Vizianagaram',
+    ],
+    cta: { to: '/medical-equipment', label: 'See all medical equipment on rent and sale' },
+    sections: [
+      {
+        heading: 'Rent or Buy Medical Equipment in Vizag',
+        paragraphs: [
+          'Genesis Health Care Enterprises provides medical equipment for rent and sale in Visakhapatnam and Vizianagaram. We serve families who need hospital-grade equipment at home, whether for a few weeks of recovery or for long-term care.',
+          'Our team delivers, installs and explains the equipment at your home. We also provide a welcome kit of consumables after a hospital discharge.',
+        ],
+      },
+      {
+        heading: 'Hospital Bed and Wheelchair Rental in Visakhapatnam',
+        list: [
+          'Manual hospital beds, semi-fowler, fowler and 5-function electric beds.',
+          'Standard, transport and motorised wheelchairs.',
+          'Air mattresses and pressure-relief mattresses for bedsore prevention.',
+          'Commode chairs and shower chairs.',
+          'Walker frames, crutches and walking sticks.',
+        ],
+      },
+      {
+        heading: 'Oxygen Concentrator and Cylinder Rental, Vizianagaram',
+        paragraphs: [
+          'We supply oxygen concentrators and portable oxygen cylinders in Visakhapatnam and Vizianagaram. Cylinder rental includes a standby cylinder for use during power cuts or during patient shifting.',
+        ],
+        list: [
+          '5-litre and 10-litre oxygen concentrators.',
+          'Portable oxygen concentrators for travel.',
+          'Oxygen cylinders with flowmeter (up to 15 litres per minute).',
+          'CPAP and BiPAP machines on rent.',
+          'Humidifier bottles, masks and tubing.',
+        ],
+      },
+      {
+        heading: 'Buy Home ICU Equipment, Visakhapatnam',
+        paragraphs: [
+          'For patients who need long-term or permanent equipment, we sell clinical-grade home ICU equipment in Visakhapatnam. Through Genesis Surgicals, we also supply medical and surgical consumables at retail and wholesale.',
+        ],
+        list: [
+          'Hospital beds and air mattresses for purchase.',
+          'Suction machines and syringe pumps.',
+          'Patient monitors and pulse oximeters.',
+          'Surgical consumables through Genesis Surgicals.',
+        ],
+      },
+      {
+        heading: 'Serving Vizianagaram',
+        paragraphs: [
+          'Families in Vizianagaram can call or WhatsApp 95818 77277. We have a branch office at R&B Bungalow, Vizianagaram, and a dedicated team for equipment pickup and delivery across the district.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'how-to-choose-hospital-bed-for-home-use-vizag',
     title: 'How to Choose a Hospital Bed for Home Use in Vizag',
     excerpt:
