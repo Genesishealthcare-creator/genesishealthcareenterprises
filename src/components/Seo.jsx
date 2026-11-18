@@ -17,7 +17,7 @@ function setTag(selector, create, attrs) {
   Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, v))
 }
 
-export default function Seo({ title, description }) {
+export default function Seo({ title, description, image }) {
   const { pathname } = useLocation()
 
   useEffect(() => {
@@ -26,6 +26,10 @@ export default function Seo({ title, description }) {
     const finalTitle = data?.title || title
     const finalDesc = data?.description || description
     const url = `${SITE_URL}${path === '/' ? '/' : path}`
+    // Use the passed image first, then page-level, then site default logo
+    const finalImage = image
+      ? (image.startsWith('http') ? image : `${SITE_URL}${image}`)
+      : (data?.image ? `${SITE_URL}${data.image}` : SITE_IMAGE)
 
     if (finalTitle) document.title = finalTitle
     if (finalDesc) setTag('meta[name="description"]', 'meta', { name: 'description', content: finalDesc })
@@ -33,7 +37,6 @@ export default function Seo({ title, description }) {
 
     setTag('link[rel="canonical"]', 'link', { rel: 'canonical', href: url })
 
-    // Pages that are not real routes (404) must not be indexed.
     setTag('meta[name="robots"]', 'meta', {
       name: 'robots',
       content: data ? 'index, follow, max-image-preview:large' : 'noindex, follow',
@@ -42,26 +45,28 @@ export default function Seo({ title, description }) {
     // Open Graph + Twitter (link previews)
     const og = {
       'og:site_name': SITE_NAME,
-      'og:type': 'website',
+      'og:type': 'article',
       'og:locale': 'en_IN',
       'og:title': finalTitle || SITE_NAME,
       'og:description': finalDesc || '',
       'og:url': url,
-      'og:image': SITE_IMAGE,
+      'og:image': finalImage,
+      'og:image:width': '1200',
+      'og:image:height': '630',
     }
     Object.entries(og).forEach(([prop, content]) =>
       setTag(`meta[property="${prop}"]`, 'meta', { property: prop, content }),
     )
     const tw = {
-      'twitter:card': 'summary',
+      'twitter:card': 'summary_large_image',
       'twitter:title': finalTitle || SITE_NAME,
       'twitter:description': finalDesc || '',
-      'twitter:image': SITE_IMAGE,
+      'twitter:image': finalImage,
     }
     Object.entries(tw).forEach(([name, content]) =>
       setTag(`meta[name="${name}"]`, 'meta', { name, content }),
     )
-  }, [pathname, title, description])
+  }, [pathname, title, description, image])
 
   return null
 }

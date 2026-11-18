@@ -108,6 +108,7 @@ posts.forEach((p) => {
     title: `${p.title} | Genesis Health Care`,
     description: p.metaDescription || p.excerpt,
     keywords: p.keywords,
+    image: p.image,
   }
 })
 

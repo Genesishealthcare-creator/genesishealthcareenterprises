@@ -60,7 +60,7 @@ export default function BlogPost() {
 
   return (
     <>
-      <Seo />
+      <Seo image={post.image} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <section className="blog-hero">

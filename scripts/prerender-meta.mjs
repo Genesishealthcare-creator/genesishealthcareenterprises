@@ -26,6 +26,12 @@ for (const [route, d] of Object.entries(seoData)) {
   html = setMeta(html, /(<meta property="og:title" content=")([^"]*)(")/, d.title)
   html = setMeta(html, /(<meta property="og:description" content=")([^"]*)(")/, d.description)
   html = setMeta(html, /(<meta property="og:url" content=")([^"]*)(")/, url)
+  // Per-page image for social previews (blog posts use their own photo)
+  if (d.image) {
+    const absImg = d.image.startsWith('http') ? d.image : `${SITE_URL}${d.image}`
+    html = setMeta(html, /(<meta property="og:image" content=")([^"]*)(")/, absImg)
+    html = setMeta(html, /(<meta name="twitter:image" content=")([^"]*)(")/, absImg)
+  }
   html = setMeta(html, /(<link rel="canonical" href=")([^"]*)(")/, url)
 
   if (route === '/') {
