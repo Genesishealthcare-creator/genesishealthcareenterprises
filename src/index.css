@@ -4405,3 +4405,115 @@ a.hc-chip--link, button.hc-chip--link {
   transform: translateY(-2px); box-shadow: 0 8px 18px -8px rgba(124,58,237,.55);
 }
 .hc-chip--link:focus-visible { outline: 2px solid var(--violet-600); outline-offset: 2px }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   ENQUIRY POPUP
+   ══════════════════════════════════════════════════════════════════════════ */
+.eq-overlay {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(10,20,40,.62);
+  backdrop-filter: blur(5px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 1rem;
+  animation: eq-fade-in .2s ease;
+}
+@keyframes eq-fade-in { from { opacity: 0 } to { opacity: 1 } }
+
+.eq-popup {
+  width: 100%; max-width: 480px; max-height: 90dvh;
+  overflow-y: auto; overflow-x: hidden;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 32px 80px -16px rgba(0,0,0,.55);
+  animation: eq-slide-up .25s ease;
+}
+@keyframes eq-slide-up { from { transform: translateY(24px); opacity: 0 } to { transform: translateY(0); opacity: 1 } }
+
+.eq-popup__head {
+  position: relative;
+  background: linear-gradient(135deg, var(--teal-900), var(--teal-700) 60%, var(--sky-600));
+  color: #fff; padding: 1.6rem 1.6rem 1.4rem;
+  border-radius: 24px 24px 0 0;
+}
+.eq-popup__badge {
+  display: inline-block;
+  background: rgba(255,255,255,.2); border: 1px solid rgba(255,255,255,.35);
+  color: #fff; font-family: var(--font-display); font-weight: 700; font-size: .75rem;
+  padding: .3rem .9rem; border-radius: 999px; margin-bottom: .75rem;
+  text-transform: uppercase; letter-spacing: .06em;
+}
+.eq-popup__title { color: #fff; font-size: 1.5rem; margin: 0 0 .3rem }
+.eq-popup__sub { color: rgba(255,255,255,.8); font-size: .92rem; margin: 0 }
+.eq-popup__close {
+  position: absolute; top: 1rem; right: 1rem;
+  width: 36px; height: 36px; border: none; border-radius: 50%;
+  background: rgba(255,255,255,.2); color: #fff;
+  font-size: 1rem; cursor: pointer; display: grid; place-items: center;
+  transition: background var(--t);
+}
+.eq-popup__close:hover { background: rgba(255,255,255,.35) }
+
+.eq-popup__body { padding: 1.6rem }
+
+.eq-form { display: flex; flex-direction: column; gap: 1rem }
+.eq-form__field { display: flex; flex-direction: column; gap: .35rem }
+.eq-form__field label { font-weight: 700; font-size: .9rem; color: var(--slate-700) }
+.eq-form__field input,
+.eq-form__field select,
+.eq-form__field textarea {
+  width: 100%; padding: .75rem 1rem;
+  border: 1.5px solid var(--slate-200); border-radius: 10px;
+  font-size: 1rem; font-family: var(--font-body);
+  color: var(--slate-800); background: #fff;
+  transition: border-color var(--t), box-shadow var(--t);
+  outline: none;
+}
+.eq-form__field input:focus,
+.eq-form__field select:focus,
+.eq-form__field textarea:focus {
+  border-color: var(--teal-500);
+  box-shadow: 0 0 0 3px rgba(14,184,166,.15);
+}
+.eq-form__field textarea { resize: vertical; min-height: 80px }
+.eq-form__error { color: var(--rose-600); font-size: .88rem; font-weight: 600 }
+.eq-form__submit { width: 100%; justify-content: center; margin-top: .25rem }
+.eq-form__note { text-align: center; font-size: .85rem; color: var(--slate-500); margin: 0 }
+.eq-form__note a { color: var(--teal-600) }
+
+.eq-success { text-align: center; padding: 1rem 0 .5rem }
+.eq-success__icon {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal-50), var(--teal-100));
+  display: grid; place-items: center; margin: 0 auto 1rem;
+}
+.eq-success__icon svg { width: 32px; height: 32px; color: var(--teal-600) }
+.eq-success h3 { font-size: 1.5rem; margin-bottom: .4rem }
+.eq-success p { color: var(--slate-600); margin-bottom: .6rem }
+.eq-success__call { font-weight: 700; color: var(--slate-800) !important }
+.eq-success__again {
+  background: none; border: none; color: var(--teal-600);
+  font-size: .88rem; font-weight: 700; cursor: pointer;
+  margin-top: 1rem; text-decoration: underline;
+}
+
+/* Trigger button — fixed bottom-right, above WhatsApp */
+.eq-trigger {
+  position: fixed; bottom: 100px; right: 1.2rem; z-index: 980;
+  display: inline-flex; align-items: center; gap: .5rem;
+  background: linear-gradient(135deg, var(--teal-700), var(--sky-600));
+  color: #fff; border: none; border-radius: 999px;
+  padding: .7rem 1.2rem .7rem .9rem;
+  font-family: var(--font-display); font-weight: 700; font-size: .9rem;
+  box-shadow: 0 10px 30px -8px rgba(14,144,144,.7);
+  cursor: pointer;
+  transition: transform var(--t), box-shadow var(--t);
+  -webkit-tap-highlight-color: transparent;
+}
+.eq-trigger:hover { transform: translateY(-3px); box-shadow: 0 16px 36px -8px rgba(14,144,144,.7) }
+.eq-trigger svg { width: 20px; height: 20px }
+
+@media (max-width: 480px) {
+  .eq-trigger { bottom: 90px; right: .9rem; font-size: .82rem; padding: .62rem 1rem .62rem .8rem }
+  .eq-popup { border-radius: 20px }
+  .eq-popup__head { border-radius: 20px 20px 0 0 }
+}

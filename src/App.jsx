@@ -1,9 +1,11 @@
 ﻿import { Routes, Route } from 'react-router-dom'
+import { useState, useCallback } from 'react'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import WhatsAppButton from './components/WhatsAppButton.jsx'
 import ImageStrip from './components/ImageStrip.jsx'
+import EnquiryPopup from './components/EnquiryPopup.jsx'
 import Home from './pages/Home.jsx'
 import MedicalEquipment from './pages/MedicalEquipment.jsx'
 import HomeCare from './pages/HomeCare.jsx'
@@ -21,6 +23,10 @@ import BlogPost from './pages/BlogPost.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
+  const [enquiryOpen, setEnquiryOpen] = useState(false)
+  const openEnquiry  = useCallback(() => setEnquiryOpen(true),  [])
+  const closeEnquiry = useCallback(() => setEnquiryOpen(false), [])
+
   return (
     <>
       <ScrollToTop />
@@ -47,6 +53,13 @@ export default function App() {
       <ImageStrip />
       <Footer />
       <WhatsAppButton />
+
+      {/* Floating enquiry trigger */}
+      <button type="button" className="eq-trigger" onClick={openEnquiry} aria-label="Open quick enquiry form">
+        ✉ Quick Enquiry
+      </button>
+
+      <EnquiryPopup isOpen={enquiryOpen} onClose={closeEnquiry} />
     </>
   )
 }
