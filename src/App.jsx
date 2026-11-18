@@ -1,5 +1,5 @@
 ﻿import { Routes, Route } from 'react-router-dom'
-import { useState, useCallback, useEffect } from 'react'
+import { useState, useCallback } from 'react'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
@@ -26,17 +26,6 @@ export default function App() {
   const [enquiryOpen, setEnquiryOpen] = useState(false)
   const openEnquiry  = useCallback(() => setEnquiryOpen(true),  [])
   const closeEnquiry = useCallback(() => setEnquiryOpen(false), [])
-
-  // Auto-open the enquiry popup 4 seconds after the site first loads.
-  // Only once per browser session so it does not reappear on every page navigation.
-  useEffect(() => {
-    if (sessionStorage.getItem('eq-shown')) return
-    const t = setTimeout(() => {
-      setEnquiryOpen(true)
-      sessionStorage.setItem('eq-shown', '1')
-    }, 4000)
-    return () => clearTimeout(t)
-  }, [])
 
   return (
     <>
