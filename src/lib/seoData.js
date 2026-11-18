@@ -65,6 +65,7 @@ export const seoData = {
       'A decade of compassion in Visakhapatnam: from Genesis Home Care Services to Genesis Health Care Enterprises with home care, old age home, medical equipment rental and Genesis Surgicals.',
     keywords:
       'Genesis Health Care Enterprises, Genesis Home Care Services Vizag, Potti Krupa Samson, home care company Visakhapatnam, Genesis Surgicals',
+    image: '/og-about.jpg',
   },
   '/contact': {
     title: 'Contact Genesis Health Care | Vizag | 70410 81081',
