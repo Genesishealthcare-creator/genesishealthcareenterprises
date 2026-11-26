@@ -212,6 +212,203 @@ export const posts = [
     ],
   },
   {
+    slug: 'injection-services-at-home-visakhapatnam',
+    title: 'Home Injection Services in Visakhapatnam – TT, Antibiotics, IV Fluids & Cannulation',
+    excerpt:
+      'Looking for professional injection services at home in Vizag? Genesis Health Care Enterprises provides prescribed TT injections, IM/IV injections, antibiotic administration, IV fluids and cannulation in Visakhapatnam and Vizianagaram. Services from \u20b9350.',
+    metaDescription:
+      'Professional injection services at home in Vizag: TT injections, IM/IV injections, antibiotic administration, IV fluids and cannulation in Visakhapatnam and Vizianagaram. From \u20b9350. Call 79972 72721.',
+    date: '2026-11-19',
+    category: 'Home Care',
+    readMins: 7,
+    image: '/gallery/nursing-care-images.jpg',
+    imageAlt: 'Nurse administering a home injection for a patient in Visakhapatnam',
+    keywords:
+      'home injection services Visakhapatnam, injection at home Vizag, TT injection at home Visakhapatnam, IV antibiotic therapy at home Visakhapatnam, IV fluids at home Vizag, cannulation at home Vizag, home injection and IV infusion service Vizianagaram, IM injection at home Visakhapatnam, antibiotic injection at home Vizag, home nursing Visakhapatnam, clinical nursing at home Vizag',
+    tags: [
+      'Home Injection Services Visakhapatnam',
+      'TT Injection at Home Vizag',
+      'IV Antibiotic Therapy at Home Visakhapatnam',
+      'IV Fluids at Home Vizag',
+      'Cannulation at Home Vizag',
+      'IM Injection at Home Visakhapatnam',
+    ],
+    cta: { to: '/home-care', label: 'All home nursing and clinical services in Vizag' },
+    sections: [
+      {
+        heading: 'Introduction',
+        paragraphs: [
+          'Access to timely and professional nursing care is essential, especially for patients who require regular injections, intravenous medication or fluid therapy. For elderly individuals, bedridden patients and those recovering from surgery, travelling to a hospital or clinic for every injection can be physically challenging and inconvenient.',
+          'Genesis Health Care Enterprises brings professional home injection and nursing services directly to patients across Visakhapatnam (Vizag) and Vizianagaram.',
+          'Our trained nursing personnel provide doctor-prescribed injection administration and IV therapy at home, including TT (Tetanus Toxoid) injections, intramuscular (IM) and intravenous (IV) injections, antibiotic administration, IV fluid therapy and cannulation.',
+          'With services starting from \u20b9350, we aim to make essential nursing care more accessible while maintaining professional standards, hygiene and patient safety.',
+          'Whether you need a single prescribed injection or nursing support for a multi-day treatment course, our team coordinates home visits based on your medical requirements and location.',
+          'For appointments, call: 79972 72721 / 70410 81081',
+        ],
+      },
+      {
+        heading: 'What Home Injection Services Do We Provide?',
+        paragraphs: [
+          'Genesis Health Care Enterprises offers a range of doctor-prescribed injection and IV therapy services at home.',
+        ],
+        list: [
+          { b: 'TT (Tetanus Toxoid) Injection — from \u20b9350', t: 'Home administration near Seethammadhara.' },
+          { b: 'IM / IV Injections — from \u20b9550 per visit', t: 'Administration as prescribed by your doctor.' },
+          { b: 'Cannulation and IV Injection — up to \u20b91,200 per visit', t: 'Includes applicable consumables.' },
+          { b: 'Antibiotic Injections — quoted per visit', t: 'Nursing support for prescribed multi-day courses.' },
+          { b: 'IV Fluid Therapy — quoted per visit', t: 'Prescribed intravenous fluids and hydration support.' },
+          { b: 'Gynaecological Injections — quoted per visit', t: "Administration according to the treating doctor\u2019s prescription." },
+        ],
+      },
+      {
+        heading: 'Location-Based Pricing',
+        paragraphs: ['Our pricing is structured according to the patient\u2019s location and the nursing service required.'],
+        list: [
+          'Within 5 km of Seethammadhara: applicable base service pricing.',
+          'Beyond 5 km: an additional \u20b950\u2013\u20b9100 may apply depending on distance.',
+          'Remote and uphill locations: pricing confirmed based on travel requirements and staff availability.',
+        ],
+        after: ['For an accurate quotation, please share your location and prescription when booking.'],
+      },
+      {
+        heading: 'Who Can Benefit from Home Injection Services?',
+        paragraphs: ['Home injection services can be particularly helpful for patients who find frequent hospital visits difficult.'],
+        subsections: [
+          {
+            heading: 'Bedridden and Mobility-Restricted Patients',
+            paragraphs: [
+              'Patients who are unable to walk, sit comfortably or travel independently may require regular injections as part of their treatment. Our nursing team visits the patient\u2019s home to administer prescribed injections, helping families avoid unnecessary transportation difficulties.',
+            ],
+          },
+          {
+            heading: 'Elderly Patients Requiring Regular Nursing Support',
+            paragraphs: [
+              'Older adults may experience mobility limitations, weakness or other difficulties that make travelling to healthcare facilities challenging. Home-based injection services provide a convenient option for administering prescribed medication in a familiar environment.',
+            ],
+          },
+          {
+            heading: 'Patients Recovering After Surgery',
+            paragraphs: [
+              'Following surgery, patients may require prescribed antibiotics, injections or IV fluids as part of their recovery plan. Our nursing personnel can assist with these procedures at home when the treating doctor considers home administration clinically appropriate.',
+            ],
+          },
+          {
+            heading: 'Patients Requiring Multi-Day Antibiotic Therapy',
+            paragraphs: [
+              'Certain medical conditions require injections over several consecutive days. For patients whose clinical condition permits home treatment, Genesis can coordinate nursing visits for prescribed antibiotic administration according to the doctor\u2019s schedule.',
+            ],
+          },
+          {
+            heading: 'Patients Requiring Prescribed IV Fluids',
+            paragraphs: [
+              'Patients who require intravenous fluids may benefit from nursing support at home, provided their condition is suitable for home-based treatment. A doctor\u2019s assessment and prescription are essential before starting IV fluid therapy.',
+            ],
+          },
+        ],
+      },
+      {
+        heading: 'Areas We Serve in Visakhapatnam and Vizianagaram',
+        paragraphs: [
+          'Genesis Health Care Enterprises operates from the Seethammadhara area of Visakhapatnam and coordinates home nursing visits across several parts of the city.',
+        ],
+        list: [
+          'Seethammadhara',
+          'Gajuwaka',
+          'Madhurawada',
+          'MVP Colony',
+          'Dwaraka Nagar',
+          'Rushikonda',
+          'Hill-side residential and naval quarters areas',
+        ],
+        after: [
+          'We also extend our nursing services to Vizianagaram, subject to staff availability and service requirements.',
+          'We understand that reaching patients in certain uphill and residential locations requires additional travel arrangements. Our team makes efforts to coordinate suitable transportation and nursing support for these areas.',
+        ],
+      },
+      {
+        heading: 'Why Choose Genesis Health Care Enterprises for Home Injection Services?',
+        paragraphs: ['Choosing a home healthcare provider involves more than finding someone who can administer an injection. Patients and families need confidence in the quality, professionalism and reliability of the nursing service.'],
+        list: [
+          { b: 'Trained Nursing Personnel', t: 'Our home nursing services are supported by trained nursing personnel who understand appropriate injection administration procedures and patient-care practices.' },
+          { b: 'Hygiene and Infection-Control Practices', t: 'We emphasise appropriate hand hygiene, sterile techniques, single-use needles and syringes, and proper disposal of used sharps.' },
+          { b: 'Prescription-Based Treatment', t: "All injections and IV therapies are administered only against a valid doctor\u2019s prescription and within the scope of the prescribed treatment." },
+          { b: 'Transparent Service Charges', t: 'We communicate applicable service charges based on the procedure, location and consumables required before confirming the visit.' },
+          { b: 'Support for Bedridden and Elderly Patients', t: 'We understand the difficulties families face when arranging transportation for patients who require regular nursing attention.' },
+          { b: 'Local Service Coordination', t: 'With our operational presence in Visakhapatnam and service coordination in Vizianagaram, we focus on providing care in areas where we can arrange appropriate staff support.' },
+        ],
+      },
+      {
+        heading: 'Our Complete Home Healthcare Services',
+        paragraphs: ['Injection administration is one part of the comprehensive home healthcare services offered by Genesis Health Care Enterprises. Our services include:'],
+        list: [
+          'Home nursing procedures and wound dressing',
+          'IV injections and infusion support',
+          'Foley catheter insertion and care',
+          'Suture and staple removal',
+          'Pressure injury and bedsore management',
+          'Medication administration as prescribed',
+          'Patient care attendant services',
+          'Medical equipment rental and support',
+        ],
+      },
+      {
+        heading: 'How to Book Home Injection Services',
+        paragraphs: ['Arranging a nursing visit with Genesis Health Care Enterprises is simple.'],
+        list: [
+          { b: 'Step 1: Contact Our Team', t: 'Call 79972 72721 or 70410 81081 to enquire about the required injection or IV nursing service.' },
+          { b: 'Step 2: Complete Registration', t: 'A \u20b950 booking/registration fee is applicable at the time of booking.' },
+          { b: 'Step 3: Share the Doctor\u2019s Prescription', t: "Provide a valid doctor\u2019s prescription mentioning the medication, dosage, route and schedule of administration." },
+          { b: 'Step 4: Confirm Your Location', t: 'Share your complete location so our team can confirm staff availability, applicable travel charges and appointment timing.' },
+          { b: 'Step 5: Schedule Your Nursing Visit', t: 'Once the service is confirmed, our nursing personnel will visit your home with the required consumables, as applicable.' },
+        ],
+        after: [
+          'Important: A valid doctor\u2019s prescription is mandatory for all injection and IV therapy services. Our nursing personnel will verify the prescription before administration. Certain procedures may require a clinical assessment or hospital-based care and may not be suitable for home administration.',
+        ],
+      },
+      {
+        heading: 'Frequently Asked Questions',
+        subsections: [
+          {
+            heading: 'How much does a TT injection at home cost in Visakhapatnam?',
+            paragraphs: ['TT injection services at home start from \u20b9350 for locations near Seethammadhara. Additional travel charges may apply for locations beyond 5 km.'],
+          },
+          {
+            heading: 'Can I get IV fluids administered at home in Vizag?',
+            paragraphs: ['Yes. Genesis Health Care Enterprises provides prescribed IV fluid therapy at home for patients who are clinically suitable for home-based treatment. Charges are confirmed based on the service and location.'],
+          },
+          {
+            heading: 'Do you provide antibiotic injections at home for multiple days?',
+            paragraphs: ['Yes. We coordinate nursing visits for patients who require prescribed multi-day antibiotic injection courses, subject to clinical suitability and staff availability.'],
+          },
+          {
+            heading: "Is a doctor\u2019s prescription compulsory for home injection services?",
+            paragraphs: ["Yes. A valid doctor\u2019s prescription is mandatory. Medication, dosage, route and administration schedule must be prescribed by the treating doctor."],
+          },
+          {
+            heading: 'Which areas in Visakhapatnam do you cover?',
+            paragraphs: ['We coordinate home nursing visits in Seethammadhara, Gajuwaka, Madhurawada, MVP Colony, Dwaraka Nagar, Rushikonda and selected hill-side residential areas. We also provide services in Vizianagaram, subject to availability.'],
+          },
+          {
+            heading: 'Do you provide cannulation and IV injection services at home?',
+            paragraphs: ['Yes. We provide cannulation and prescribed IV injection services at home for suitable patients. Charges can be up to \u20b91,200 per visit, including applicable consumables.'],
+          },
+          {
+            heading: 'How can I book a home injection service?',
+            paragraphs: ['Call 79972 72721 or 70410 81081. Share your prescription and location with our team to confirm availability and pricing. A \u20b950 booking/registration fee is applicable.'],
+          },
+        ],
+      },
+      {
+        heading: 'Conclusion',
+        paragraphs: [
+          'Timely nursing care plays an important role in supporting patients during illness, treatment and recovery. For individuals who find frequent hospital visits difficult, professional home injection services can provide a practical and convenient alternative when clinically appropriate.',
+          'Genesis Health Care Enterprises is committed to bringing prescribed nursing procedures, injection administration and IV therapy closer to patients and families across Visakhapatnam and Vizianagaram.',
+          'From routine prescribed injections to multi-day antibiotic administration and IV therapy, our focus remains on professional nursing care, hygiene, patient safety and dependable service coordination.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'ryles-tube-foley-catheter-iv-therapy-at-home-vizag',
     title: 'Ryles Tube Insertion, Foley Catheter Changing & IV Therapy at Home in Vizag',
     excerpt:
