@@ -221,8 +221,9 @@ export const posts = [
     date: '2026-11-19',
     category: 'Home Care',
     readMins: 7,
-    image: '/gallery/nursing-care-images.jpg',
-    imageAlt: 'Nurse administering a home injection for a patient in Visakhapatnam',
+    image: '/blog/injection-services-vizag.jpg',
+    imageSize: [1200, 800],
+    imageAlt: 'Nurse administering a home injection for an elderly patient in Visakhapatnam — Genesis Health Care Enterprises',
     keywords:
       'home injection services Visakhapatnam, injection at home Vizag, TT injection at home Visakhapatnam, IV antibiotic therapy at home Visakhapatnam, IV fluids at home Vizag, cannulation at home Vizag, home injection and IV infusion service Vizianagaram, IM injection at home Visakhapatnam, antibiotic injection at home Vizag, home nursing Visakhapatnam, clinical nursing at home Vizag',
     tags: [
