@@ -4,6 +4,7 @@
 // still receive the correct tags for every page.
 
 import { posts } from './blogData.js'
+import { homeServiceGroups } from './homeServices.js'
 
 export const SITE_URL = 'https://www.genesishealthcareenterprises.com'
 export const SITE_NAME = 'Genesis Health Care Enterprises'
@@ -95,6 +96,15 @@ export const seoData = {
     keywords: 'Genesis Health Care photos, home care Vizag gallery, old age home Vizag photos',
   },
 }
+
+// Home care service pages (22 pages)
+homeServiceGroups.flatMap(g => g.services).forEach(s => {
+  seoData[`/${s.slug}`] = {
+    title: s.metaTitle,
+    description: s.metaDesc,
+    keywords: s.keywords,
+  }
+})
 
 // Blog list + one entry per post (generated from src/lib/blogData.js).
 seoData['/blog'] = {

@@ -20,6 +20,8 @@ import OldAgeHomeSupport from './pages/OldAgeHomeSupport.jsx'
 import Gallery from './pages/Gallery.jsx'
 import Blog from './pages/Blog.jsx'
 import BlogPost from './pages/BlogPost.jsx'
+import HomeServicePage from './pages/HomeServicePage.jsx'
+import { homeServices } from './lib/homeServices.js'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -47,6 +49,9 @@ export default function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          {homeServices.map(s => (
+            <Route key={s.slug} path={`/${s.slug}`} element={<HomeServicePage />} />
+          ))}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

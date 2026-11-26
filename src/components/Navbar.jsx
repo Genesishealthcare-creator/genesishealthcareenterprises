@@ -1,16 +1,18 @@
-﻿import { useState, useEffect } from 'react'
+﻿import { useState, useEffect, useRef } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
-import { Phone } from './Icons.jsx'
+import { Phone, ArrowRight, ChevronDown } from './Icons.jsx'
 import SocialLinks from './SocialLinks.jsx'
+import { homeServiceGroups } from '../lib/homeServices.js'
 
+// Nav links — Home Care gets a dropdown instead of a plain link
 const links = [
-  { to: '/',                 label: 'Home' },
-  { to: '/medical-equipment',label: 'Medical Equipment' },
-  { to: '/home-care',        label: 'Home Care' },
-  { to: '/old-age-home',     label: 'Old Age Home' },
-  { to: '/about',            label: 'About' },
-  { to: '/faq',              label: 'FAQ' },
-  { to: '/join-our-team', label: 'Join in Our Team' },
+  { to: '/',                  label: 'Home' },
+  { to: '/medical-equipment', label: 'Medical Equipment' },
+  { to: '/home-care',         label: 'Home Care', dropdown: true },
+  { to: '/old-age-home',      label: 'Old Age Home' },
+  { to: '/about',             label: 'About' },
+  { to: '/faq',               label: 'FAQ' },
+  { to: '/join-our-team',     label: 'Join in Our Team' },
 ]
 
 export default function Navbar() {
@@ -52,11 +54,34 @@ export default function Navbar() {
 
         {/* Desktop nav links */}
         <nav className="nav-links" aria-label="Primary navigation">
-          {links.map((l) => (
-            <NavLink key={l.to} to={l.to} end={l.to === '/'}>
-              {l.label}
-            </NavLink>
-          ))}
+          {links.map((l) =>
+            l.dropdown ? (
+              <div key={l.to} className="nav-dropdown">
+                <NavLink to={l.to} end={false} className="nav-dropdown__toggle">
+                  {l.label} <ChevronDown style={{ width: 14, height: 14 }} />
+                </NavLink>
+                <div className="nav-dropdown__menu" role="menu">
+                  {homeServiceGroups.map(g => (
+                    <div key={g.group} className="nav-dropdown__group">
+                      <div className="nav-dropdown__group-label">{g.group}</div>
+                      {g.services.map(s => (
+                        <Link key={s.slug} to={`/${s.slug}`} className="nav-dropdown__link" role="menuitem">
+                          {s.title}
+                        </Link>
+                      ))}
+                    </div>
+                  ))}
+                  <div className="nav-dropdown__all">
+                    <Link to="/home-care">All Home Care Services <ArrowRight style={{ width: 14, height: 14 }} /></Link>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <NavLink key={l.to} to={l.to} end={l.to === '/'}>
+                {l.label}
+              </NavLink>
+            )
+          )}
         </nav>
 
         {/* Desktop CTA */}

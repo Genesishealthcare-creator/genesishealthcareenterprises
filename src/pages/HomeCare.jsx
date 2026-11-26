@@ -23,6 +23,7 @@ const services = [
     icon: Stethoscope, color: 'teal', n: '01',
     title: 'Home Nursing Care',
     tag: 'Nursing at Home in Visakhapatnam',
+    to: '/home-nursing-services-visakhapatnam',
     intro: 'Qualified nurses providing professional medical attention, monitoring and clinical procedures at your home.',
     items: ['Vital signs monitoring', 'Medication administration as prescribed', 'Wound dressing and basic nursing procedures', 'Post-operative nursing support', 'Catheter and Ryles tube care', 'IV injections and infusion support'],
   },
@@ -30,6 +31,7 @@ const services = [
     icon: Elderly, color: 'violet', n: '02',
     title: 'Elderly Care Services',
     tag: 'Senior Citizen Care at Home',
+    to: '/nurse-at-home-visakhapatnam',
     intro: 'Dedicated, dignified assistance for senior citizens who need extra support with everyday activities.',
     items: ['Personal hygiene and bathing assistance', 'Walking and mobility support', 'Meal preparation and feeding assistance', 'Medication reminders', 'Companionship and emotional support', 'Dementia and Alzheimer\'s care support'],
   },
@@ -37,6 +39,7 @@ const services = [
     icon: Bed, color: 'rose', n: '03',
     title: 'Bedridden Patient Care',
     tag: 'Bedridden Patient Care at Home',
+    to: '/bedsore-dressing-at-home-visakhapatnam',
     intro: 'Specialised daily care for patients who are unable to move independently, with focus on comfort and hygiene.',
     items: ['Bedside patient assistance', 'Position changing to prevent bedsores', 'Sponge bath and personal hygiene', 'Feeding assistance and tube feeding', 'Diaper and catheter care', 'General comfort and hygiene maintenance'],
   },
@@ -44,6 +47,7 @@ const services = [
     icon: HomeCareIcon, color: 'amber', n: '04',
     title: 'Post-Hospitalization Care',
     tag: 'Post Surgery Care at Home',
+    to: '/wound-dressing-at-home-visakhapatnam',
     intro: 'Smooth recovery support for patients returning home after surgery, illness or a hospital stay.',
     items: ['Post-surgery recovery assistance', 'Daily patient care and monitoring', 'Medication reminders and management', 'Mobility and physiotherapy support', 'Follow-up care coordination', 'Assistance with daily activities'],
   },
@@ -51,6 +55,7 @@ const services = [
     icon: Hands, color: 'sky', n: '05',
     title: 'Attendant & Caregiver Services',
     tag: 'Patient Attendant & Caretaker',
+    to: '/female-nurse-at-home-visakhapatnam',
     intro: 'Trained and verified caregivers and patient attendants for round-the-clock or part-time support.',
     items: ['Trained patient attendants', 'Elderly care attendants', '12-hour and 24-hour care options', 'Full-time and part-time arrangements', 'Personal care and companionship', 'Verified, background-checked staff'],
   },
@@ -58,6 +63,7 @@ const services = [
     icon: HeartPlus, color: 'emerald', n: '06',
     title: 'Palliative & Long-Term Care',
     tag: 'Palliative Care at Home',
+    to: '/medication-administration-at-home-visakhapatnam',
     intro: 'Compassionate comfort-focused care for patients with chronic or long-term conditions, at home with family.',
     items: ['Pain and symptom comfort support', 'Chronic illness care assistance', 'Stroke and paralysis patient care', 'Emotional support for patient and family', 'Care coordination with doctors', 'Dignity-first, family-centred approach'],
   },
@@ -254,7 +260,9 @@ export default function HomeCare() {
           </SectionHeading>
 
           <div className="hc-grid">
-            {services.map(({ icon: Icon, color, n, title, tag, intro, items }, i) => (
+            {services.map((item, i) => {
+              const { icon: Icon, color, n, title, tag, intro, items } = item
+              return (
               <Reveal key={title} delay={(i % 3) + 1}>
                 <article className={`hc-card hc-card--${color}`}>
                   <div className="hc-card__top">
@@ -269,12 +277,13 @@ export default function HomeCare() {
                       <li key={it}><Check />{it}</li>
                     ))}
                   </ul>
-                  <Link to="/contact" className={`hc-card__link hc-card__link--${color}`}>
+                  <Link to={item.to} className={`hc-card__link hc-card__link--${color}`}>
                     Book this service <ArrowRight />
                   </Link>
                 </article>
               </Reveal>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>

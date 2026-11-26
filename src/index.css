@@ -4517,3 +4517,114 @@ a.hc-chip--link, button.hc-chip--link {
   .eq-popup { border-radius: 20px }
   .eq-popup__head { border-radius: 20px 20px 0 0 }
 }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   HOME SERVICE PAGES (22 clinical service pages)
+   ══════════════════════════════════════════════════════════════════════════ */
+.hsp-hero {
+  background: linear-gradient(135deg, var(--teal-900) 0%, var(--teal-700) 55%, var(--sky-600) 100%);
+  color: #fff; padding-block: clamp(36px, 6vw, 72px);
+}
+.hsp-hero__inner { max-width: 820px }
+.hsp-hero h1 { color: #fff; font-size: clamp(1.6rem, 4vw, 2.6rem); line-height: 1.2; margin: .6rem 0 .9rem }
+.hsp-hero .lead { color: rgba(255,255,255,.88); font-size: 1.08rem; margin-bottom: 1.4rem }
+.hsp-hero__badge {
+  display: inline-block; font-family: var(--font-display); font-weight: 700; font-size: .78rem;
+  padding: .3rem .9rem; border-radius: 999px; margin-bottom: .5rem; text-transform: uppercase; letter-spacing: .06em;
+  background: rgba(255,255,255,.18); color: #fff; border: 1px solid rgba(255,255,255,.35);
+}
+.hsp-hero__cta { display: flex; flex-wrap: wrap; gap: .75rem }
+.hsp-hero__cta .btn--outline-white {
+  background: transparent; border: 2px solid rgba(255,255,255,.75); color: #fff;
+}
+.hsp-hero__cta .btn--outline-white:hover { background: rgba(255,255,255,.12) }
+
+.hsp-content { display: grid; grid-template-columns: 1fr 280px; gap: 3rem; align-items: start }
+@media (max-width: 900px) { .hsp-content { grid-template-columns: 1fr } }
+
+.hsp-main h2 { font-size: clamp(1.4rem, 2.8vw, 1.8rem); margin-bottom: 1rem }
+.hsp-checklist { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: .7rem }
+.hsp-checklist li { display: flex; gap: .6rem; font-size: 1.03rem; color: var(--slate-700) }
+.hsp-checklist svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: .25em; color: var(--teal-500) }
+.hsp-note { margin-top: 1.6rem }
+.hsp-contact-card {
+  margin-top: 2rem; padding: 1.6rem;
+  background: linear-gradient(135deg, var(--teal-900), var(--teal-700));
+  border-radius: var(--r-lg); color: #fff;
+}
+.hsp-contact-card h3 { color: #fff; margin-bottom: .4rem }
+.hsp-contact-card p { color: rgba(255,255,255,.8); margin-bottom: 1rem }
+.hsp-contact-card__num {
+  display: flex; align-items: center; gap: .5rem;
+  color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 1.1rem;
+  margin-bottom: .4rem; text-decoration: none;
+}
+.hsp-contact-card__num svg { width: 18px; height: 18px }
+
+.hsp-related { position: sticky; top: 90px }
+.hsp-related h3 { font-size: 1rem; margin-bottom: .9rem; color: var(--slate-700) }
+.hsp-related__group { margin-bottom: 1.1rem }
+.hsp-related__label {
+  display: block; font-family: var(--font-display); font-weight: 800; font-size: .72rem;
+  text-transform: uppercase; letter-spacing: .07em; padding: .25rem .6rem; border-radius: 6px;
+  margin-bottom: .35rem;
+}
+.hsp-related__label--teal    { background: var(--teal-50);    color: var(--teal-700) }
+.hsp-related__label--violet  { background: var(--violet-50);  color: var(--violet-700) }
+.hsp-related__label--rose    { background: var(--rose-50);    color: var(--rose-700) }
+.hsp-related__label--amber   { background: var(--amber-50);   color: var(--amber-700) }
+.hsp-related__label--sky     { background: var(--sky-50);     color: var(--sky-700) }
+.hsp-related__label--emerald { background: var(--emerald-50); color: var(--emerald-700) }
+.hsp-related__link {
+  display: block; padding: .32rem .4rem; font-size: .88rem; color: var(--slate-600);
+  border-radius: 6px; text-decoration: none; transition: background var(--t), color var(--t);
+}
+.hsp-related__link:hover, .hsp-related__link.is-active {
+  background: var(--teal-50); color: var(--teal-700); font-weight: 600;
+}
+
+/* ── Home Care navbar dropdown ── */
+.nav-dropdown { position: relative }
+.nav-dropdown__toggle {
+  display: flex; align-items: center; gap: .25rem; cursor: pointer;
+}
+.nav-dropdown__menu {
+  position: absolute; top: calc(100% + .6rem); left: 50%; transform: translateX(-50%);
+  width: 720px; max-width: 95vw;
+  background: #fff; border-radius: 16px;
+  box-shadow: 0 20px 60px -16px rgba(0,0,0,.35);
+  border: 1px solid var(--slate-100);
+  padding: 1.2rem;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: .3rem 1rem;
+  z-index: 300;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transform: translateX(-50%) translateY(8px);
+  transition: opacity .2s ease, transform .2s ease, visibility .2s;
+}
+.nav-dropdown:hover .nav-dropdown__menu,
+.nav-dropdown:focus-within .nav-dropdown__menu {
+  opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0);
+}
+.nav-dropdown__group { grid-column: span 1 }
+.nav-dropdown__group-label {
+  font-family: var(--font-display); font-weight: 800; font-size: .7rem;
+  text-transform: uppercase; letter-spacing: .07em; color: var(--slate-500);
+  padding: .3rem .5rem .15rem; border-bottom: 1px solid var(--slate-100); margin-bottom: .2rem;
+}
+.nav-dropdown__link {
+  display: block; padding: .32rem .5rem; border-radius: 6px; font-size: .86rem; color: var(--slate-700);
+  text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  transition: background var(--t), color var(--t);
+}
+.nav-dropdown__link:hover { background: var(--teal-50); color: var(--teal-700) }
+.nav-dropdown__all {
+  grid-column: 1 / -1; border-top: 1px solid var(--slate-100); margin-top: .4rem; padding-top: .6rem;
+  display: flex; justify-content: center;
+}
+.nav-dropdown__all a {
+  font-family: var(--font-display); font-weight: 700; font-size: .88rem; color: var(--teal-600);
+  text-decoration: none; display: flex; align-items: center; gap: .4rem;
+}
+.nav-dropdown__all a:hover { color: var(--teal-800) }
+
+@media (max-width: 1160px) { .nav-dropdown__menu { display: none } }
