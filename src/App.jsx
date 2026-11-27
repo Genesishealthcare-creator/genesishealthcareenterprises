@@ -51,9 +51,7 @@ export default function App() {
           <Route path="/home-care/all-services" element={<HomeServices />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
-          {homeServices.map(s => (
-            <Route key={s.slug} path={`/${s.slug}`} element={<HomeServicePage />} />
-          ))}
+          <Route path="/:slug" element={<HomeServicePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
