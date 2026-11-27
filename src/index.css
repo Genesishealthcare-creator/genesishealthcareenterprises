@@ -259,6 +259,7 @@ p  { margin-bottom: 1em }
   position: sticky;
   top: 0;
   z-index: 200;
+  overflow: visible;
   background: linear-gradient(135deg, var(--teal-900) 0%, var(--teal-700) 60%, var(--sky-600) 100%);
   box-shadow: 0 4px 24px rgba(0,0,0,.25);
   transition: box-shadow var(--t);
@@ -4589,20 +4590,20 @@ a.hc-chip--link, button.hc-chip--link {
   display: flex; align-items: center; gap: .25rem; cursor: pointer;
 }
 .nav-dropdown__menu {
-  position: absolute; top: calc(100% + .6rem); left: 50%; transform: translateX(-50%);
-  width: 720px; max-width: 95vw;
+  position: absolute; top: calc(100% + .4rem); left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  width: 760px; max-width: calc(100vw - 2rem);
   background: #fff; border-radius: 16px;
-  box-shadow: 0 20px 60px -16px rgba(0,0,0,.35);
-  border: 1px solid var(--slate-100);
+  box-shadow: 0 24px 60px -12px rgba(0,0,0,.35), 0 0 0 1px rgba(0,0,0,.06);
   padding: 1.2rem;
   display: grid; grid-template-columns: repeat(3, 1fr); gap: .3rem 1rem;
-  z-index: 300;
+  z-index: 9999;
   opacity: 0; visibility: hidden; pointer-events: none;
-  transform: translateX(-50%) translateY(8px);
   transition: opacity .2s ease, transform .2s ease, visibility .2s;
 }
 .nav-dropdown:hover .nav-dropdown__menu,
-.nav-dropdown:focus-within .nav-dropdown__menu {
+.nav-dropdown:focus-within .nav-dropdown__menu,
+.nav-dropdown.is-open .nav-dropdown__menu {
   opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0);
 }
 .nav-dropdown__group { grid-column: span 1 }
@@ -4628,3 +4629,8 @@ a.hc-chip--link, button.hc-chip--link {
 .nav-dropdown__all a:hover { color: var(--teal-800) }
 
 @media (max-width: 1160px) { .nav-dropdown__menu { display: none } }
+
+/* On desktops, show dropdown on hover using JS state too for touch devices */
+.nav-dropdown.is-open .nav-dropdown__menu {
+  opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0);
+}

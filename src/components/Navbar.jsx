@@ -17,10 +17,13 @@ const links = [
 
 export default function Navbar() {
   const [open, setOpen]       = useState(false)
+  const [dropOpen, setDropOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const { pathname }          = useLocation()
+  const dropRef               = useRef(null)
 
-  useEffect(() => { setOpen(false) }, [pathname])
+  useEffect(() => { setOpen(false); setDropOpen(false) }, [pathname])
+
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8)
@@ -56,7 +59,13 @@ export default function Navbar() {
         <nav className="nav-links" aria-label="Primary navigation">
           {links.map((l) =>
             l.dropdown ? (
-              <div key={l.to} className="nav-dropdown">
+              <div
+                key={l.to}
+                className={`nav-dropdown${dropOpen ? ' is-open' : ''}`}
+                ref={dropRef}
+                onMouseEnter={() => setDropOpen(true)}
+                onMouseLeave={() => setDropOpen(false)}
+              >
                 <NavLink to={l.to} end={false} className="nav-dropdown__toggle">
                   {l.label} <ChevronDown style={{ width: 14, height: 14 }} />
                 </NavLink>
