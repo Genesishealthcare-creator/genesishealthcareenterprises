@@ -22,6 +22,7 @@ import Blog from './pages/Blog.jsx'
 import BlogPost from './pages/BlogPost.jsx'
 import HomeServicePage from './pages/HomeServicePage.jsx'
 import HomeServices from './pages/HomeServices.jsx'
+import GenesisSurgicals from './pages/GenesisSurgicals.jsx'
 import { homeServices } from './lib/homeServices.js'
 import NotFound from './pages/NotFound.jsx'
 
@@ -49,6 +50,7 @@ export default function App() {
           <Route path="/old-age-home-support" element={<OldAgeHomeSupport />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/home-care/all-services" element={<HomeServices />} />
+          <Route path="/genesis-surgicals" element={<GenesisSurgicals />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/:slug" element={<HomeServicePage />} />

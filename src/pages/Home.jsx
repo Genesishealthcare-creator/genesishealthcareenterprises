@@ -46,7 +46,7 @@ const services = [
     icon: Pill, color: 'emerald',
     title: 'Genesis Surgicals',
     text: 'Retail and wholesale medical supplies for our patients and the wider community. Enquire for surgical and medical supplies.',
-    to: '/contact',
+    to: '/genesis-surgicals',
   },
 ]
 

@@ -60,6 +60,11 @@ export const seoData = {
     keywords:
       'old age home support Andhra Pradesh, assisted living Vizag, hospice care Visakhapatnam, senior day care Vizag, dementia care Vizag, long term care for seniors',
   },
+  '/genesis-surgicals': {
+    title: 'Genesis Surgicals | Surgical Instruments, Disposables & Hospital Supplies | Visakhapatnam',
+    description: 'Genesis Surgicals, a division of Genesis Health Care Enterprises, supplies surgical instruments, disposables, wound care, sterilisation products, gloves, sutures, hospital beds and respiratory devices in Visakhapatnam. Drug-licensed and GST-registered. Enquire: 79971 72017.',
+    keywords: 'Genesis Surgicals, Genesis Health Care Enterprises surgicals, surgical products supplier Visakhapatnam, surgical instruments supplier Visakhapatnam, medical supplies Visakhapatnam, surgical disposables supplier Visakhapatnam, hospital surgical supplies Andhra Pradesh, wound care products supplier Visakhapatnam, hospital furniture supplier Visakhapatnam, drug licensed surgical supplier Visakhapatnam',
+  },
   '/about': {
     title: 'About Genesis Health Care | 10+ Years of Care in Vizag',
     description:
