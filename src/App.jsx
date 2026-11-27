@@ -21,6 +21,7 @@ import Gallery from './pages/Gallery.jsx'
 import Blog from './pages/Blog.jsx'
 import BlogPost from './pages/BlogPost.jsx'
 import HomeServicePage from './pages/HomeServicePage.jsx'
+import HomeServices from './pages/HomeServices.jsx'
 import { homeServices } from './lib/homeServices.js'
 import NotFound from './pages/NotFound.jsx'
 
@@ -47,6 +48,7 @@ export default function App() {
           <Route path="/nri-services" element={<NriServices />} />
           <Route path="/old-age-home-support" element={<OldAgeHomeSupport />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/home-care/all-services" element={<HomeServices />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           {homeServices.map(s => (
