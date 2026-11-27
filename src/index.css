@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    Genesis Health Care — Premium Colorful Design System v3
    Fonts: Plus Jakarta Sans (display) + Inter (body) via Google Fonts
    ========================================================================== */
@@ -4764,7 +4764,12 @@ a.hc-chip--link, button.hc-chip--link {
   font-family: var(--font-display); font-weight: 700; font-size: .95rem; text-decoration: none;
   transition: background var(--t);
 }
-.gs-contact-info__item:hover { background: var(--teal-900); color: #fff }
+.gs-contact-info__item { white-space: nowrap }
+.gs-contact-info__item--call { background: var(--teal-800) }
+.gs-contact-info__item--call:hover { background: var(--teal-900) !important; color: #fff }
+.gs-contact-info__item--wa { background: #25d366 }
+.gs-contact-info__item--wa:hover { background: #1db954 !important; color: #fff }
+.gs-contact-info__item svg { width: 18px; height: 18px; flex-shrink: 0 }
 .gs-address { color: var(--slate-500); font-size: .92rem; margin-bottom: 1.4rem; line-height: 1.65 }
 
 /* Enquiry form */
